@@ -1,7 +1,7 @@
 
 import { useEffect,useState } from 'react';
 import { Vid,Custom,Plot,Construct,School,Old,Park,Elec,Hall,Road,Hospital,Temple } from '..'
-import { testModeAPI } from 'react-ga';
+
 const testimonialsData = [
   {
       name: 'Amrendra Singh',
