@@ -127,7 +127,7 @@ function Home() {
         <section className=" bg-yellow-50 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
                 <h2 className="text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
-                <p className="md:text-lg text-md ml-8 mr-8  text-gray-600 mb-4 text-justify">
+                <p className=" text-md ml-8 mr-8  text-gray-600 mb-4 text-justify">
                 The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction.
  
  Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices. 
@@ -210,7 +210,7 @@ function Home() {
         <section className=" bg-yellow-50 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
                 <h2 className="text-3xl font-bold text-primary mb-6">Our Expertise</h2>
-                <p className="md:text-lg text-md ml-8 mr-8  text-gray-600 mb-4 text-justify">
+                <p className=" text-md ml-8 mr-8  text-gray-600 mb-4 text-justify">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
                 </p>
             

@@ -25,6 +25,7 @@ function Footer() {
       </div>
 
       {/* Quick Links */}
+     
       <div>
         <h3 className="text-lg font-semibold text-primary">Quick Links</h3>
         <ul className="space-y-2 mt-4 text-gray-400">
@@ -45,7 +46,7 @@ function Footer() {
           <li><Link to="/terms-conditions" className="hover:text-primary">Terms & Conditions</Link></li>
         </ul>
       </div>
-
+   
       {/* Social Links */}
       <div>
         <h3 className="text-lg font-semibold text-primary">Follow Us On</h3>

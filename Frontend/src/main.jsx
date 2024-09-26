@@ -5,6 +5,7 @@ import {Home,About,Projects,Blogs,Contact,Career, Login, Enquire} from './compon
 import App from './App.jsx'
 import './index.css'
 import ProjectDetails from './components/pages/ProjectDetails.jsx'
+import AllBlogs from './components/pages/AllBlogs.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +18,8 @@ const router=createBrowserRouter(
       <Route path='contact' element={<Contact/>}/>
       <Route path='login' element={<Login/>}/>
       <Route path='enquire' element={<Enquire/>}/>
-      <Route path='/:id' element={<ProjectDetails/>}/>
+      <Route path='/projects/:id' element={<ProjectDetails/>}/>
+      <Route path="/blogs/:id" element={<AllBlogs />} />
       </Route>
   )
 )

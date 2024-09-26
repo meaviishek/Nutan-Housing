@@ -11,6 +11,24 @@ import Waterimg from '../assets/water.jpg'
 import Hallimg from '../assets/hall.jpg'
 import Movieimg from '../assets/movie.jpg'
 import Clubimg from '../assets/club.jpg'
+import Careerimg from "../assets/join.jpg"
+import Contactimg from '../assets/contact.jpg'
+import Blogimg from '../assets/blog.jpg'
+
+import Img1 from '../assets/img1.jpeg'
+import Img2 from "../assets/img2.jpeg"
+import Img3 from '../assets/img3.jpeg'
+import Img4 from "../assets/img4.jpeg"
+import Img5 from '../assets/img5.jpeg'
+import Img6 from "../assets/img6.jpeg"
+
+import Gmailimg from '../assets/gmail.png'
+import Phoneimg from '../assets/phone-call.png'
+import Whatsappimg from '../assets/whatsapp.png'
+import Locimg from '../assets/location.png'
+import Blog1 from '../assets/blog1.jpg'
+import Blog2 from '../assets/blog2.jpg'
+import Blog3 from '../assets/blog3.jpg'
 
 export{
   Schoolimg,
@@ -25,7 +43,12 @@ export{
   Hallimg,
   Movieimg,
   Clubimg,
-  Proj1img
-
+  Proj1img,
+  Img1,
+  Img2,
+  Img3,
+  Img4,Img5,Img6,Contactimg,Blogimg,Careerimg,
+  Gmailimg,Whatsappimg,Phoneimg
+ ,Locimg,Blog1,Blog2,Blog3
 
 }

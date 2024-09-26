@@ -51,7 +51,7 @@ function Projects() {
                             <div className="p-6">
                                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-700 mb-4">{project.description}</p>
-                              <Link to={`/${project.id}`} > <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                              <Link to={`/projects/${project.id}`} > <button className="bg-primary text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
                                     View Details
                                 </button></Link>
                             </div>
