@@ -5,7 +5,7 @@ function Login({closeLogin}) {
   return (
     <div>
       <div  className=" fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-lg">
-  <div className="bg-white p-8 rounded-lg w-full max-w-md relative">
+  <div className="bg-white p-8 rounded-lg w-full max-w-md relative transition-all duration-700 ease">
  
     <button onClick={closeLogin} className="absolute top-4 right-4 text-gray-400 hover:text-gray-800">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">

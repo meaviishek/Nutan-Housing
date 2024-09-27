@@ -11,7 +11,7 @@ import Logo from "../assets/logo.png"
 import Enquire from "./model/Enquire";
 import Vid from "../assets/videoplayback.mov"
 import Construct from "../assets/construction.png"
-import Plot from "../assets/plot.png"
+import Plotimg from "../assets/plot.png"
 import Custom from "../assets/scale.png"
 import School from "../assets/school.png"
 import Park from "../assets/garden.png"
@@ -27,6 +27,7 @@ import Mission from "../assets/mission.png"
 import Vision from "../assets/vision.png"
 import Project from "../assets/project.jpg";
 import ProjectDetails from "./pages/ProjectDetails";
+import Plot from "./pages/Plot";
 
 export{
   Header,
@@ -42,7 +43,7 @@ export{
   Enquire,
   Vid,
   Construct,
-  Plot,
+  Plotimg,
   Custom,
   School,
   Park,
@@ -57,6 +58,6 @@ export{
   Mission,
   Vision,
   Project,
-  ProjectDetails
-  
+  ProjectDetails,
+  Plot
 }

@@ -29,7 +29,8 @@ import Locimg from '../assets/location.png'
 import Blog1 from '../assets/blog1.jpg'
 import Blog2 from '../assets/blog2.jpg'
 import Blog3 from '../assets/blog3.jpg'
-
+import Pro1 from '../assets/plot11.jpg'
+import Pro2 from '../assets/nutan.jpg'
 export{
   Schoolimg,
   Hospitalimg,
@@ -49,6 +50,6 @@ export{
   Img3,
   Img4,Img5,Img6,Contactimg,Blogimg,Careerimg,
   Gmailimg,Whatsappimg,Phoneimg
- ,Locimg,Blog1,Blog2,Blog3
+ ,Locimg,Blog1,Blog2,Blog3,Pro1,Pro2
 
 }

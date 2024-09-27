@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function Emi_calc() {
   return (

@@ -1,9 +1,10 @@
 import { useState,useEffect } from 'react'
-import { Footer, Header,Floating, Logo,Login } from './components'
+import { Footer, Header,Floating, Logo,Login, Enquire } from './components'
 import { Outlet } from 'react-router-dom'
 function App() {
 
   const [loading, setLoading] = useState(true);
+  
 
   useEffect(() => {
     // Simulate loading delay (in real projects, you can use window.onload or actual API/content loading)
@@ -17,6 +18,14 @@ function App() {
 
 
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isEnqOp,setIsEnqOp] =useState(false);
+
+  const openEnq=()=>{
+    setIsEnqOp(true)
+  }
+  const closeEmq=()=>{
+    setIsEnqOp(false)
+  }
 
   const openLogin = () => {
     setIsLoginOpen(true);
@@ -35,15 +44,18 @@ function App() {
         </div>
       ) : (
       <div className='transition-all duration-700 ease-in-out'>
-        <div className='relative'>
-      <Header openLogin={openLogin} />
+       
+      <Header openLogin={openLogin} openEnq={openEnq} />
+      {isEnqOp && <Enquire closeEnq={closeEmq}/>}
       {isLoginOpen && <Login closeLogin={closeLogin} />}
-      </div>
-      <main>
+      
+      <main className='w-full'>
         <Outlet/>
       </main>
       <Floating/>
-      <Footer/></div> )}
+      <Footer/>
+      
+      </div> )}
     </>
   )
 }

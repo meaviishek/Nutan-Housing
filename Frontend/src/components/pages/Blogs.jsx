@@ -50,6 +50,7 @@ function Blogs() {
   
   const BlogCard = ({ blog }) => {
     return (
+      <Link to={`/blogs/${blog.id}`} className="">
       <div className="blog-card bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-700 transform hover:scale-105">
        
         <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
@@ -59,11 +60,12 @@ function Blogs() {
           <h3 className="text-2xl font-semibold text-gray-800 mb-3">{blog.title}</h3>
           <p className="text-gray-600 mb-3">{blog.description}</p>
           <p className="text-gray-500 text-sm mb-4">Published on {blog.date}</p>
-          <Link to={`/blogs/${blog.id}`} className="text-gold-600 font-semibold hover:underline">
+          
             Read More
-          </Link>
+        
         </div>
       </div>
+      </Link>
     );
   };
   

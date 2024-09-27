@@ -1,6 +1,6 @@
 
 import { useEffect,useState } from 'react';
-import { Vid,Custom,Plot,Construct,School,Old,Park,Elec,Hall,Road,Hospital,Temple } from '..'
+import { Vid,Custom,Plotimg,Construct,School,Old,Park,Elec,Hall,Road,Hospital,Temple } from '..'
 
 const testimonialsData = [
   {
@@ -106,7 +106,7 @@ function Home() {
                     </div>
 
                     <div  className="flex bg-white border items-center rounded-lg shadow-md m-4 p-4 hover:scale-105 transition-all duration-300 ">
-                        <img src={Plot} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
+                        <img src={Plotimg} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
                         <h3 className="text-lg font-semibold mt-4">Plot Selling</h3>
                         <p className="text-md text-gray-600 mt-2 md:ml-2 text-justify">Nutan Housing offers prime plots for sale, providing ideal locations for residential and commercial development.</p>

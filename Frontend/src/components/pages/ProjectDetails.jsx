@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Clubimg,Schoolimg,Proj1img,Templeimg,Gymimg,Swimmingimg,Hospitalimg,Marketimg,Kidimg,Parkimg,Waterimg,Hallimg,Movieimg, Img1, Img2, Img3, Img4, Img5, Img6} from '../indeximages'
 
 
@@ -72,9 +72,7 @@ And many more Government project coming to Rajgir....
       
           </div>
         </div>
-        <a href="../img/lodipur new.pdf" target="_blank" class="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
-          View Plot
-        </a>
+      
       </div>
     </div>
   </section>`,
@@ -212,6 +210,9 @@ function ProjectDetails() {
           __html: project.details
         }}
       />
+      <Link to='/plot' className='bg-green-500 p-3 rounded-md shadow-lg  transition-all duration-500 text-white hover:bg-green-600'>
+      
+      View Plot</Link>
 
     <div className="mt-8">
       <h2 className="text-3xl font-semibold text-primary  mb-4 font-poppins">Project Configuration</h2>

@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom';
 import { Logo } from '.';
 function Footer() {
   return (
+    <div>
+
+
+
+
+
     <footer className="bg-[#181818] text-white py-10">
-    <div className="container mx-8 md:mx-20  grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-24 ">
+    <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4  md:gap-24 ">
       
       {/* Company Info */}
       <div className="space-y-4 ">
@@ -70,6 +76,7 @@ function Footer() {
       <p>Developed by <a href="https://prachar.com" target="_blank" rel="noreferrer" className="hover:text-primary">prachar.com</a></p>
     </div>
   </footer>
+  </div>
   )
 }
 
