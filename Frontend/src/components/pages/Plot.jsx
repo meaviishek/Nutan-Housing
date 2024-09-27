@@ -7,7 +7,7 @@ function Plot() {
   const pdfUrl = Lpdf; // Use the correct path
 
   return (
-    <div className="App">
+    <div className="App mt-16">
       {/* <Pdfviewer pdfUrl={pdfUrl} /> */}
       <img src={Lodhipur}/>
     </div>
