@@ -79,7 +79,7 @@ const Header = ({openLogin,openEnq}) => {
 
         {/* Enquire & Login Buttons in Mobile Menu */}
         <div className="flex flex-col space-y-4 mt-6">
-          <button className="bg-yellow-200 text-yellow-600 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white">
+          <button onClick={openEnq} className="bg-yellow-200 text-yellow-600 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white">
             Enquire Now
           </button>
           <button onClick={openLogin}  className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">

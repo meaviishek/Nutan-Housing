@@ -29,6 +29,7 @@ import Project from "../assets/project.jpg";
 import ProjectDetails from "./pages/ProjectDetails";
 import Plot from "./pages/Plot";
 import Pdfviewer from "./pages/Pdfviewer";
+import Emi from './pages/Emi_calc'
 
 export{
   Header,
@@ -61,5 +62,6 @@ export{
   Project,
   ProjectDetails,
   Plot,
-  Pdfviewer
+  Pdfviewer,
+  Emi
 }

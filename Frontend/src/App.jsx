@@ -53,7 +53,7 @@ function App() {
         <Outlet/>
       </main>
       <Floating/>
-      <Footer/>
+      <Footer openLogin={openLogin} openEnq={openEnq}/>
       
       </div> )}
     </>

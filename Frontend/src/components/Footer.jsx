@@ -2,7 +2,7 @@
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Logo } from '.';
-function Footer() {
+function Footer({openLogin,openEnq}) {
   return (
     <div>
 
@@ -37,8 +37,8 @@ function Footer() {
         <ul className="space-y-2 mt-4 text-gray-400 text-md">
           <li><Link to="/" className="hover:text-primary">Home</Link></li>
           <li><Link to="/blogs" className="hover:text-primary">Gallery</Link></li>
-          <li><Link to="/emi-calculator" className="hover:text-primary">EMI Calculator</Link></li>
-          <li><Link to="/become-advisor" className="hover:text-primary">Become an Advisor</Link></li>
+          <li><Link to="/emi_calc" className="hover:text-primary">EMI Calculator</Link></li>
+          <li><Link  onClick={openLogin} className="hover:text-primary">Become an Advisor</Link></li>
         </ul>
       </div>
 
@@ -46,7 +46,7 @@ function Footer() {
       <div>
         <h3 className="text-lg font-semibold text-primary">Support</h3>
         <ul className="space-y-2 mt-4 text-gray-400">
-          <li><Link to="/enquire" className="hover:text-primary">Enquire Now</Link></li>
+          <li><Link onClick={openEnq} className="hover:text-primary">Enquire Now</Link></li>
           <li><Link to="/support" className="hover:text-primary">Customer Support</Link></li>
           <li><Link to="/privacy-policy" className="hover:text-primary">Privacy & Policy</Link></li>
           <li><Link to="/terms-conditions" className="hover:text-primary">Terms & Conditions</Link></li>

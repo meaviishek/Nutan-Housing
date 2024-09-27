@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter,Route,createRoutesFromElements,RouterProvider } from 'react-router-dom'
-import {Home,About,Projects,Blogs,Contact,Career, Login, Enquire,Plot} from './components/index.js'
+import {Home,About,Projects,Blogs,Contact,Career, Login, Enquire,Plot, Emi} from './components/index.js'
 import App from './App.jsx'
 import './index.css'
 import ProjectDetails from './components/pages/ProjectDetails.jsx'
@@ -21,6 +21,7 @@ const router=createBrowserRouter(
       <Route path='/projects/:id' element={<ProjectDetails/>}/>
       <Route path="/blogs/:id" element={<AllBlogs />} />
       <Route path='plot' element={<Plot/>}/>
+      <Route path='emi_calc' element={<Emi/>}/>
       </Route>
   )
 )
