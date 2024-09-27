@@ -34,7 +34,7 @@ const Plot = () => {
   };
 
   return (
-    <div className="container mx-auto  p-4 mt-24">
+    <div className="container mx-auto   p-4 mt-24">
       {/* Render grid layout */}
       <div className="grid grid-cols-5 gap-4">
         {plotLayout.map((row, rowIndex) => (
@@ -43,7 +43,7 @@ const Plot = () => {
               <button
                 key={plot}
                 onClick={() => handleClick(plot)}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded"
               >
                 Plot {plot}
               </button>
