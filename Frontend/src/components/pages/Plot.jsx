@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pdfviewer} from '../index';
-import { Lpdf } from '../indeximages';
+import { Lpdf,Lodhipur } from '../indeximages';
 
 
 function Plot() {
@@ -8,7 +8,8 @@ function Plot() {
 
   return (
     <div className="App">
-      <Pdfviewer pdfUrl={pdfUrl} />
+      {/* <Pdfviewer pdfUrl={pdfUrl} /> */}
+      <img src={Lodhipur}/>
     </div>
   );
 }
