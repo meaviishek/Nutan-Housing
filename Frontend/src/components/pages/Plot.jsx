@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const plotLayout = [
   [6, 7, 8, 9, 10],
@@ -34,21 +34,17 @@ const Plot = () => {
   };
 
   return (
-    <div className="container mx-auto   p-4 mt-24">
-      {/* Render grid layout */}
-      <div className="grid grid-cols-5 gap-4">
-        {plotLayout.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex justify-center space-x-4">
-            {row.map((plot) => (
-              <button
-                key={plot}
-                onClick={() => handleClick(plot)}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded"
-              >
-                Plot {plot}
-              </button>
-            ))}
-          </div>
+    <div className="p-4 mt-24">
+      {/* Responsive Grid Layout */}
+      <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3">
+        {plotLayout.flat().map((plot) => (
+          <button
+            key={plot}
+            onClick={() => handleClick(plot)}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Plot {plot}
+          </button>
         ))}
       </div>
 

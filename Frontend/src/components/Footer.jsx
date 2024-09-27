@@ -26,7 +26,7 @@ function Footer() {
         <div className="text-gray-400">
           <p><a href="mailto:info@nutanhousing.com" className="hover:text-white">info@nutanhousing.com</a></p>
           <p><a href="tel:+919471613137" className="hover:text-white">+91 9471613137</a> <a href="tel:+918539804930" className="hover:text-white">+91 8539804930</a></p>
-          <p>Jhunki Baba Road, Patel Nagar,<br />Near RDH School, Rajgir, 803121</p>
+          <p>Jhunki Baba Road, Patel Nagar,<br />Near RDH School, Rajgir, 803116</p>
         </div>
       </div>
 
