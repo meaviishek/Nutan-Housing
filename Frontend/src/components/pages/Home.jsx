@@ -101,7 +101,7 @@ function Home() {
                         <img src={Construct} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
                         <h3 className="text-lg font-semibold mt-4">Construction</h3>
-                        <p className="text-md text-gray-600 mt-2 md:ml-2 text-justify">Nutan Housing delivers high-quality construction services, ensuring durable and efficient project execution.</p>
+                        <p className="text-md text-gray-600 mt-2 md:ml-2 ">Nutan Housing delivers high-quality construction services, ensuring durable and efficient project execution.</p>
                         </div>
                     </div>
 
@@ -109,14 +109,14 @@ function Home() {
                         <img src={Plotimg} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
                         <h3 className="text-lg font-semibold mt-4">Plot Selling</h3>
-                        <p className="text-md text-gray-600 mt-2 md:ml-2 text-justify">Nutan Housing offers prime plots for sale, providing ideal locations for residential and commercial development.</p>
+                        <p className="text-md text-gray-600 mt-2 md:ml-2 ">Nutan Housing offers prime plots for sale, providing ideal locations for residential and commercial development.</p>
                     </div>
                     </div>
                     <div  className="flex bg-white border items-center rounded-lg shadow-md m-4 p-4 hover:scale-105 transition-all duration-300">
                         <img src={Custom} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
                         <h3 className="text-lg font-semibold mt-4">Custom Design</h3>
-                        <p className="text-md text-gray-600 mt-2 md:ml-2 text-justify">Nutan Housing specializes in custom designs, crafting personalized spaces that meet unique client preferences.</p>
+                        <p className="text-md text-gray-600 mt-2 md:ml-2 ">Nutan Housing specializes in custom designs, crafting personalized spaces that meet unique client preferences.</p>
                     </div>
                     </div>
            
