@@ -92,31 +92,31 @@ function Home() {
           🎉 Welcome to Nutan Housing Finance! 🎉 Home Loans, Affordable Housing Loans, and much more!
         </p>
       </div>
-      <section className="container mx-auto  text-center py-10" id="what-we-do">
-            <h2 className="text-3xl font-bold mb-8 text-primary">What We Do</h2>
-            <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 justify-around flex-wrap">
+      <section className="container mx-auto  text-center py-6" id="what-we-do">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-primary">WHAT WE DO</h2>
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-2 md:gap-4  flex-wrap">
               
-                    <div  className="flex bg-white border items-center rounded-lg shadow-md m-4 p-4 hover:scale-105 transition-all duration-300 ">
+                    <div  className="flex bg-white border items-center rounded-lg shadow-md mx-2 p-4 hover:scale-105 transition-all duration-300 ">
                         
-                        <img src={Construct} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
+                        <img src={Construct} alt="construct" className="mr-4 w-14 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
-                        <h3 className="text-lg font-semibold mt-4">Construction</h3>
-                        <p className="text-md text-gray-600 mt-2 md:ml-2 ">Nutan Housing delivers high-quality construction services, ensuring durable and efficient project execution.</p>
+                        <h3 className="text-lg font-semibold mt-1">Construction</h3>
+                        <p className="text-sm text-gray-600 mt-2 md:ml-2 text-justify ">Nutan Housing delivers high-quality construction services, ensuring durable and efficient project execution.</p>
                         </div>
                     </div>
 
-                    <div  className="flex bg-white border items-center rounded-lg shadow-md m-4 p-4 hover:scale-105 transition-all duration-300 ">
-                        <img src={Plotimg} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
+                    <div  className="flex bg-white border items-center rounded-lg shadow-md mx-2 p-4 hover:scale-105 transition-all duration-300 ">
+                        <img src={Plotimg} alt="construct" className="mr-4 w-14 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
-                        <h3 className="text-lg font-semibold mt-4">Plot Selling</h3>
-                        <p className="text-md text-gray-600 mt-2 md:ml-2 ">Nutan Housing offers prime plots for sale, providing ideal locations for residential and commercial development.</p>
+                        <h3 className="text-lg font-semibold mt-1">Plot Selling</h3>
+                        <p className="text-sm text-gray-600 mt-2 md:ml-2 text-justify">Nutan Housing offers prime plots for sale, providing ideal locations for residential and commercial development.</p>
                     </div>
                     </div>
-                    <div  className="flex bg-white border items-center rounded-lg shadow-md m-4 p-4 hover:scale-105 transition-all duration-300">
-                        <img src={Custom} alt="construct" className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
+                    <div  className="flex bg-white border items-center rounded-lg shadow-md mx-2 p-4 hover:scale-105 transition-all duration-300">
+                        <img src={Custom} alt="construct" className="mr-4 w-14 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
                         <div>
-                        <h3 className="text-lg font-semibold mt-4">Custom Design</h3>
-                        <p className="text-md text-gray-600 mt-2 md:ml-2 ">Nutan Housing specializes in custom designs, crafting personalized spaces that meet unique client preferences.</p>
+                        <h3 className="text-lg font-semibold mt-1">Custom Design</h3>
+                        <p className="text-sm text-gray-600 mt-2 md:ml-2 text-justify">Nutan Housing specializes in custom designs, crafting personalized spaces that meet unique client preferences.</p>
                     </div>
                     </div>
            
@@ -126,7 +126,7 @@ function Home() {
 
         <section className=" bg-yellow-50 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
-                <h2 className="text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
                 <p className=" text-md ml-8 mr-8  text-gray-600 mb-4 text-justify">
                 The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction.
  
@@ -142,7 +142,7 @@ function Home() {
 
         <section className="py-12 bg-gray-50" id="amenities">
             <div className="max-w-6xl mx-auto text-center mb-8">
-                <h2 className="text-3xl font-bold text-primary mb-4">Our Amenities</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4">Our Amenities</h2>
                 <p className="text-md text-gray-600">Discover a range of amenities designed to enhance your living experience.</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 ml-6 max-w-6xl md:mx-auto">
@@ -209,7 +209,7 @@ function Home() {
         </section>
         <section className=" bg-yellow-50 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
-                <h2 className="text-3xl font-bold text-primary mb-6">Our Expertise</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
                 <p className=" text-md ml-8 mr-8  text-gray-600 mb-4 text-justify">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
                 </p>
@@ -223,7 +223,7 @@ function Home() {
 
         <section className="py-12 bg-gray-50" id="testimonials">
             <div className="max-w-6xl mx-auto text-center mb-8">
-                <h2 className="text-3xl font-bold text-primary mb-4">Testimonials</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4">Testimonials</h2>
                 <p className="text-lg text-gray-600 mb-6">Hear from our satisfied residents.</p>
             </div>
             <div className="flex justify-center">

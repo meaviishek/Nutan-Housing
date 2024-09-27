@@ -15,7 +15,7 @@ function About() {
 
     {/* About Us Content Section */}
     <div className="max-w-4xl mx-auto py-12  px-6">
-        <h2 className="text-3xl font-semibold mb-6 text-primary">About Nutan Housing</h2>
+        <h2 className="text-2xl lg:text-3xl font-semibold mb-6 text-primary">About Nutan Housing</h2>
         <p className="text-md text-gray-700 leading-7 mb-6">
         Nutan Housing Finance has sustained a steady growth to become the leading real estate developer in the region boasting of outstanding quality, consistency, economy, and creativity. The company has always maintained path breaking status and has pioneered various firsts in India. From trend setting luxury housing to providing homes for the poorest section of Indian Society. When it comes to buying a plot in Rajgir, Nutan Housing is a name that stands tall for its commitment to transparency, trust and customer service. With over 1 decades of experience in the real estate industry, we have carved a niche for ourselves and continue to deliver the highest standards in terms of quality. The real estate industry thrives on competition and as a renowned real estate company in Rajgir, We’re thrilled to take on its many challenges and excel! It is Nutan Housing' Core values of trust, competitive spirit and innovation that have helped us, not just to survive the industry but ace it with several awards that proudly reinforce our belief that uncompromising quality always wins.
 <br/><br/>
@@ -35,7 +35,7 @@ If you want to buy a plot in Bihar at prime locations of Rajgir, Nutan Housing, 
                       className="font-heading mb-4 bg-yellow-100  px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest text-black uppercase title-font">
                       Why choose us?
                   </h2>
-                  <p className="font-heading mt-2 text-primary text-3xl leading-8 font-semibold tracking-tight  sm:text-4xl">
+                  <p className="font-heading mt-2 text-primary text-2xl lg:text-3xl leading-8 font-semibold tracking-tight  sm:text-4xl">
                     Expert Guidance for Every Step of Your Property Journey
                   </p>
                   <p className="mt-4 max-w-10xl text-md text-justify  font-poppins text-gray-500 lg:mx-auto">

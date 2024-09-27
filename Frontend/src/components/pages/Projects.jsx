@@ -40,7 +40,7 @@ function Projects() {
 
             {/* Ongoing Projects Section */}
             <div className="max-w-7xl mx-auto py-12 px-6">
-                <h2 className="text-3xl font-semibold text-center text-primary mb-8">Ongoing Projects</h2>
+                <h2 className="text-2xl lg:text-3xl font-semibold text-center text-primary mb-8">Ongoing Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projectsData.map((project) => (
                         <div key={project.id} className="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ">

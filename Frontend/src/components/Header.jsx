@@ -11,24 +11,24 @@ const Header = ({openLogin,openEnq}) => {
 
   
   return (
-    <header className="fixed top-0 left-0  w-full bg-[#8c8c8c51] shadow-md z-50 backdrop-blur-xl">
+    <header className="fixed top-0 left-0  w-full bg-[#343332b3] shadow-md z-50 backdrop-blur-xl">
       <div className="container mx-auto flex justify-between items-center py-4 px-4">
         {/* Logo */}
         <Link to='/'>
           <div className="flex items-center">
             <img src={Logo} alt="Nutan Housing Finance" className="md:w-16 md:h-10 w-14 h-8" />
-            <h1 className="md:ml-3 ml-1 text-base md:text-xl font-bold text-primary">Nutan Housing Finance</h1>
+            <h1 className="md:ml-3 ml-1 text-lg lg:text-2xl font-bold text-primary">Nutan Housing Finance</h1>
           </div>
         </Link>
         
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex space-x-6 font-semibold">
-          <NavLink to="/" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-100 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Home</NavLink>
-          <NavLink to="/about" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-100 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>About Us</NavLink>
-          <NavLink to="/projects" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-100 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Projects</NavLink>
-          <NavLink to="/career" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-100 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Careers</NavLink>
-          <NavLink to="/blogs" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-100 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Blog</NavLink>
-          <NavLink to="/contact" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-100 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Contact Us</NavLink>
+        <nav className="hidden md:flex text-sm font-semibold space-x-6 ">
+          <NavLink to="/" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-200 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Home</NavLink>
+          <NavLink to="/about" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-200 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>About Us</NavLink>
+          <NavLink to="/projects" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-200 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Projects</NavLink>
+          <NavLink to="/career" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-200 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Careers</NavLink>
+          <NavLink to="/blogs" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-200 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Blog</NavLink>
+          <NavLink to="/contact" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-200 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Contact Us</NavLink>
         </nav>
 
         {/* Enquire & Login Buttons (Desktop only) */}

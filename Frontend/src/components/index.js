@@ -28,6 +28,7 @@ import Vision from "../assets/vision.png"
 import Project from "../assets/project.jpg";
 import ProjectDetails from "./pages/ProjectDetails";
 import Plot from "./pages/Plot";
+import Pdfviewer from "./pages/Pdfviewer";
 
 export{
   Header,
@@ -59,5 +60,6 @@ export{
   Vision,
   Project,
   ProjectDetails,
-  Plot
+  Plot,
+  Pdfviewer
 }
