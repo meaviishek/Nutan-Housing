@@ -254,7 +254,7 @@ function ProjectDetails() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {project.neighbours.map((neighbour, index) => (
           <div key={index} className="border p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-500">
-            <h3 className="text-xl font-semibold mb-2">{neighbour.name}</h3>
+            <h3 className="text-md font-semibold mb-2">{neighbour.name}</h3>
             {/* <p className="text-gray-600">Location: {neighbour.location}</p> */}
             <p className="text-gray-600">Distance: {neighbour.distance}</p>
           </div>

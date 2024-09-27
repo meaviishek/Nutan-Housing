@@ -75,7 +75,7 @@ function Home() {
       <section className="bg-yellow-100 py-12 text-center">
         <div className="container mx-auto">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto">Nutan Housing Finance offers luxury homes for reasonable costs, excellent customer care, and high satisfaction. We believe everyone deserves their dream home or business. From sustainable living spaces to exceptional amenities, Nutan Housing Finance ensures a smart, comfortable lifestyle.</p>
+          <p className="text-md text-gray-700 max-w-4xl mx-auto">Nutan Housing Finance offers luxury homes for reasonable costs, excellent customer care, and high satisfaction. We believe everyone deserves their dream home or business. From sustainable living spaces to exceptional amenities, Nutan Housing Finance ensures a smart, comfortable lifestyle.</p>
         </div>
       </section>
 
@@ -99,7 +99,7 @@ function Home() {
       <section className=" bg-yellow-100 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
                 <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
-                <p className=" text-lg text-gray-700 max-w-4xl mx-auto">
+                <p className=" text-md text-gray-700 max-w-4xl mx-auto">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
                 </p>
             

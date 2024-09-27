@@ -16,7 +16,7 @@ function About() {
     {/* About Us Content Section */}
     <div className="max-w-4xl mx-auto py-12  px-6">
         <h2 className="text-2xl lg:text-3xl font-semibold mb-6 text-primary">About Nutan Housing</h2>
-        <p className="text-lg text-gray-700 leading-7 mb-6">
+        <p className="text-md text-gray-700 leading-7 mb-6">
         Nutan Housing Finance has sustained a steady growth to become the leading real estate developer in the region boasting of outstanding quality, consistency, economy, and creativity. The company has always maintained path breaking status and has pioneered various firsts in India. From trend setting luxury housing to providing homes for the poorest section of Indian Society. When it comes to buying a plot in Rajgir, Nutan Housing is a name that stands tall for its commitment to transparency, trust and customer service. With over 1 decades of experience in the real estate industry, we have carved a niche for ourselves and continue to deliver the highest standards in terms of quality. The real estate industry thrives on competition and as a renowned real estate company in Rajgir, We’re thrilled to take on its many challenges and excel! It is Nutan Housing' Core values of trust, competitive spirit and innovation that have helped us, not just to survive the industry but ace it with several awards that proudly reinforce our belief that uncompromising quality always wins.
 <br/><br/>
 If you want to buy a plot in Bihar at prime locations of Rajgir, Nutan Housing, the first choice real estate company in Bihar, has just the projects for you. The best real estate company in Bihar — and design your dream home and experience a lifestyle you always wished you had.
@@ -38,7 +38,7 @@ If you want to buy a plot in Bihar at prime locations of Rajgir, Nutan Housing, 
                   <p className="font-heading mt-2 text-primary text-2xl lg:text-3xl leading-8 font-semibold tracking-tight  sm:text-4xl">
                     Expert Guidance for Every Step of Your Property Journey
                   </p>
-                  <p className="mt-4 max-w-10xl text-lg text-justify  font-poppins text-gray-500 lg:mx-auto">
+                  <p className="mt-4 max-w-10xl text-md text-justify  font-poppins text-gray-500 lg:mx-auto">
                     Our projects are not just built with brick and mortar, we understand the value of our customer’s emotions attached to a property and so, we take the pledge to put sustained effort to enhance quality and provide value for our customer’s money.
 
                     A clean and healthy atmosphere is the need of this era, and Nutan Housing pays equal attention to the surroundings, and beautifully landscaped gardens adorning our projects.
