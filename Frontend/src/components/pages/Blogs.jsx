@@ -35,8 +35,8 @@ function Blogs() {
         alt="Header"
         className="object-cover w-full h-full"
       />
-      <div className="container mx-auto p-4 lg:mx-8 mt-10">
-        <h1 className="text-3xl font-semibold text-center text-primary mt-8 mb-8">Our Blog</h1>
+      <div className="container mx-auto p-4 lg:mx-8 ">
+        <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary mt-8 mb-8">Our Blog</h1>
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((blog) => (

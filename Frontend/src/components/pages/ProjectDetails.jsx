@@ -187,7 +187,7 @@ function ProjectDetails() {
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
     <div className='max-w-7xl mx-auto px-6'>
     
-    <h1 className="text-4xl font-bold mb-4 text-primary">{project.title}</h1>
+    <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary">{project.title}</h1>
     <div className='bg-yellow-50 p-4'>
     <div
         className="text-lg text-gray-700 "
@@ -215,7 +215,7 @@ function ProjectDetails() {
       View Plot</Link>
 
     <div className="mt-8">
-      <h2 className="text-3xl font-semibold text-primary  mb-4 font-poppins">Project Configuration</h2>
+      <h2 className="text-2xl lg:text-3xl font-semibold text-primary  mb-4 font-poppins">Project Configuration</h2>
       <table className="w-full  text-center bg-white shadow-lg rounded-lg">
         <thead className="bg-primary text-white">
           <tr>
@@ -239,7 +239,7 @@ function ProjectDetails() {
    
     
     <div className="mb-8 mt-8">
-      <h3 className="text-3xl text-primary font-semibold mb-4">Amenities</h3>
+      <h3 className="text-2xl lg:text-3xl text-primary font-semibold mb-4">Amenities</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {project.amenitiesimg.map((amenity, index) => (
             <div key={index} className="border p-4 rounded-lg shadow-md text-center hover:scale-105 transition-all duration-500">
@@ -250,7 +250,7 @@ function ProjectDetails() {
       </div>
     </div>
     <div className="max-w-7xl mx-auto py-12 px-2">
-      <h2 className="text-3xl font-semibold mb-8 text-primary ">Our Neighbours</h2>
+      <h2 className="text-2xl lg:text-3xl font-semibold mb-8 text-primary ">Our Neighbours</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {project.neighbours.map((neighbour, index) => (
           <div key={index} className="border p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-500">
@@ -264,7 +264,7 @@ function ProjectDetails() {
 
 
     <div className=" py-12 ">
-      <h2 className="text-3xl text-primary font-semibold mb-8 ">Gallery</h2>
+      <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-8 ">Gallery</h2>
       
      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -305,7 +305,7 @@ function ProjectDetails() {
     
  
     <div className="mb-8">
-      <h3 className="text-3xl font-semibold mb-4 text-primary">Location</h3>
+      <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-primary">Location</h3>
       <iframe
         src={project.mapLocation}
         width="100%"
