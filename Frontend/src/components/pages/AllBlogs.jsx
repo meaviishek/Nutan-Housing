@@ -111,7 +111,7 @@ const AllBlogs = () => {
         
       
        
-        <h1 className="text-4xl font-bold text-primary mb-4">{blog.title}</h1>
+        <h1 className="text-2xl lg:text-3xl font-bold text-primary mb-4">{blog.title}</h1>
         <p className="text-gray-500 text-sm mb-8">Published on {blog.date}</p>
 
         <div
