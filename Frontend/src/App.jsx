@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react'
-import { Footer, Header,Floating, Logo } from './components'
+import { Footer, Header,Floating, Logo,Login } from './components'
 import { Outlet } from 'react-router-dom'
 function App() {
 
@@ -13,6 +13,19 @@ function App() {
 
     return () => clearTimeout(loadTimeout); // Cleanup on unmount
   }, []);
+
+
+
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+
+  const openLogin = () => {
+    setIsLoginOpen(true);
+  };
+
+  const closeLogin = () => {
+    setIsLoginOpen(false);
+  };
+
   return (
     <>
     {loading ? (
@@ -22,7 +35,10 @@ function App() {
         </div>
       ) : (
       <div className='transition-all duration-700 ease-in-out'>
-      <Header/>
+        <div className='relative'>
+      <Header openLogin={openLogin} />
+      {isLoginOpen && <Login closeLogin={closeLogin} />}
+      </div>
       <main>
         <Outlet/>
       </main>

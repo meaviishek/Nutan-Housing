@@ -5,11 +5,11 @@ import { Logo } from '.';
 function Footer() {
   return (
     <footer className="bg-[#181818] text-white py-10">
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+    <div className="container mx-8 md:mx-20  grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-24 ">
       
       {/* Company Info */}
-      <div className="space-y-4">
-        <div className="flex items-center space-x-2">
+      <div className="space-y-4 ">
+        <div className="flex ">
           <img
             src={Logo}
             alt="Nutan Housing Finance"
@@ -25,12 +25,12 @@ function Footer() {
       </div>
 
       {/* Quick Links */}
-     
+
       <div>
         <h3 className="text-lg font-semibold text-primary">Quick Links</h3>
-        <ul className="space-y-2 mt-4 text-gray-400">
+        <ul className="space-y-2 mt-4 text-gray-400 text-md">
           <li><Link to="/" className="hover:text-primary">Home</Link></li>
-          <li><Link to="/gallery" className="hover:text-primary">Gallery</Link></li>
+          <li><Link to="/blogs" className="hover:text-primary">Gallery</Link></li>
           <li><Link to="/emi-calculator" className="hover:text-primary">EMI Calculator</Link></li>
           <li><Link to="/become-advisor" className="hover:text-primary">Become an Advisor</Link></li>
         </ul>
@@ -46,11 +46,11 @@ function Footer() {
           <li><Link to="/terms-conditions" className="hover:text-primary">Terms & Conditions</Link></li>
         </ul>
       </div>
-   
+ 
       {/* Social Links */}
       <div>
         <h3 className="text-lg font-semibold text-primary">Follow Us On</h3>
-        <div className="flex space-x-4 mt-4">
+        <div className="flex space-x-6 mt-4">
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
             <FaFacebookF size={24} />
           </a>

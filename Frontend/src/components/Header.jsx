@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Logo } from '.'; // Replace with your logo import
 
-const Header = () => {
+const Header = ({openLogin}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  
   return (
     <header className="fixed top-0 left-0 w-full bg-[#8c8c8c51] shadow-md z-50 backdrop-blur-xl">
       <div className="container mx-auto flex justify-between items-center py-4 px-2">
@@ -35,8 +36,8 @@ const Header = () => {
           <button className="bg-yellow-200 text-yellow-600 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white animate-bounce">
             Enquire Now
           </button>
-          <button className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
-            Login
+          <button onClick={openLogin} className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
+        Login
           </button>
         </div>
 
@@ -81,8 +82,8 @@ const Header = () => {
           <button className="bg-yellow-200 text-yellow-600 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white">
             Enquire Now
           </button>
-          <button className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
-            Login
+          <button onClick={openLogin}  className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
+    Login
           </button>
         </div>
       </div>
