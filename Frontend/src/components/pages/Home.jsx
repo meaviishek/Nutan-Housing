@@ -75,7 +75,7 @@ function Home() {
       {/* Nutan Housing Info */}
       <section className="bg-yellow-100 py-8 text-center">
         <div className="container mx-auto">
-          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Welcome to Nutan Housing Finance</h2>
           <p className="text-md text-gray-900 mx-4 md:mx-52 text-justify ">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
         </div>
       </section>
@@ -83,7 +83,7 @@ function Home() {
       {/* Amenities Section */}
       <section className="mt-6 mb-6 " id="amenities">
         <div className="container mx-auto text-center mb-6">
-          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Our Amenities</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Amenities</h2>
           <p className="text-sm md:text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
         </div>
         <div className="m-3 grid  mx-auto lg:grid-cols-4 grid-cols-2 mt-10  md:max-w-7xl flex-wrap gap-10">
