@@ -81,8 +81,8 @@ function Home() {
       </section>
 
       {/* Amenities Section */}
-      <section className="mt-6 mb-6 " id="amenities">
-        <div className="container mx-auto text-center mb-6">
+      <section className="container mx-auto mt-6 mb-6 " >
+        <div className=" text-center mb-6">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Amenities</h2>
           <p className="text-sm md:text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
         </div>

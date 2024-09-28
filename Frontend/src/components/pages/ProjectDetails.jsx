@@ -183,14 +183,14 @@ function ProjectDetails() {
 
   return (
 
-    <div className=" mx-auto py-4 ">
+    <div className="  py-4 ">
       <Scrolltop/>
    
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
     <div className='max-w-7xl mx-auto px-6'>
     
     <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary">{project.title}</h1>
-    <div className='bg-yellow-50 p-4'>
+    <div className='bg-yellow-100 p-4'>
     <div
         className="text-lg text-gray-700 "
         dangerouslySetInnerHTML={{
@@ -216,9 +216,9 @@ function ProjectDetails() {
       
       View Plot</Link>
 
-    <div className="mt-8">
+    <div className=" mt-16">
       <h2 className="text-2xl lg:text-3xl font-semibold text-primary  mb-4 font-poppins">Project Configuration</h2>
-      <table className="w-full  text-center bg-white shadow-lg rounded-lg">
+      <table className="w-full mt-8  text-center bg-white shadow-lg rounded-lg">
         <thead className="bg-primary text-white">
           <tr>
             <th className="px-6 py-4">Type</th>
@@ -240,9 +240,9 @@ function ProjectDetails() {
    
    
     
-    <div className="mb-8 mt-8">
+    <div className="mb-4 mt-16">
       <h3 className="text-2xl lg:text-3xl text-primary font-semibold mb-4">Amenities</h3>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 mt-8 gap-4">
         {project.amenitiesimg.map((amenity, index) => (
             <div key={index} className="border p-4 rounded-lg shadow-md text-center hover:scale-105 transition-all duration-500">
           <img  src={amenity.img} alt={amenity.name} className="w-full h-48 object-cover" />
@@ -251,7 +251,7 @@ function ProjectDetails() {
         ))}
       </div>
     </div>
-    <div className="max-w-7xl mx-auto py-12 px-2">
+    <div className="max-w-7xl  mx-auto py-12 px-2">
       <h2 className="text-2xl lg:text-3xl font-semibold mb-8 text-primary ">Our Neighbours</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {project.neighbours.map((neighbour, index) => (
