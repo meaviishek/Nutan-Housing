@@ -11,7 +11,7 @@ const Header = ({openLogin,openEnq}) => {
 
   
   return (
-    <header className="fixed top-0 left-0  w-full bg-[#fafaf9a7] shadow-md z-50 backdrop-blur-xl">
+    <header className="fixed top-0 left-0  w-full bg-[#fafaf9] shadow-md z-50 backdrop-blur-xl">
       <div className="container mx-auto flex justify-between items-center py-4 px-4">
         {/* Logo */}
         <Link to='/'>
