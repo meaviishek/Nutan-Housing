@@ -115,8 +115,8 @@ function Home() {
         </div>
         <div className="max-w-7xl mx-auto text-center h-40">
           <div className="bg-white rounded-lg shadow-lg shadow-primary p-8 transition-transform duration-300 ease-in-out">
-            <p className="text-gray-600 italic mb-4">{testimonialsData[currentIndex].testimonial}</p>
-            <h3 className="text-xl font-semibold text-gray-800">{testimonialsData[currentIndex].name}</h3>
+            <p className="text-gray-600 text-lg mb-4">{testimonialsData[currentIndex].testimonial}</p>
+            <h3 className="text-xl text-end font-semibold text-gray-800">{testimonialsData[currentIndex].name}</h3>
           </div>
         </div>
       </section>
