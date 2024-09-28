@@ -12,7 +12,7 @@ const Header = ({openLogin,openEnq}) => {
   
   return (
     <header className="fixed top-0 left-0  w-full bg-[#fafaf9] shadow-md z-50 backdrop-blur-xl">
-      <div className="container mx-auto flex justify-between items-center py-4 px-4">
+      <div className="container mx-auto flex justify-between items-center py-4 px-2">
         {/* Logo */}
         <Link to='/'>
           <div className="flex items-center">
@@ -22,7 +22,7 @@ const Header = ({openLogin,openEnq}) => {
         </Link>
         
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex  space-x-4 font-semibold ">
+        <nav className="hidden md:flex  space-x-3 font-semibold ">
           <NavLink to="/" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Home</NavLink>
           <NavLink to="/about" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>About Us</NavLink>
           <NavLink to="/projects" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Projects</NavLink>
