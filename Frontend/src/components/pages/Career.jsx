@@ -5,15 +5,15 @@ function Career() {
   return (
     <div>
     {/* Header Section with Image */}
-    <div className="relative h-98">
+    <div className="relative py-16">
       <img 
         src={Careerimg}
         alt="Header"
-        className="object-cover w-full h-full"
+        className="object-cover w-full h-98"
       />
      
     </div>
-    <h1 className='text-center text-primary text-3xl font-semibold mt-8'>Apply Now</h1>
+    <h1 className='text-center text-primary text-3xl font-semibold '>Apply Now</h1>
     {/* Main Form Section */}
     <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between gap-6">
       {/* Form Section */}

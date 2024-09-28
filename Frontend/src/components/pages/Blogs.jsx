@@ -29,14 +29,14 @@ function Blogs() {
     ];
   
     return (
-      <div className="blogs-page   py-10">
+      <div className="blogs-page   py-16">
         <img 
         src={Blogimg}
         alt="Header"
         className="object-cover w-full h-full"
       />
       <div className="container mx-auto p-4 lg:mx-8 ">
-        <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary mt-8 mb-8">Our Blog</h1>
+        <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary mt-4 mb-4">Our Blog</h1>
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((blog) => (
@@ -51,13 +51,13 @@ function Blogs() {
   const BlogCard = ({ blog }) => {
     return (
       <Link to={`/blogs/${blog.id}`} className="">
-      <div className="blog-card bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-700 transform hover:scale-105">
+      <div className="blog-card bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-700 transform md:hover:scale-105">
        
         <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
   
         
         <div className="p-6">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-3">{blog.title}</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">{blog.title}</h3>
           <p className="text-gray-600 mb-3">{blog.description}</p>
           <p className="text-gray-500 text-sm mb-4">Published on {blog.date}</p>
           

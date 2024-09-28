@@ -3,8 +3,8 @@ import React from 'react';
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa'; // FontAwesome icons
 
 const Floating = () => {
-    const whatsappNumber = "+91 8539804930"; // Replace with your WhatsApp number
-    const callNumber = "+91 9471613137";     // Replace with your call number
+    const whatsappNumber = "+918539804930"; // Replace with your WhatsApp number
+    const callNumber = "+919471613137";     // Replace with your call number
 
     return (
         <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">

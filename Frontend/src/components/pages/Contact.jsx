@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className="contact-page bg-gray-50">
     {/* Header Image */}
-    <div className="header-image">
+    <div className="header-image mt-16">
       <img src={Contactimg} alt="Header" className="w-full h-98 object-cover" />
     </div>
 
