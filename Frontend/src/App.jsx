@@ -40,7 +40,7 @@ function App() {
     {loading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
           {/* Spinner or any image */}
-          <img src={Logo} alt="Loading..." className="w-36 h-24 animate-pulse" />
+          <img src={Logo} alt="Loading..." className="w-42 h-32 animate-pulse" />
         </div>
       ) : (
       <div className='transition-all duration-700 ease-in-out'>
