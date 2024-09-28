@@ -80,14 +80,14 @@ function Home() {
       </section>
 
       {/* Amenities Section */}
-      <section className="py-8 bg-gray-100" id="amenities">
-        <div className="container mx-auto text-center mb-12">
-          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4">Our Amenities</h2>
-          <p className="text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
+      <section className="mt-4 mb-4 bg-gray-100" id="amenities">
+        <div className="container mx-auto text-center mb-6">
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Our Amenities</h2>
+          <p className="text-sm md:text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8 mx-2 lg:mx-8">
           {[{ img: Temple, title: "Temple" }, { img: School, title: "School" }, { img: Hall, title: "Community Hall" }, { img: Park, title: "Park" }, { img: Hospital, title: "Hospital" }, { img: Elec, title: "Electricity" }, { img: Road, title: "Road" }, { img: Old, title: "Old Age Lobby" }].map((amenity, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-transform">
+            <div key={index} className="bg-white rounded-lg shadow-lg p-4 hover:scale-105 transition-transform">
               <img src={amenity.img} alt={amenity.title} className="w-20 h-20 mx-auto mb-4" />
               <h3 className="text-md text-center font-semibold">{amenity.title}</h3>
             </div>
