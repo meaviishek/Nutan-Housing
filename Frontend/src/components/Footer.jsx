@@ -27,12 +27,12 @@ function Footer({openLogin,openEnq}) {
         </div>
         <div className="text-gray-400 text-sm">
         <p className='mt-2 gap-2 flex'>
-         <MdLocationOn className=''/>  Jhunki Baba Road, Patel Nagar,<br />Near RDH School, Rajgir, 803116</p>
+         <MdLocationOn className='text-primary'/>  Jhunki Baba Road, Patel Nagar,<br />Near RDH School, Rajgir, 803116</p>
           <p className='mt-2 gap-2 flex'>
-           <MdEmail/> <a href="mailto:info@nutanhousing.com" className="hover:text-white">info@nutanhousing.com</a></p>
+           <MdEmail className='text-primary'/> <a href="mailto:info@nutanhousing.com" className="hover:text-white">info@nutanhousing.com</a></p>
           <p className='mt-2 gap-2 flex'>
           
-           <MdPhone/> <a href="tel:+919471613137" className="hover:text-white ">+91 9471613137</a> <a href="tel:+918539804930" className="hover:text-white">+91 8539804930</a></p>
+           <MdPhone className='text-primary'/> <a href="tel:+919471613137" className="hover:text-white ">+91 9471613137</a> <a href="tel:+918539804930" className="hover:text-white">+91 8539804930</a></p>
           <p className='mt-2 text-primary'>Open On Sunday</p>
         </div>
       </div>
