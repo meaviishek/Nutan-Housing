@@ -62,10 +62,10 @@ function Home() {
             title: "Custom Design", img: Custom, desc: "Nutan Housing specializes in custom designs, crafting personalized spaces that meet unique client preferences."
           }].map((service, index) => (
             <div key={index} className="flex w-full items-center rounded-xl border border-black border-opacity-10 px-4 py-6 text-black duration-200 hover:border-opacity-0 hover:no-underline hover:shadow-lg dark:text-white dark:hover:bg-white dark:hover:bg-opacity-10 sm:flex-col sm:hover:shadow-2xl">
-              <img src={service.img} alt={service.title} className="w-20 h-20 mx-auto mb-4" />
+              <img src={service.img} alt={service.title} className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
               <div className='ml-4'>
               <h3 className="text-lg text-primary font-semibold">{service.title}</h3>
-              <p className="mt-2 text-sm text-gray-600">{service.desc}</p>
+              <p className="mt-2 text-sm text-gray-600 text-justify">{service.desc}</p>
               </div>
             </div>
           ))}

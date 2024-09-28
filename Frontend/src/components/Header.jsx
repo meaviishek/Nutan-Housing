@@ -33,7 +33,7 @@ const Header = ({openLogin,openEnq}) => {
 
         {/* Enquire & Login Buttons (Desktop only) */}
         <div className="hidden md:flex space-x-4">
-          <button onClick={openEnq} className="bg-yellow-200 text-gray-900 px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-white animate-bounce">
+          <button onClick={openEnq} className="bg-yellow-200 text-gray-900 px-3 py-2 rounded-xl hover:bg-yellow-500 hover:text-white animate-bounce">
             Enquire Now
           </button>
           <button onClick={openLogin} className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-xl flex items-center gap-2">
