@@ -4,7 +4,7 @@ function Login({closeLogin}) {
   const [isLogin, setIsLogin] = useState(true);
   return (
     <div>
-      <div  className=" fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-lg">
+      <div  className=" fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-lg p-2">
   <div className="bg-white p-8 rounded-lg w-full max-w-md relative transition-all duration-700 ease">
  
     <button onClick={closeLogin} className="absolute top-4 right-4 text-gray-400 hover:text-gray-800">
@@ -21,7 +21,7 @@ function Login({closeLogin}) {
 
   {isLogin ? (
     <div id="login-form" className="">
-      <h2 className="text-2xl font-bold mb-4">Login</h2>
+      <h2 className="text-xl md:text-2xl font-bold mb-4">Login</h2>
       <form>
         <div className="mb-3">
           <label className="block mb-2 text-gray-700">Email</label>
@@ -51,7 +51,7 @@ function Login({closeLogin}) {
   ):(
     
     <div id="signup-form" className="">
-      <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
+      <h2 className="text-xl md:text-2xl font-bold mb-4">Sign Up</h2>
       <form>
         <div className="mb-3">
           <label className="block mb-2 text-gray-700">Name*</label>
