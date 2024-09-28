@@ -22,18 +22,18 @@ const Header = ({openLogin,openEnq}) => {
         </Link>
         
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex text-sm space-x-6 ">
-          <NavLink to="/" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Home</NavLink>
-          <NavLink to="/about" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>About Us</NavLink>
-          <NavLink to="/projects" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Projects</NavLink>
-          <NavLink to="/career" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Careers</NavLink>
-          <NavLink to="/blogs" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Blog</NavLink>
-          <NavLink to="/contact" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Contact Us</NavLink>
+        <nav className="hidden md:flex text-sm space-x-4 ">
+          <NavLink to="/" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Home</NavLink>
+          <NavLink to="/about" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>About Us</NavLink>
+          <NavLink to="/projects" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Projects</NavLink>
+          <NavLink to="/career" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Careers</NavLink>
+          <NavLink to="/blogs" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Blog</NavLink>
+          <NavLink to="/contact" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Contact Us</NavLink>
         </nav>
 
         {/* Enquire & Login Buttons (Desktop only) */}
         <div className="hidden md:flex space-x-4">
-          <button onClick={openEnq} className="bg-yellow-200 text-yellow-600 px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-white animate-bounce">
+          <button onClick={openEnq} className="bg-yellow-200 text-gray-900 px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-white animate-bounce">
             Enquire Now
           </button>
           <button onClick={openLogin} className="bg-yellow-500 text-white px-4 py-2 rounded-xl hover:bg-secondary hover:text-yellow-600">
@@ -79,7 +79,7 @@ const Header = ({openLogin,openEnq}) => {
 
         {/* Enquire & Login Buttons in Mobile Menu */}
         <div className="flex flex-col space-y-4 mt-6">
-          <button onClick={openEnq} className="bg-yellow-200 text-yellow-600 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white">
+          <button onClick={openEnq} className="bg-yellow-200 text-gray-900 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white">
             Enquire Now
           </button>
           <button onClick={openLogin}  className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
