@@ -76,7 +76,7 @@ function Home() {
       <section className="bg-yellow-100 py-8 text-center">
         <div className="container mx-auto">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
-          <p className="text-md text-gray-900 mx-4 md:mx-64 text-justify ">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
+          <p className="text-md text-gray-900 mx-4 md:mx-52 text-justify ">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
         </div>
       </section>
 
@@ -86,11 +86,11 @@ function Home() {
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Our Amenities</h2>
           <p className="text-sm md:text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8 mx-2 lg:mx-8">
+        <div className="m-3 grid  mx-auto lg:grid-cols-4 grid-cols-2 mt-10  md:max-w-7xl flex-wrap gap-10">
           {[{ img: Temple, title: "Temple" }, { img: School, title: "School" }, { img: Hall, title: "Community Hall" }, { img: Park, title: "Park" }, { img: Hospital, title: "Hospital" }, { img: Elec, title: "Electricity" }, { img: Road, title: "Road" }, { img: Old, title: "Old Age Lobby" }].map((amenity, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-4 hover:scale-105 transition-transform">
-              <img src={amenity.img} alt={amenity.title} className="w-20 h-20 mx-auto mb-4" />
-              <h3 className="text-md text-center font-semibold">{amenity.title}</h3>
+            <div key={index} className="grid gap-4 justify-items-center text-center">
+              <img src={amenity.img} alt={amenity.title} className="w-20 h-20 mx-auto mb-4 hover:scale-105 transition-all duration-400" />
+              <h3 className="text-md text-center font-semibold ">{amenity.title}</h3>
             </div>
           ))}
         </div>
@@ -100,7 +100,7 @@ function Home() {
       <section className=" bg-yellow-100 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
                 <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
-                <p className=" text-md text-gray-900  text-justify mx-4 md:mx-64 ">
+                <p className=" text-md text-gray-900  text-justify mx-4 md:mx-52 ">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
                 </p>
             
