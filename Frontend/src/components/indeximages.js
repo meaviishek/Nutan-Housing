@@ -33,6 +33,7 @@ import Pro1 from '../assets/plot11.jpg'
 import Pro2 from '../assets/nutan.jpg'
 import Lpdf from '../assets/lodipur new.pdf'
 import Lodhipur from '../assets/lodipur.jpg'
+// import DwgL from '../assets/lodipur new.dwg'
 export{
   Schoolimg,
   Hospitalimg,

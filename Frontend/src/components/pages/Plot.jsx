@@ -1,17 +1,18 @@
-import React from 'react';
-import {Pdfviewer} from '../index';
-import { Lpdf,Lodhipur } from '../indeximages';
+import React from "react";
+import { Lodhipur} from "../indeximages";
 
-
-function Plot() {
-  const pdfUrl = Lpdf; // Use the correct path
-
+const Plot = () => {
   return (
-    <div className="App mt-16">
-      {/* <Pdfviewer pdfUrl={pdfUrl} /> */}
-      <img src={Lodhipur}/>
+   <div>
+     <div className="h-full w-full">
+      <img
+        src={Lodhipur}
+        title="DWG Viewer"
+        className="w-full h-full"
+      />
     </div>
+   </div>
   );
-}
+};
 
 export default Plot;

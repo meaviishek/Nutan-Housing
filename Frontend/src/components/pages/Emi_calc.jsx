@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Scrolltop from '../model/Scrolltop';
 
 const Emi_calc= () => {
   const [principal, setPrincipal] = useState(0);
@@ -18,6 +19,7 @@ const Emi_calc= () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <Scrolltop/>
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">EMI Calculator</h2>
         

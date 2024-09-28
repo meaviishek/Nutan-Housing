@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { Link, useParams } from 'react-router-dom'
 import { Clubimg,Schoolimg,Proj1img,Templeimg,Gymimg,Swimmingimg,Hospitalimg,Marketimg,Kidimg,Parkimg,Waterimg,Hallimg,Movieimg, Img1, Img2, Img3, Img4, Img5, Img6} from '../indeximages'
+import Scrolltop from '../model/Scrolltop'
 
 
 
@@ -183,6 +184,7 @@ function ProjectDetails() {
   return (
 
     <div className=" mx-auto py-4 ">
+      <Scrolltop/>
    
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
     <div className='max-w-7xl mx-auto px-6'>

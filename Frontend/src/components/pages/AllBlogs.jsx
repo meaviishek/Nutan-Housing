@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Blog1, Blog2,Blog3 } from '../indeximages';
+import Scrolltop from '../model/Scrolltop';
 
 // Sample blog data for demonstration (Replace with dynamic data source)
 const blogPosts = [
@@ -103,6 +104,7 @@ const AllBlogs = () => {
 
   return (
     <div>
+      <Scrolltop/>
     <img src={blog.image} alt={blog.title} className="w-full h-96 object-cover rounded-lg mb-6" />
 
     <div className="blog-detail-page container mx-auto px-6 lg:px-8 py-10">

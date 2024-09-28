@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Vid, Custom, Plotimg, Construct, School, Old, Park, Elec, Hall, Road, Hospital, Temple } from '..';
+import { Vid, Custom, Plotimg, Construct, School, Old, Park, Elec, Hall, Road, Hospital, Temple,Scrolltop } from '..';
 
 const testimonialsData = [
   { name: 'Amrendra Singh', testimonial: 'Nutan Housing transformed my dream of owning a home into reality! The entire process was seamless and enjoyable.' },
@@ -25,6 +25,7 @@ function Home() {
 
   return (
     <div className="bg-gray-50">
+      <Scrolltop/> 
       {/* Hero Section */}
       <div className="relative h-screen w-full">
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
@@ -50,9 +51,9 @@ function Home() {
       </div>
 
       {/* What We Do Section */}
-      <section className="container mx-auto  py-4" id="what-we-do">
-        <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4 text-primary">WHAT WE DO</h2>
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-2 lg:gap-6 items-center m-2">
+      <section className="mx-auto md:mt-8 max-w-10xl text-center p-6 " id="what-we-do">
+        <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-primary">WHAT WE DO</h2>
+        <div className=" mx-auto max-w-5xl items-stretch space-y-6 text-left sm:flex sm:space-y-0 sm:space-x-10 sm:text-center">
           {[{
             title: "Construction", img: Construct, desc: "Nutan Housing delivers high-quality construction services, ensuring durable and efficient project execution."
           }, {
@@ -60,10 +61,10 @@ function Home() {
           }, {
             title: "Custom Design", img: Custom, desc: "Nutan Housing specializes in custom designs, crafting personalized spaces that meet unique client preferences."
           }].map((service, index) => (
-            <div key={index} className="flex bg-white rounded-lg shadow-lg p-6  lg:hover:scale-105 transition-transform">
+            <div key={index} className="flex w-full items-center rounded-xl border border-black border-opacity-10 px-4 py-6 text-black duration-200 hover:border-opacity-0 hover:no-underline hover:shadow-lg dark:text-white dark:hover:bg-white dark:hover:bg-opacity-10 sm:flex-col sm:hover:shadow-2xl">
               <img src={service.img} alt={service.title} className="w-20 h-20 mx-auto mb-4" />
               <div className='ml-4'>
-              <h3 className="text-lg font-semibold">{service.title}</h3>
+              <h3 className="text-lg text-primary font-semibold">{service.title}</h3>
               <p className="mt-2 text-sm text-gray-600">{service.desc}</p>
               </div>
             </div>
@@ -72,15 +73,15 @@ function Home() {
       </section>
 
       {/* Nutan Housing Info */}
-      <section className="bg-yellow-100 py-6 text-center">
+      <section className="bg-yellow-100 py-8 text-center">
         <div className="container mx-auto">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Nutan Housing: Building Dreams into Reality</h2>
-          <p className="text-md text-gray-700 mx-4 md:mx-40 text-justify ">Nutan Housing Finance offers luxury homes for reasonable costs, excellent customer care, and high satisfaction. We believe everyone deserves their dream home or business. From sustainable living spaces to exceptional amenities, Nutan Housing Finance ensures a smart, comfortable lifestyle.</p>
+          <p className="text-md text-gray-900 mx-4 md:mx-64 text-justify ">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
         </div>
       </section>
 
       {/* Amenities Section */}
-      <section className="mt-4 mb-4 bg-gray-100" id="amenities">
+      <section className="mt-6 mb-6 " id="amenities">
         <div className="container mx-auto text-center mb-6">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Our Amenities</h2>
           <p className="text-sm md:text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
@@ -96,10 +97,10 @@ function Home() {
       </section>
 
 
-      <section className=" bg-yellow-100 py-8" id="nutan-housing">
+      <section className=" bg-yellow-100 py-12" id="nutan-housing">
             <div className="container mx-auto text-center">
                 <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
-                <p className=" text-md text-gray-700  text-justify mx-4 md:mx-40 ">
+                <p className=" text-md text-gray-900  text-justify mx-4 md:mx-64 ">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
                 </p>
             
@@ -107,14 +108,14 @@ function Home() {
         </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50" id="testimonials">
+      <section className="py-8 bg-gray-50" id="testimonials">
         <div className="container mx-auto text-center mb-8">
           <h2 className="text-3xl font-bold text-primary mb-4">Testimonials</h2>
           <p className="text-lg text-gray-600 mb-6">Hear from our satisfied residents.</p>
         </div>
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center h-40">
           <div className="bg-white rounded-lg shadow-lg p-8 transition-transform duration-300 ease-in-out">
-            <p className="text-gray-600 italic mb-4">"{testimonialsData[currentIndex].testimonial}"</p>
+            <p className="text-gray-600 italic mb-4">{testimonialsData[currentIndex].testimonial}</p>
             <h3 className="text-xl font-semibold text-gray-800">{testimonialsData[currentIndex].name}</h3>
           </div>
         </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Contactimg, Gmailimg, Locimg, Phoneimg, Whatsappimg } from '../indeximages'
+import Scrolltop from '../model/Scrolltop'
 
 function Contact() {
   return (
     <div className="contact-page bg-gray-50">
+      <Scrolltop/>
     {/* Header Image */}
     <div className="header-image mt-16">
       <img src={Contactimg} alt="Header" className="w-full h-98 object-cover" />

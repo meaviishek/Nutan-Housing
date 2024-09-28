@@ -1,5 +1,5 @@
 import React from 'react'
-import { Project } from '..';
+import { Project, Scrolltop } from '..';
 import { Pro1,Pro2 } from '../indeximages';
 import img1 from "../../assets/plot11.jpg"
 import { Link } from 'react-router-dom';
@@ -28,6 +28,7 @@ const projectsData = [
 function Projects() {
   return (
     <div>
+        <Scrolltop/>
             {/* Header Image Section */}
             <div className="relative  mt-16">
                 <img

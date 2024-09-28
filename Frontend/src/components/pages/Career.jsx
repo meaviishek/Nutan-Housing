@@ -1,9 +1,11 @@
 import React from 'react'
 import { Careerimg } from '../indeximages'
+import Scrolltop from '../model/Scrolltop'
 
 function Career() {
   return (
     <div>
+      <Scrolltop/>
     {/* Header Section with Image */}
     <div className="relative py-16">
       <img 

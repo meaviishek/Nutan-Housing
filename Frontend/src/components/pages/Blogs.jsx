@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Blog1, Blog2, Blog3, Blogimg } from '../indeximages';
+import Scrolltop from '../model/Scrolltop';
 function Blogs() {
  
     const blogPosts = [
@@ -30,6 +31,7 @@ function Blogs() {
   
     return (
       <div className="blogs-page   py-16">
+        <Scrolltop/>
         <img 
         src={Blogimg}
         alt="Header"

@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react'
-import { Footer, Header,Floating, Logo,Login, Enquire } from './components'
+import { Footer, Header,Floating, Logo,Login, Enquire, Scrolltop } from './components'
 import { Outlet } from 'react-router-dom'
 function App() {
 
@@ -44,12 +44,13 @@ function App() {
         </div>
       ) : (
       <div className='transition-all duration-700 ease-in-out'>
-       
+     
       <Header openLogin={openLogin} openEnq={openEnq} />
       {isEnqOp && <Enquire closeEnq={closeEmq}/>}
       {isLoginOpen && <Login closeLogin={closeLogin} />}
       
       <main className='w-full'>
+      
         <Outlet/>
       </main>
       <Floating/>
