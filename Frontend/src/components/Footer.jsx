@@ -11,7 +11,7 @@ function Footer({openLogin,openEnq}) {
 
 
     <footer className="bg-[#181818] text-white py-10">
-    <div className="container max-w-7xl md:mx-auto mx-4  grid grid-cols-1 lg:grid-cols-3 gap-8  ">
+    <div className="container max-w-7xl md:mx-auto px-4  grid grid-cols-1 lg:grid-cols-3 gap-8  ">
       
       {/* Company Info */}
       <div className="space-y-4 lg:max-w-xs ">
