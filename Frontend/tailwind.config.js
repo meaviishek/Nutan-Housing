@@ -24,7 +24,7 @@ export default {
     
       colors: {
         // Add your custom colors here
-        primary: '#ddbf5fff',    // Example: custom gold
+        primary: '#c4a230',    // Example: custom gold
         secondary: '#FEF9A7',  
         accent: '#F4D35E',     // Example: custom yellow
         neutral: '#333333',    // Example: custom dark gray
