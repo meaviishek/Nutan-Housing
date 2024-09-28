@@ -11,7 +11,7 @@ const Header = ({openLogin,openEnq}) => {
 
   
   return (
-    <header className="fixed top-0 left-0  w-full bg-[#fafaf9] shadow-md z-50 backdrop-blur-xl">
+    <header className="fixed top-0 left-0  w-full bg-[#fafaf9a7] shadow-md z-50 backdrop-blur-xl">
       <div className="container mx-auto flex justify-between items-center py-4 px-4">
         {/* Logo */}
         <Link to='/'>
@@ -36,7 +36,10 @@ const Header = ({openLogin,openEnq}) => {
           <button onClick={openEnq} className="bg-yellow-200 text-gray-900 px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-white animate-bounce">
             Enquire Now
           </button>
-          <button onClick={openLogin} className="bg-yellow-500 text-white px-4 py-2 rounded-xl hover:bg-secondary hover:text-yellow-600">
+          <button onClick={openLogin} className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-xl flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
         Login
           </button>
         </div>
