@@ -17,7 +17,7 @@ const Header = ({openLogin,openEnq}) => {
         <Link to='/'>
           <div className="flex items-center">
             <img src={Logo} alt="Nutan Housing Finance" className="md:w-20 md:h-12 w-14 h-8" />
-            <h1 className="text-lg lg:text-2xl ml-2 mt-[5px] font-bold text-primary font-ubuntu ">NUTAN HOUSING FINANCE</h1>
+            <h1 className="text-lg lg:text-2xl ml-2 mt-[5px] font-bold text-primary font-roboto">NUTAN HOUSING FINANCE</h1>
           </div>
         </Link>
         
