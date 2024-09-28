@@ -22,7 +22,7 @@ const Header = ({openLogin,openEnq}) => {
         </Link>
         
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex text-sm space-x-4 font-semibold ">
+        <nav className="hidden md:flex  space-x-4 font-semibold ">
           <NavLink to="/" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Home</NavLink>
           <NavLink to="/about" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>About Us</NavLink>
           <NavLink to="/projects" className={({isActive})=> `p-1 lg:px-2 rounded ${isActive ? 'text-primary' : 'text-gray-900 hover:bg-yellow-200 hover:text-gray-700 transition-colors duration-300'}`}>Projects</NavLink>
