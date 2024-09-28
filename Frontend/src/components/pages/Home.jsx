@@ -113,8 +113,8 @@ function Home() {
           <h2 className="text-3xl font-bold text-primary mb-4">Testimonials</h2>
           <p className="text-lg text-gray-600 mb-6">Hear from our satisfied residents.</p>
         </div>
-        <div className="max-w-5xl mx-auto text-center h-40">
-          <div className="bg-white rounded-lg shadow-lg p-8 transition-transform duration-300 ease-in-out">
+        <div className="max-w-7xl mx-auto text-center h-40">
+          <div className="bg-white rounded-lg shadow-lg shadow-primary p-8 transition-transform duration-300 ease-in-out">
             <p className="text-gray-600 italic mb-4">{testimonialsData[currentIndex].testimonial}</p>
             <h3 className="text-xl font-semibold text-gray-800">{testimonialsData[currentIndex].name}</h3>
           </div>
