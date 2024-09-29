@@ -16,7 +16,7 @@ function Footer({openLogin,openEnq}) {
     <div className="container max-w-7xl md:mx-auto px-4  grid grid-cols-1 lg:grid-cols-3 gap-8  ">
       
       {/* Company Info */}
-      <div className="space-y-4 lg:max-w-xs border-1 border-r border-gray-700 ">
+      <div className="space-y-4 lg:max-w-xs md:border-1 md:border-r border-gray-400 ">
         <Link to=''>
         <div className="flex ">
           <img
@@ -79,7 +79,7 @@ function Footer({openLogin,openEnq}) {
     </div>
 
     {/* Footer Bottom */}
-    <div className="mt-4  border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+    <div className="mt-4  border-t border-gray-700 pt-4 text-center text-gray-400 text-sm">
       <p className=''>© Nutan Housing Finance 2024, All rights reserved.</p>
       <p className=''>Developed by <a href="https://prachar.com" target="_blank" rel="noreferrer" className="hover:text-primary">prachar.com</a></p>
     </div>
