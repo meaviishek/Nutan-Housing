@@ -63,7 +63,7 @@ function Blogs() {
           <p className="text-gray-600 mb-3">{blog.description}</p>
           <p className="text-gray-500 text-sm mb-4">Published on {blog.date}</p>
           
-           <p className='text-primary'>Know More</p> 
+           <p className='text-primary'>Read More</p> 
         
         </div>
       </div>

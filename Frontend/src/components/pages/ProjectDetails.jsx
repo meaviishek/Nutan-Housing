@@ -202,7 +202,7 @@ function ProjectDetails() {
           onClick={toggleExpand}
           className="text-primary hover:underline mt-2"
         >
-          {isexp ? 'know Less' : 'know More'}
+          {isexp ? 'Less' : 'know More'}
         </button>
       )}
       </div>

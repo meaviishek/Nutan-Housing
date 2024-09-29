@@ -56,7 +56,23 @@ function Career() {
               placeholder="Phone Number"
             />
           </div>
-
+          
+        <div className='mb-4'>
+          <label className="block text-sm font-medium">Upload Resume</label>
+          <input
+            type="file"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            // onChange={handleFileChange}
+            className="mt-1 block w-full text-sm text-gray-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-indigo-50 file:text-black
+            hover:file:bg-indigo-100"
+            required
+          />
+        </div>
           <div className="mb-4">
             <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
               Message*
