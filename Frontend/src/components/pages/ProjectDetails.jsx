@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react'
 
 import { Link, useParams } from 'react-router-dom'
-import { Raj1,Raj2,Raj5,Raj3,Raj4,Clubimg,Schoolimg,Proj1img,Templeimg,Gymimg,Swimmingimg,Hospitalimg,Marketimg,Kidimg,Parkimg,Waterimg,Hallimg,Movieimg, Img1, Img2, Img3, Img4, Img5, Img6} from '../indeximages'
+import { Raj1,Raj2,Raj5,Raj3,Raj4,Clubimg,Schoolimg,Proj1img,Templeimg,Gymimg,Swimmingimg,Hospitalimg,Marketimg,Kidimg,Parkimg,Waterimg,Hallimg,Movieimg, Img1, Img2, Img3, Img4, Img5, Img6, Rin} from '../indeximages'
 import Scrolltop from '../model/Scrolltop'
 
 
@@ -279,16 +279,25 @@ function ProjectDetails() {
       </table>
     </div>
     </div>
-   
-    
     <div className="mb-4 mt-16">
+      <div className='max-w-7xl container mx-auto'>
+
+    
+      <h3 className="text-2xl lg:text-3xl text-primary text-center font-semibold mb-4">Reliable Infrastructure</h3>
+     <img src={Rin}/>
+      </div>
+    </div>
+    
+    <div className='bg-yellow-100'>
+
+    <div className=" mb-4 mt-16 py-8">
       <div className='max-w-7xl container mx-auto'>
 
     
       <h3 className="text-2xl lg:text-3xl text-primary text-center font-semibold mb-4">Amenities</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 mt-8 gap-4">
         {project.amenitiesimg.map((amenity, index) => (
-            <div key={index} className="border p-4 rounded-lg shadow-md text-center hover:scale-105 transition-all duration-500">
+            <div key={index} className="border bg-white p-4 rounded-lg shadow-md text-center hover:scale-105 transition-all duration-500">
           <img  src={amenity.img} alt={amenity.name} className="w-full h-48 object-cover" />
           <h3 className="text-md font-semibold text-gray-700 text-center">{amenity.name}</h3>
           </div>
@@ -296,7 +305,8 @@ function ProjectDetails() {
       </div>
       </div>
     </div>
-    <div className='bg-yellow-100'>
+   </div>
+ 
 
    
     <div className="max-w-7xl  mx-auto py-12 px-2">
@@ -313,9 +323,9 @@ function ProjectDetails() {
       </div>
       </div>
     </div>
-    </div>
+   
 
-
+    <div className="bg-yellow-100 py-12  ">
 <div className='max-w-7xl container mx-auto'>
 
 
@@ -344,7 +354,8 @@ function ProjectDetails() {
       </div>
 
       </div>
-    <div className="bg-yellow-100 py-12  ">
+      </div>
+    <div className=" py-12  ">
       <div className='max-w-7xl container mx-auto'>
       <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-8 text-center ">Gallery</h2>
       

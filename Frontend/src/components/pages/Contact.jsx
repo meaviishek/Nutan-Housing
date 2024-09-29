@@ -55,7 +55,7 @@ function Contact() {
                         </div>
                       </div>
             <div>
-              <h4 className="font-semibold text-lg">Address</h4>
+              <h4 className="font-semibold md:text-lg text-md">Address</h4>
               <p>Jhunki Baba Road, Patel Nagar, Near RDH School, Rajgir, 803116</p>
             </div>
           </div>
@@ -66,8 +66,8 @@ function Contact() {
                           <img src={Gmailimg} className="w-8 h-8"/>
                         </div>
                       </div>
-            <div>
-              <h4 className="font-semibold text-lg">Email Us</h4>
+            <div >
+              <h4 className="font-semibold md:text-lg text-md">Email Us</h4>
               <p>info@nutanhousing.com</p>
             </div>
           </div>
@@ -80,8 +80,9 @@ function Contact() {
                           <img src={Whatsappimg} className="w-8 h-8"/>
                         </div>
                       </div>
-              <h4 className="font-semibold text-lg">WhatsApp</h4>
-              <p>+91 8539804930</p>
+                      <div >
+              <h4 className="font-semibold md:text-lg text-md">WhatsApp</h4>
+              <p>+91 8539804930</p></div>
             </div>
           
 
@@ -92,8 +93,9 @@ function Contact() {
                       </div>
            
                       </div>
-              <h4 className="font-semibold text-lg">Mobile</h4>
-              <p>+91 9471613137</p>
+                      <div>
+              <h4 className="font-semibold md:text-lg text-md">Mobile</h4>
+              <p>+91 9471613137</p></div>
            
           </div>
 

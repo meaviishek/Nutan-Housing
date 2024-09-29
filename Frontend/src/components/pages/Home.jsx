@@ -63,7 +63,7 @@ function Home({openEnq}) {
           }].map((service, index) => (
             <div key={index} className="flex w-full items-center rounded-xl border border-black border-opacity-10 px-4 py-6 text-black duration-200 hover:border-opacity-0 hover:no-underline hover:shadow-lg dark:text-white dark:hover:bg-white dark:hover:bg-opacity-10 sm:flex-col sm:hover:shadow-2xl">
               <img src={service.img} alt={service.title} className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
-              <div className='ml-4'>
+              <div className='ml-1'>
               <h3 className="text-lg text-primary font-semibold">{service.title}</h3>
               <p className="mt-2 text-sm text-gray-600 text-justify">{service.desc}</p>
               </div>
@@ -116,7 +116,7 @@ function Home({openEnq}) {
           <h2 className="text-3xl font-bold text-primary mb-1">Testimonials</h2>
           <p className="text-lg text-gray-600 mb-6">Hear from our satisfied residents.</p>
         </div>
-        <div className="max-w-7xl mx-auto text-center h-40">
+        <div className="max-w-6xl mx-auto text-center h-40">
           <div className="bg-white rounded-lg shadow-md shadow-primary p-4 transition-transform duration-300 ease-in-out">
             <p className="text-gray-600 text-sm md:text-md mb-4">{testimonialsData[currentIndex].testimonial}</p>
             <h3 className="text-md md:text-lg text-end font-semibold text-gray-800">-{testimonialsData[currentIndex].name}</h3>

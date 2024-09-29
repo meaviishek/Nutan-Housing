@@ -38,6 +38,7 @@ import Raj2 from '../assets/glass.jpg'
 import Raj3 from '../assets/roap.jpg'
 import Raj4 from '../assets/raj.jpg';
 import Raj5 from "../assets/kund.jpg"
+import Rin from '../assets/Infrastrcture.jpg'
 
 // import DwgL from '../assets/lodipur new.dwg'
 export{
@@ -61,5 +62,5 @@ export{
   Gmailimg,Whatsappimg,Phoneimg,
   Lodhipur
  ,Locimg,Blog1,Blog2,Blog3,Pro1,Pro2,Lpdf,
- Raj1,Raj2,Raj3,Raj4,Raj5
+ Raj1,Raj2,Raj3,Raj4,Raj5,Rin
 }
