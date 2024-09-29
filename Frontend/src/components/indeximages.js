@@ -33,6 +33,12 @@ import Pro1 from '../assets/plot11.jpg'
 import Pro2 from '../assets/nutan.jpg'
 import Lpdf from '../assets/lodipur new.pdf'
 import Lodhipur from '../assets/lodipur.jpg'
+import Raj1 from '../assets/rajgir.jpg'
+import Raj2 from '../assets/glass.jpg'
+import Raj3 from '../assets/roap.jpg'
+import Raj4 from '../assets/raj.jpg';
+import Raj5 from "../assets/kund.jpg"
+
 // import DwgL from '../assets/lodipur new.dwg'
 export{
   Schoolimg,
@@ -54,6 +60,6 @@ export{
   Img4,Img5,Img6,Contactimg,Blogimg,Careerimg,
   Gmailimg,Whatsappimg,Phoneimg,
   Lodhipur
- ,Locimg,Blog1,Blog2,Blog3,Pro1,Pro2,Lpdf
-
+ ,Locimg,Blog1,Blog2,Blog3,Pro1,Pro2,Lpdf,
+ Raj1,Raj2,Raj3,Raj4,Raj5
 }

@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 import { Link, useParams } from 'react-router-dom'
-import { Clubimg,Schoolimg,Proj1img,Templeimg,Gymimg,Swimmingimg,Hospitalimg,Marketimg,Kidimg,Parkimg,Waterimg,Hallimg,Movieimg, Img1, Img2, Img3, Img4, Img5, Img6} from '../indeximages'
+import { Raj1,Raj2,Raj5,Raj3,Raj4,Clubimg,Schoolimg,Proj1img,Templeimg,Gymimg,Swimmingimg,Hospitalimg,Marketimg,Kidimg,Parkimg,Waterimg,Hallimg,Movieimg, Img1, Img2, Img3, Img4, Img5, Img6} from '../indeximages'
 import Scrolltop from '../model/Scrolltop'
 
 
@@ -147,6 +147,15 @@ And many more Government project coming to Rajgir....
   },
 ]
 
+
+const images = [
+  { src:Raj1, alt: "Image 1" },
+  { src: Raj2, alt: "Image 2" },
+  { src: Raj3, alt: "Image 3" },
+  { src: Raj4, alt: "Image 4" },
+  { src: Raj5, alt: "Image 5" }
+];
+
 function ProjectDetails() {
 
   const [isexp,setisexp] =useState(false)
@@ -179,7 +188,14 @@ function ProjectDetails() {
      setIsModalOpen(false);
      setSelectedImage(null);
    };
+   const [currentIndex, setCurrentIndex] = useState(0);
 
+   useEffect(() => {
+     const slideInterval = setInterval(() => {
+       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+     }, 3000); // Change every 3 seconds
+     return () => clearInterval(slideInterval);
+   }, []);
 
   return (
 
@@ -190,7 +206,8 @@ function ProjectDetails() {
     <div className='max-w-7xl  container mx-auto'>
     
     <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary text-center">{project.title}</h1>
-    <div className='bg-yellow-100 p-4'>
+    <div className='bg-yellow-100 p-4 md:flex'>
+ <div>
     <div
         className="text-lg text-gray-700 "
         dangerouslySetInnerHTML={{
@@ -206,6 +223,23 @@ function ProjectDetails() {
         </button>
       )}
       </div>
+
+      <div className="relative max-w-2xl md:ml-4 mx-auto overflow-hidden rounded-lg">
+      <div className="flex transition-transform duration-500 ease-in-out transform"
+           style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {images.map((image, index) => (
+          <div key={index} className="min-w-full">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+        ))}
+      </div>
+</div>
+
+</div>
       <div
         className="text-lg text-gray-700 p-4 "
         dangerouslySetInnerHTML={{
@@ -260,12 +294,15 @@ function ProjectDetails() {
       </div>
       </div>
     </div>
+    <div className='bg-yellow-100'>
+
+   
     <div className="max-w-7xl  mx-auto py-12 px-2">
     <div className="container mx-auto">
       <h2 className="text-2xl lg:text-3xl font-semibold mb-8 text-primary text-center">Our Neighbours</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {project.neighbours.map((neighbour, index) => (
-          <div key={index} className="border p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-500">
+          <div key={index} className="border bg-white p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-500">
             <h3 className="text-md font-semibold mb-2 text-center">{neighbour.name}</h3>
             {/* <p className="text-gray-600">Location: {neighbour.location}</p> */}
             <p className="text-gray-600 text-center">{neighbour.distance}</p>
@@ -273,6 +310,7 @@ function ProjectDetails() {
         ))}
       </div>
       </div>
+    </div>
     </div>
 
 
@@ -304,7 +342,7 @@ function ProjectDetails() {
       </div>
 
       </div>
-    <div className=" py-12 ">
+    <div className="bg-yellow-100 py-12 ">
       <div className='max-w-7xl container mx-auto'>
       <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-8 text-center ">Gallery</h2>
       
