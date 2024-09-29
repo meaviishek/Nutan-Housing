@@ -37,7 +37,7 @@ function Home({openEnq}) {
             <h1 className="text-3xl md:text-6xl font-bold leading-tight">Welcome to Nutan Housing Finance</h1>
             <p className="mt-4 text-lg md:text-2xl">Bringing your vision to life</p>
             <button className="mt-8 px-8 py-2 bg-gradient-to-r from-primary to-secondary rounded-full text-lg font-semibold text-white shadow-lg hover:shadow-2xl transition duration-300">
-             <a href='tel:+919471613137'> Know More</a>
+             <a href='tel:+919471613137'> Book More</a>
             </button>
           </div>
         </div>
@@ -74,7 +74,7 @@ function Home({openEnq}) {
 
       {/* Nutan Housing Info */}
       <section className="bg-yellow-100 mt-14 text-center">
-        <div className="container mx-auto p-8  md:p-16 ">
+        <div className="container mx-auto p-8  md:p-12 ">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Welcome to Nutan Housing Finance</h2>
           <p className="text-md text-justify  mt-4 md:pl-16 md:pr-16">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
         </div>
@@ -101,7 +101,7 @@ function Home({openEnq}) {
 
 
       <section className=" bg-yellow-100 mt-14 text-center" >
-            <div className="container mx-auto p-8  md:p-16 ">
+            <div className="container mx-auto p-8  md:p-12 ">
                 <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
                 <p className=" text-md text-justify  mt-4 md:pl-16 md:pr-16 ">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.

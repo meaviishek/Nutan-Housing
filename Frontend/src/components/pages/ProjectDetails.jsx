@@ -187,7 +187,7 @@ function ProjectDetails() {
       <Scrolltop/>
    
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
-    <div className='max-w-7xl container mx-auto'>
+    <div className='max-w-7xl  container mx-auto'>
     
     <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary text-center">{project.title}</h1>
     <div className='bg-yellow-100 p-4'>
@@ -207,18 +207,18 @@ function ProjectDetails() {
       )}
       </div>
       <div
-        className="text-lg text-gray-700 "
+        className="text-lg text-gray-700 p-4 "
         dangerouslySetInnerHTML={{
           __html: project.details
         }}
       />
-      <Link to='/plot' className='bg-green-500 p-3 rounded-md shadow-lg   transition-all duration-500 text-white hover:bg-green-600'>
+      <Link to='/plot' className='bg-green-500 p-3 ml-4 rounded-md shadow-lg   transition-all duration-500 text-white hover:bg-green-600'>
       
       View Plot</Link>
 
 
       </div>
-<div className='bg-yellow-100 py-10 mt-16 '>
+<div className='bg-yellow-100 py-10 mt-16 p-4 '>
 
 
     <div className="container max-w-7xl   items-center justify-center mx-auto">
@@ -319,7 +319,7 @@ function ProjectDetails() {
             <img
               src={image.src}
               alt={image.alt}
-              className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+              className="object-cover w-full h-48 transition-transform duration-300 hover:scale-105"
             />
           </div>
         ))}
