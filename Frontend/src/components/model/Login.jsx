@@ -23,12 +23,12 @@ function Login({closeLogin}) {
     <div id="login-form" className="">
       <h2 className="text-xl md:text-2xl font-bold mb-4">Login</h2>
       <form>
-        <div className="mb-3">
-          <label className="block mb-2 text-gray-700">Email</label>
+        <div className="mb-2">
+          <label className="block mb-1 text-gray-700">Email</label>
           <input type="email" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your email" />
         </div>
-        <div className="mb-3">
-          <label className="block mb-2 text-gray-700">Password</label>
+        <div className="mb-2">
+          <label className="block mb-1 text-gray-700">Password</label>
           <input type="password" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your password" />
           <a href="#" id="forgotPasswordLink" className=" text-sm  text-yellow-700">Forgot Password?</a>
         </div>
@@ -53,20 +53,20 @@ function Login({closeLogin}) {
     <div id="signup-form" className="">
       <h2 className="text-xl md:text-2xl font-bold mb-4">Sign Up</h2>
       <form>
-        <div className="mb-3">
-          <label className="block mb-2 text-gray-700">Name*</label>
+        <div className="mb-2">
+          <label className="block mb-1 text-gray-700">Name*</label>
           <input type="text" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your Name" />
         </div>
-        <div className="mb-3">
-          <label className="block mb-2 text-gray-700">Email*</label>
+        <div className="mb-2">
+          <label className="block mb-1 text-gray-700">Email*</label>
           <input type="email" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your email" />
         </div>
-        <div className="mb-3">
+        <div className="mb-2">
           <label className="block mb-2 text-gray-700">Phone Number*</label>
           <input type="text" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Enter your phone Number" />
         </div>
-        <div className="mb-3">
-          <label  className="block mb-2 font-medium text-gray-600">Select Role</label>
+        <div className="mb-2">
+          <label  className="block mb-1 font-medium text-gray-600">Select Role</label>
         <select id="options" className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
             <option value="" disabled selected>Choose an option</option>
             <option value="option1">Advisor</option>
@@ -75,8 +75,8 @@ function Login({closeLogin}) {
         </div>
 
 
-        <div className="mb-3">
-          <label className="block mb-2 text-gray-700">Password</label>
+        <div className="mb-2">
+          <label className="block mb-1 text-gray-700">Password</label>
           <input type="password" className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Create a password" />
         </div>
         <button type="submit" className="w-full bg-gold text-white px-4 py-2 rounded-md shadow-lg bg-primary hover:bg-yellow-500 transition duration-300">
