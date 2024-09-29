@@ -55,7 +55,7 @@ const Header = ({openLogin,openEnq}) => {
       </div>
 
       {/* Mobile Navigation Menu - Slide from Right */}
-      <div className={`fixed md:hidden top-0 h-screen right-0 w-64 bg-[#aaa9a9db] p-6 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
+      <div className={`fixed md:hidden top-0 h-screen right-0 w-64 bg-[#dfdfdff6] p-6 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
         <button onClick={toggleMenu} className="text-gray-800 focus:outline-none mb-4">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
