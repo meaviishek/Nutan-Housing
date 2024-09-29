@@ -3,8 +3,8 @@ import { Lodhipur} from "../indeximages";
 
 const Plot = () => {
   return (
-   <div>
-     <div className="h-full w-full">
+   <div className="container mx-auto max-w-6xl">
+     <div className="h-auto w-auto">
       <img
         src={Lodhipur}
         title="DWG Viewer"
