@@ -111,15 +111,15 @@ function Home({openEnq}) {
         </section>
 
       {/* Testimonials */}
-      <section className="py-8 bg-gray-50" id="testimonials">
+      <section className="py-8 mx-4 mb-8 " id="testimonials">
         <div className="container mx-auto text-center mb-8">
           <h2 className="text-3xl font-bold text-primary mb-1">Testimonials</h2>
           <p className="text-lg text-gray-600 mb-6">Hear from our satisfied residents.</p>
         </div>
-        <div className="max-w-7xl mx-auto text-center h-36">
+        <div className="max-w-7xl mx-auto text-center h-40">
           <div className="bg-white rounded-lg shadow-md shadow-primary p-4 transition-transform duration-300 ease-in-out">
-            <p className="text-gray-600 text-md mb-4">{testimonialsData[currentIndex].testimonial}</p>
-            <h3 className="text-lg text-end font-semibold text-gray-800">-{testimonialsData[currentIndex].name}</h3>
+            <p className="text-gray-600 text-sm md:text-md mb-4">{testimonialsData[currentIndex].testimonial}</p>
+            <h3 className="text-md md:text-lg text-end font-semibold text-gray-800">-{testimonialsData[currentIndex].name}</h3>
           </div>
         </div>
       </section>
