@@ -199,14 +199,14 @@ function ProjectDetails() {
 
   return (
 
-    <div className="  py-4 ">
+    <div className="  pt-4 ">
       <Scrolltop/>
    
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
     <div className='max-w-7xl  container mx-auto'>
     
     <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary text-center">{project.title}</h1>
-    <div className='bg-yellow-100 p-4 md:flex'>
+    <div className='bg-yellow-100 p-4 rounded-lg md:flex'>
  <div>
     <div
         className="text-lg text-gray-700 "
@@ -342,7 +342,7 @@ function ProjectDetails() {
       </div>
 
       </div>
-    <div className="bg-yellow-100 py-12 ">
+    <div className="bg-yellow-100 py-12  ">
       <div className='max-w-7xl container mx-auto'>
       <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-8 text-center ">Gallery</h2>
       

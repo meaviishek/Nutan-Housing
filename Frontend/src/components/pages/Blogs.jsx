@@ -37,7 +37,7 @@ function Blogs() {
         alt="Header"
         className="object-cover w-full h-full"
       />
-      <div className="container mx-auto p-4 lg:mx-8 ">
+      <div className="max-w-7xl mx-auto py-6 px-6 ">
         <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary mt-4 mb-4">Our Blog</h1>
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

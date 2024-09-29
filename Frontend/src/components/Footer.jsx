@@ -13,10 +13,10 @@ function Footer({openLogin,openEnq}) {
 
 
     <footer className="bg-[#181818] text-white pt-8">
-    <div className="container max-w-7xl md:mx-auto px-4  grid grid-cols-1 lg:grid-cols-3 gap-8  ">
+    <div className="container  max-w-7xl md:mx-auto px-4  grid grid-cols-1 lg:grid-cols-3 gap-8  ">
       
       {/* Company Info */}
-      <div className="space-y-4 lg:max-w-xs md:border-1 md:border-r border-gray-400 ">
+      <div className="space-y-4 items-center justify-center lg:max-w-xs md:border-1 md:border-r border-gray-400 ">
         <Link to=''>
         <div className="flex ">
           <img
@@ -39,7 +39,7 @@ function Footer({openLogin,openEnq}) {
       </div>
 
       {/* Quick Links */}
-   <div className='flex gap-14 md:gap-24'>
+   <div className='flex gap-14 md:gap-28'>
       <div className='block text-left'>
         <h3 className="text-base font-semibold text-primary">Quick Links</h3>
         <ul className="space-y-2 mt-4 text-gray-400 text-sm">
@@ -79,7 +79,7 @@ function Footer({openLogin,openEnq}) {
     </div>
 
     {/* Footer Bottom */}
-    <div className="mt-4  border-t border-gray-700 pt-4 text-center text-gray-400 text-sm">
+    <div className="mt-4  border-t border-gray-400 pt-4 text-center text-gray-400 text-sm">
       <p className=''>© Nutan Housing Finance 2024, All rights reserved.</p>
       <p className=''>Developed by <a href="https://prachar.com" target="_blank" rel="noreferrer" className="hover:text-primary">prachar.com</a></p>
     </div>
