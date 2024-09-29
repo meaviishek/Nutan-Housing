@@ -85,20 +85,20 @@ And many more Government project coming to Rajgir....
       { name: 'IT City', location: 'Location D', distance: '5 km' },
       { name: 'Rajgir Film City', location: 'Location E', distance: '5 km' },
       { name: 'CRPF Camp Rajgir', location: 'Location A', distance: '7 km' },
-      { name: 'Rajgir Railway Station', location: 'Location B', distance: '8 km' },
-      { name: 'Jungle Safari', location: 'Location C', distance: '9 km' },
+      { name: 'Rajgir Railway Station', location: 'Location B', distance: '12 km' },
+      { name: 'Jungle Safari', location: 'Location C', distance: '13 km' },
       { name: 'International Cricket Stadium', location: 'Location D', distance: '9 km' },
       { name: 'Brahma Kund', location: 'Location E', distance: '10 km' },
       { name: 'Rajgir Bus Stand', location: 'Location A', distance: '12 km' },
       { name: 'Nalanda University', location: 'Location B', distance: '5.5 km' },
       { name: 'SVM School', location: 'Location C', distance: '13.2 km' },
-      { name: 'JNV School', location: 'Location D', distance: '7.8 km' },
+      { name: 'JNV ', location: 'Location D', distance: '12 km' },
       { name: 'Wildlife Sanctuary', location: 'Location E', distance: '9.4 km' },
-      { name: 'Sone Bhandar', location: 'Location A', distance: '10 km' },
-      { name: 'Venu Van', location: 'Location B', distance: '11 km' },
-      { name: 'Glass bridge', location: 'Location C', distance: '11.8 km' },
-      { name: 'Ghora Katora', location: 'Location D', distance: '13.1 km' },
-      { name: 'Rajgir Ropeway & Shanti Stupa', location: 'Location E', distance: '14 km' },
+      { name: 'Sone Bhandar', location: 'Location A', distance: '14 km' },
+      { name: 'Venu Van', location: 'Location B', distance: '10 km' },
+      { name: 'Glass bridge', location: 'Location C', distance: '13 km' },
+      { name: 'Ghora Katora', location: 'Location D', distance: '17.5 km' },
+      { name: 'Rajgir Ropeway & Shanti Stupa', location: 'Location E', distance: '16 km' },
    
    
    
@@ -317,7 +317,7 @@ function ProjectDetails() {
 <div className='max-w-7xl container mx-auto'>
 
 
-    <div className="mb-8">
+    <div className="mb-8 mt-12">
       <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-primary text-center">Site Location</h3>
       <iframe
         src={project.mapLocation}
