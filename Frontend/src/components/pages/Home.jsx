@@ -24,7 +24,7 @@ function Home({openEnq}) {
   }, []);
 
   return (
-    <div className="bg-gray-50">
+    <div className=" bg-gray-50">
       <Scrolltop/> 
       {/* Hero Section */}
       <div className="relative h-screen w-full">
@@ -51,7 +51,7 @@ function Home({openEnq}) {
       </div>
 
       {/* What We Do Section */}
-      <section className="mx-auto md:mt-8 max-w-10xl text-center p-6 " id="what-we-do">
+      <section className=" mx-auto md:mt-8 max-w-10xl text-center p-6 " id="what-we-do">
         <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-primary">WHAT WE DO</h2>
         <div className=" mx-auto max-w-5xl items-stretch space-y-6 text-left sm:flex sm:space-y-0 sm:space-x-10 sm:text-center">
           {[{
@@ -74,14 +74,14 @@ function Home({openEnq}) {
 
       {/* Nutan Housing Info */}
       <section className="bg-yellow-100 mt-4 md:mt-14 text-center">
-        <div className="container mx-auto p-8  md:p-12 ">
+        <div className="container mx-auto max-w-7xl py-8  ">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Welcome to Nutan Housing Finance</h2>
-          <p className="text-md text-justify  mt-4 md:pl-16 md:pr-16">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
+          <p className="text-md text-justify  mt-4 px-4">The company is one of the fastest growing entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction. Nutan Housing Finance strongly believe that everyone should have a home and business they have always dreamed of having. At Nutan Housing Finance — an innovative real estate company in Rajgir — we don’t just provide customers with a plot in Bihar to build their home or business. We also provide our customers with a wide range of top-notch amenities that allow them to live a healthy and comfortable lifestyle. We also focus on building better and smarter spaces, hence, we ensure all our projects are designed to incorporate sustainable living practices.</p>
         </div>
       </section>
 
       {/* Amenities Section */}
-      <section className="container mx-auto mt-6 mb-6 " >
+      <section className="container mx-auto max-w-7xl py-8  mt-6 mb-6 " >
         <div className=" text-center mb-6">
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">Amenities</h2>
           <p className="text-sm md:text-lg text-gray-600">Discover amenities designed to enhance your living experience.</p>
@@ -101,9 +101,9 @@ function Home({openEnq}) {
 
 
       <section className=" bg-yellow-100 mt-4 md:mt-14 text-center" >
-            <div className="container mx-auto p-8  md:p-12 ">
+            <div className="container mx-auto max-w-7xl py-8 ">
                 <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
-                <p className=" text-md text-justify  mt-4 md:pl-16 md:pr-16 ">
+                <p className=" text-md text-justify  mt-4 px-4 ">
                 Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
                 </p>
             
