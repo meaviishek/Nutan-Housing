@@ -37,7 +37,7 @@ function Home({openEnq}) {
             <h1 className="text-3xl md:text-6xl font-bold leading-tight">Welcome to Nutan Housing Finance</h1>
             <p className="mt-4 text-lg md:text-2xl">Bringing your vision to life</p>
             <button className="mt-8 px-8 py-2 bg-gradient-to-r from-primary to-secondary rounded-full text-lg font-semibold text-white shadow-lg hover:shadow-2xl transition duration-300">
-             <a href='tel:+919471613137'> Book More</a>
+             <a href='tel:+919471613137'> Book Now</a>
             </button>
           </div>
         </div>
