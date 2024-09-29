@@ -42,7 +42,9 @@ And many more Government project coming to Rajgir....
         <h2 class="text-3xl font-semibold text-primary font-poppins">Premium Plots for sale in Rajgir</h2>
         <h3 class="text-base text-gray-600 italic mt-2">A Perfect Blend of Nature and Urban Living</h3>
         <p class="mt-4 text-base text-gray-600">
-          Nutan Villa's area offers outstanding connectivity, making it an ideal location for development. It is conveniently located near major roads and highway, providing easy access to surrounding areas and key urban centers. Well-served by public transportation, including bus routes and railway lines, the site ensures effortless commuting. Additionally, its proximity to essential amenities such as schools, hospitals, and shopping centers enhances its appeal. Future infrastructure improvements in the area promise to further boost connectivity and property value.
+At Nutan Villa, we specialize in providing prime residential plots that empower you to build your dream home. Our meticulously selected plots are situated in Rajgir , offering easy access to essential Amenities - Schools, Parks, Hospitals and Transportation. We understand that the right plot is the foundation of a perfect home, which is why we focus on quality land that meets the highest standards.
+<br><br>
+  Each of our plots is designed to cater to various lifestyles and budgets, allowing you the flexibility to create a living space that reflects your unique vision. Whether you’re looking for a serene retreat on the outskirts of the city or a vibrant space close to urban conveniences, Nutan Housing has the perfect option for you. Our commitment to transparency ensures that you have all the information you need to make an informed decision. With a focus on customer satisfaction, we provide personalized support throughout the purchasing process. Discover the potential of our plots and start your journey toward building the home you’ve always dreamed of with Nutan Housing Finance—where your vision meets reality...
         </p>
         <div class="flex  items-center py-8">
           <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-40  text-primary">
@@ -77,7 +79,7 @@ And many more Government project coming to Rajgir....
       </div>
     </div>
   </section>`,
-    location: 'Near KK University Phase II Lodipur, Rajgir,',
+    
     neighbours:[
       { name: 'K.K. University Phase II', location: 'Location A', distance: '0.5 km' },
       { name: 'Sports Academy', location: 'Location B', distance: '0.5 km' },
@@ -136,7 +138,7 @@ And many more Government project coming to Rajgir....
 
 
     mapLocation: 'https://www.google.com/maps/embed?...',  
-    address: 'Near KK University Phase II Lodipur, Rajgir,',
+    address: 'Near KK University Phase II Lodipur, Rajgir,803116',
   phone: '+91 9471613137',
   email: 'info@nutanhousing.com',
     propertyDetails: {
