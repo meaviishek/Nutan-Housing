@@ -7,7 +7,7 @@ function Contact() {
     <div className="contact-page bg-gray-50">
       <Scrolltop/>
     {/* Header Image */}
-    <div className="header-image mt-16">
+    <div className="header-image mt-20">
       <img src={Contactimg} alt="Header" className="w-full h-98 object-cover" />
     </div>
 
@@ -36,7 +36,7 @@ function Contact() {
 
             <div className="flex items-center">
               <input type="checkbox" className="mr-2" />
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 I authorize Nutan Housing Finance to contact me via Email, SMS, WhatsApp, and Call.
               </p>
             </div>
@@ -47,6 +47,19 @@ function Contact() {
 
         {/* Contact Info Section */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 flex flex-col justify-center bg-white shadow-md rounded-lg p-6 space-y-6">
+         
+        <div className="flex items-center space-x-4">
+          <div className="shrink-0">
+                        <div className="inline-block rounded-md bg-yellow-200 p-2 text-primary">
+                          <img src={Locimg} className="w-8  h-8"/>
+                        </div>
+                      </div>
+            <div>
+              <h4 className="font-semibold text-lg">Address</h4>
+              <p>Jhunki Baba Road, Patel Nagar, Near RDH School, Rajgir, 803116</p>
+            </div>
+          </div>
+         
           <div className="flex items-center space-x-4">
           <div className="shrink-0">
                         <div className="inline-block rounded-md bg-yellow-200 p-2 text-primary">
@@ -59,17 +72,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="flex items-center space-x-4">
-          <div className="shrink-0">
-                        <div className="inline-block rounded-md bg-yellow-200 p-2 text-primary">
-                          <img src={Locimg} className="w-8  h-8"/>
-                        </div>
-                      </div>
-            <div>
-              <h4 className="font-semibold text-lg">Address</h4>
-              <p>Jhunki Baba Road, Patel Nagar, Near RDH School, Rajgir, 803116</p>
-            </div>
-          </div>
+         
 
           <div className="flex items-center space-x-4">
           <div className="shrink-0">

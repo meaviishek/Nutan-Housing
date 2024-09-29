@@ -16,29 +16,30 @@ function Footer({openLogin,openEnq}) {
     <div className="container max-w-7xl md:mx-auto px-4  grid grid-cols-1 lg:grid-cols-3 gap-8  ">
       
       {/* Company Info */}
-      <div className="space-y-4 lg:max-w-xs ">
+      <div className="space-y-4 lg:max-w-xs border-1 border-r border-gray-700 ">
+        <Link to=''>
         <div className="flex ">
           <img
             src={Logo}
             alt="Nutan Housing Finance"
-            className="w-8 h-4"
+            className="w-10 h-6"
           />
-          <h2 className="text-md ml-2 font-bold">Nutan Housing Finance</h2>
-        </div>
+          <h2 className="text-md ml-2 ">Nutan Housing Finance</h2>
+        </div></Link>
         <div className="text-gray-400 text-sm">
         <p className='mt-2 gap-2 flex'>
-         <MdLocationOn className='text-primary'/>  Jhunki Baba Road, Patel Nagar,<br />Near RDH School, Rajgir, 803116</p>
+         <MdLocationOn className='text-primary w-4 h-4'/>Jhunki Baba Road, Patel Nagar,<br />Near RDH School, Rajgir, 803116</p>
           <p className='mt-2 gap-2 flex'>
-           <MdEmail className='text-primary'/> <a href="mailto:info@nutanhousing.com" className="hover:text-white">info@nutanhousing.com</a></p>
+           <MdEmail className='text-primary w-4 h-4'/> <a href="mailto:info@nutanhousing.com" className="hover:text-white">info@nutanhousing.com</a></p>
           <p className='mt-2 gap-2 flex'>
           
-           <MdPhone className='text-primary'/> <a href="tel:+919471613137" className="hover:text-white ">+91 9471613137</a> <a href="tel:+918539804930" className="hover:text-white">+91 8539804930</a></p>
-          <p className='mt-2 text-primary'>Open On Sunday</p>
+           <MdPhone className='text-primary w-4 h-4'/> <a href="tel:+919471613137" className="hover:text-white ">+91 9471613137</a> <a href="tel:+918539804930" className="hover:text-white">+91 8539804930</a></p>
+          <p className='mt-2 text-primary ml-6'>Open On Sunday</p>
         </div>
       </div>
 
       {/* Quick Links */}
-   <div className='flex gap-14 md:gap-40'>
+   <div className='flex gap-14 md:gap-24'>
       <div className='block text-left'>
         <h3 className="text-base font-semibold text-primary">Quick Links</h3>
         <ul className="space-y-2 mt-4 text-gray-400 text-sm">
@@ -78,9 +79,9 @@ function Footer({openLogin,openEnq}) {
     </div>
 
     {/* Footer Bottom */}
-    <div className="mt-4 border-t border-gray-800 pt-4 text-center text-gray-500 text-sm">
-      <p>© Nutan Housing Finance 2024, All rights reserved.</p>
-      <p>Developed by <a href="https://prachar.com" target="_blank" rel="noreferrer" className="hover:text-primary">prachar.com</a></p>
+    <div className="mt-4  border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+      <p className=''>© Nutan Housing Finance 2024, All rights reserved.</p>
+      <p className=''>Developed by <a href="https://prachar.com" target="_blank" rel="noreferrer" className="hover:text-primary">prachar.com</a></p>
     </div>
   </footer>
   </div>

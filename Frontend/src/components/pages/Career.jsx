@@ -7,7 +7,7 @@ function Career() {
     <div>
       <Scrolltop/>
     {/* Header Section with Image */}
-    <div className="relative py-16">
+    <div className="relative mt-20">
       <img 
         src={Careerimg}
         alt="Header"
@@ -15,7 +15,7 @@ function Career() {
       />
      
     </div>
-    <h1 className='text-center text-primary text-3xl font-semibold '>Apply Now</h1>
+    <h1 className='text-center text-primary text-3xl font-semibold mt-10 '>Apply Now</h1>
     {/* Main Form Section */}
     <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between gap-6">
       {/* Form Section */}

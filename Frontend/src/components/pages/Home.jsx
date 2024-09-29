@@ -4,16 +4,16 @@ import { Vid, Custom, Plotimg, Construct, School, Old, Park, Elec, Hall, Road, H
 const testimonialsData = [
   { name: 'Amrendra Singh', testimonial: 'Nutan Housing transformed my dream of owning a home into reality! The entire process was seamless and enjoyable.' },
   { name: 'Lalit Narayan Prasad', testimonial: 'The quality of the construction and the attention to detail is impressive. Highly recommend Nutan Housing!' },
-  { name: 'Ashish Ranjan', testimonial: 'I love the amenities and the sense of community. It feels like home!' },
+  { name: 'Ashish Ranjan', testimonial: 'Nutan Housing was fantastic! Great service, clear communication, and a friendly team. They helped me find my dream home effortlessly.' },
   { name: 'Prem Kant', testimonial: "If you're looking for a dedicated and experienced real estate professional, look no further than Nutan Housing Finance." },
   { name: 'Anil Verma', testimonial: "I felt confident and well-supported every step of the way. Highly recommend Nutan Housing Finance in Bihar." },
-  { name: 'Praveen', testimonial: "I had a fantastic experience. They made the property-buying process smooth and stress-free." },
-  { name: 'Surendra Prasad', testimonial: "I’m thrilled with my new Plot and grateful for the outstanding support." },
-  { name: 'Sunil Kumar', testimonial: "Their knowledge of the local market and commitment to finding the right property was impressive." },
+  { name: 'Praveen', testimonial: "They took the time to understand exactly what I was looking for and provided insightful advice throughout the process. Their responsiveness and attention to detail made everything so much easier and less stressful." },
+  { name: 'Surendra Prasad', testimonial: "Nutan Housing made my home-buying experience easy and stress-free. The team was helpful, professional, and found the perfect property." },
+  { name: 'Sunil Kumar', testimonial: "Their knowledge of the local market and their commitment to finding the right property for me were truly impressive. They were always available to answer questions and offer valuable insights, making the experience both smooth and enjoyable." },
   { name: 'Pawan', testimonial: "Their responsiveness and attention to detail made everything easier and less stressful." }
 ];
 
-function Home() {
+function Home({openEnq}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -34,10 +34,10 @@ function Home() {
         </video>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
           <div className="text-center text-white">
-            <h1 className="text-3xl md:text-7xl font-bold leading-tight">Welcome to Nutan Housing Finance</h1>
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight">Welcome to Nutan Housing Finance</h1>
             <p className="mt-4 text-lg md:text-2xl">Bringing your vision to life</p>
-            <button className="mt-8 px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-full text-lg font-semibold text-white shadow-lg hover:shadow-2xl transition duration-300">
-              Learn More
+            <button className="mt-8 px-8 py-2 bg-gradient-to-r from-primary to-secondary rounded-full text-lg font-semibold text-white shadow-lg hover:shadow-2xl transition duration-300">
+             <a href='tel:+919471613137'> Know More</a>
             </button>
           </div>
         </div>
@@ -94,6 +94,9 @@ function Home() {
             </div>
           ))}
         </div>
+        <div className="text-center ">
+  <button onClick={openEnq} className="bg-primary text-white py-2 px-4 rounded hover:bg-yellow-500">Know More</button>
+</div>
       </section>
 
 
@@ -113,10 +116,10 @@ function Home() {
           <h2 className="text-3xl font-bold text-primary mb-1">Testimonials</h2>
           <p className="text-lg text-gray-600 mb-6">Hear from our satisfied residents.</p>
         </div>
-        <div className="max-w-7xl mx-auto text-center h-40">
-          <div className="bg-white rounded-lg shadow-md shadow-primary p-8 transition-transform duration-300 ease-in-out">
-            <p className="text-gray-600 text-lg mb-4">{testimonialsData[currentIndex].testimonial}</p>
-            <h3 className="text-xl text-end font-semibold text-gray-800">-{testimonialsData[currentIndex].name}</h3>
+        <div className="max-w-7xl mx-auto text-center h-36">
+          <div className="bg-white rounded-lg shadow-md shadow-primary p-4 transition-transform duration-300 ease-in-out">
+            <p className="text-gray-600 text-md mb-4">{testimonialsData[currentIndex].testimonial}</p>
+            <h3 className="text-lg text-end font-semibold text-gray-800">-{testimonialsData[currentIndex].name}</h3>
           </div>
         </div>
       </section>

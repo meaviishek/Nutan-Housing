@@ -30,7 +30,7 @@ function Blogs() {
     ];
   
     return (
-      <div className="blogs-page   py-16">
+      <div className="blogs-page   py-20">
         <Scrolltop/>
         <img 
         src={Blogimg}
@@ -63,7 +63,7 @@ function Blogs() {
           <p className="text-gray-600 mb-3">{blog.description}</p>
           <p className="text-gray-500 text-sm mb-4">Published on {blog.date}</p>
           
-            Read More
+           <p className='text-primary'>Know More</p> 
         
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Project, Scrolltop } from '..';
 import { Pro1,Pro2 } from '../indeximages';
 import img1 from "../../assets/plot11.jpg"
@@ -30,7 +30,7 @@ function Projects() {
     <div>
         <Scrolltop/>
             {/* Header Image Section */}
-            <div className="relative  mt-16">
+            <div className="relative  mt-20">
                 <img
                     src={Project} // Replace with your header image path
                     alt="Projects Header"
@@ -44,20 +44,23 @@ function Projects() {
                 <h2 className="text-2xl lg:text-3xl font-semibold text-center text-primary mb-8">Ongoing Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {projectsData.map((project) => (
+                         
                         <div key={project.id} className="bg-white shadow-lg rounded-lg overflow-hidden md:hover:scale-105 transition-all duration-300 ">
+                             <Link to={`/projects/${project.id}`} > 
                             <img
                                 src={project.image}
                                 alt={project.title}
                                 className="w-full h-48 object-cover"
-                            />
+                            />    
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                            
+                                <h3 className="text-xl font-semibold mb-2 text-primary">{project.title}</h3>
                                 <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
-                              <Link to={`/projects/${project.id}`} > <button className="bg-primary text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-                                    View Details
-                                </button></Link>
+                          
                             </div>
+                            </Link>
                         </div>
+                        
                     ))}
                 </div>
             </div>

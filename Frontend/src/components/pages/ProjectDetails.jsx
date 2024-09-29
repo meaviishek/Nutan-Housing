@@ -187,9 +187,9 @@ function ProjectDetails() {
       <Scrolltop/>
    
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
-    <div className='max-w-7xl mx-auto px-6'>
+    <div className='max-w-7xl container mx-auto'>
     
-    <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary">{project.title}</h1>
+    <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary text-center">{project.title}</h1>
     <div className='bg-yellow-100 p-4'>
     <div
         className="text-lg text-gray-700 "
@@ -200,9 +200,9 @@ function ProjectDetails() {
       {project.description.includes('class="hidden"') && (
         <button
           onClick={toggleExpand}
-          className="text-blue-500 hover:underline mt-2"
+          className="text-primary hover:underline mt-2"
         >
-          {isexp ? 'View Less' : 'View More'}
+          {isexp ? 'know Less' : 'know More'}
         </button>
       )}
       </div>
@@ -212,12 +212,17 @@ function ProjectDetails() {
           __html: project.details
         }}
       />
-      <Link to='/plot' className='bg-green-500 p-3 rounded-md shadow-lg  transition-all duration-500 text-white hover:bg-green-600'>
+      <Link to='/plot' className='bg-green-500 p-3 rounded-md shadow-lg   transition-all duration-500 text-white hover:bg-green-600'>
       
       View Plot</Link>
 
-    <div className=" mt-16">
-      <h2 className="text-2xl lg:text-3xl font-semibold text-primary  mb-4 font-poppins">Project Configuration</h2>
+
+      </div>
+<div className='bg-yellow-100 py-10 mt-16 '>
+
+
+    <div className="container max-w-7xl   items-center justify-center mx-auto">
+      <h2 className="text-2xl lg:text-3xl font-semibold text-primary text-center  mb-4 font-poppins">Project Configuration</h2>
       <table className="w-full mt-8  text-center bg-white shadow-lg rounded-lg">
         <thead className="bg-primary text-white">
           <tr>
@@ -237,11 +242,14 @@ function ProjectDetails() {
         </tbody>
       </table>
     </div>
-   
+    </div>
    
     
     <div className="mb-4 mt-16">
-      <h3 className="text-2xl lg:text-3xl text-primary font-semibold mb-4">Amenities</h3>
+      <div className='max-w-7xl container mx-auto'>
+
+    
+      <h3 className="text-2xl lg:text-3xl text-primary text-center font-semibold mb-4">Amenities</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 mt-8 gap-4">
         {project.amenitiesimg.map((amenity, index) => (
             <div key={index} className="border p-4 rounded-lg shadow-md text-center hover:scale-105 transition-all duration-500">
@@ -250,23 +258,55 @@ function ProjectDetails() {
           </div>
         ))}
       </div>
+      </div>
     </div>
     <div className="max-w-7xl  mx-auto py-12 px-2">
-      <h2 className="text-2xl lg:text-3xl font-semibold mb-8 text-primary ">Our Neighbours</h2>
+    <div className="container mx-auto">
+      <h2 className="text-2xl lg:text-3xl font-semibold mb-8 text-primary text-center">Our Neighbours</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {project.neighbours.map((neighbour, index) => (
           <div key={index} className="border p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-500">
-            <h3 className="text-md font-semibold mb-2">{neighbour.name}</h3>
+            <h3 className="text-md font-semibold mb-2 text-center">{neighbour.name}</h3>
             {/* <p className="text-gray-600">Location: {neighbour.location}</p> */}
-            <p className="text-gray-600">Distance: {neighbour.distance}</p>
+            <p className="text-gray-600 text-center">{neighbour.distance}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
 
 
+<div className='max-w-7xl container mx-auto'>
+
+
+    <div className="mb-8">
+      <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-primary text-center">Site Location</h3>
+      <iframe
+        src={project.mapLocation}
+        width="100%"
+        height="450"
+        allowFullScreen=""
+        loading="lazy"
+        className="border-2 border-gray-300 rounded-lg"
+      ></iframe>
+    </div>
+    <div className="items-center text-center mb-8">
+        <h3 className="text-xl text-primary font-semibold">Site Address</h3>
+        <p className="text-gray-600">
+          <span className="font-semibold">Address:</span> {project.address}
+        </p>
+        <p className="text-gray-600">
+          <span className="font-semibold">Phone:</span> <a href={`tel:${project.phone}`} className="text-blue-500 hover:underline">{project.phone}</a>
+        </p>
+        <p className="text-gray-600">
+          <span className="font-semibold">Email:</span> <a href={`mailto:${project.email}`} className="text-blue-500 hover:underline">{project.email}</a>
+        </p>
+      </div>
+
+      </div>
     <div className=" py-12 ">
-      <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-8 ">Gallery</h2>
+      <div className='max-w-7xl container mx-auto'>
+      <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-8 text-center ">Gallery</h2>
       
      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -283,6 +323,7 @@ function ProjectDetails() {
             />
           </div>
         ))}
+      </div>
       </div>
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
@@ -306,33 +347,11 @@ function ProjectDetails() {
       </div>
     
  
-    <div className="mb-8">
-      <h3 className="text-2xl lg:text-3xl font-semibold mb-4 text-primary">Location</h3>
-      <iframe
-        src={project.mapLocation}
-        width="100%"
-        height="450"
-        allowFullScreen=""
-        loading="lazy"
-        className="border-2 border-gray-300 rounded-lg"
-      ></iframe>
-    </div>
-    <div className="mb-8">
-        <h3 className="text-xl text-primary font-semibold">Contact Information</h3>
-        <p className="text-gray-600">
-          <span className="font-semibold">Address:</span> {project.address}
-        </p>
-        <p className="text-gray-600">
-          <span className="font-semibold">Phone:</span> <a href={`tel:${project.phone}`} className="text-blue-500 hover:underline">{project.phone}</a>
-        </p>
-        <p className="text-gray-600">
-          <span className="font-semibold">Email:</span> <a href={`mailto:${project.email}`} className="text-blue-500 hover:underline">{project.email}</a>
-        </p>
-      </div>
+ 
 
   
     </div>
-  </div>
+
 
 
 

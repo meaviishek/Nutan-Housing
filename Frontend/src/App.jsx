@@ -51,7 +51,7 @@ function App() {
       
       <main className='w-full'>
       
-        <Outlet/>
+        <Outlet openEnq={openEnq}/>
       </main>
       <Floating/>
       <Footer openLogin={openLogin} openEnq={openEnq}/>
