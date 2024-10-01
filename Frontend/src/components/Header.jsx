@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Logo } from '.'; // Replace with your logo import
+import { AiOutlineMenuFold } from "react-icons/ai";
 
 const Header = ({openLogin,openEnq}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,10 +47,8 @@ const Header = ({openLogin,openEnq}) => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-primary focus:outline-none">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button onClick={toggleMenu} className="text-primary focus:outline-none mr-4">
+            <AiOutlineMenuFold size={24}/>
           </button>
         </div>
       </div>

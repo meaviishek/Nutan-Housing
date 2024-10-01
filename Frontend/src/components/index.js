@@ -28,7 +28,6 @@ import Vision from "../assets/vision.png"
 import Project from "../assets/project.jpg";
 import ProjectDetails from "./pages/ProjectDetails";
 import Plot from "./pages/Plot";
-import Pdfviewer from "./pages/Pdfviewer";
 import Emi from './pages/Emi_calc';
 import Scrolltop from './model/Scrolltop.jsx'
 
@@ -63,7 +62,6 @@ export{
   Project,
   ProjectDetails,
   Plot,
-  Pdfviewer,
   Emi,
   Scrolltop
 }

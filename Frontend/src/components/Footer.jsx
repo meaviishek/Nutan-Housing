@@ -50,7 +50,7 @@ function Footer({ openLogin, openEnq }) {
               <h3 className="text-base font-semibold text-primary">Support</h3>
               <ul className="space-y-2 mt-4 text-sm text-gray-400">
                 <li><Link onClick={openEnq} className="hover:text-primary">Enquire Now</Link></li>
-                <li><Link to="/support" className="hover:text-primary">Customer Support</Link></li>
+                <li><a  href="tel:+919471613137" className="hover:text-primary">Customer Support</a></li>
                 <li><Link to="/privacy-policy" className="hover:text-primary">Privacy & Policy</Link></li>
                 <li><Link to="/terms-conditions" className="hover:text-primary">Terms & Conditions</Link></li>
               </ul>

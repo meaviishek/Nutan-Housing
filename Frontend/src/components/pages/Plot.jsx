@@ -3,7 +3,7 @@ import { Lodhipur} from "../indeximages";
 
 const Plot = () => {
   return (
-   <div className="container mx-auto max-w-6xl">
+   <div className="container mx-auto max-w-6xl mt-8">
      <div className="h-auto w-auto">
       <img
         src={Lodhipur}
