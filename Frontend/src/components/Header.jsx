@@ -47,7 +47,7 @@ const Header = ({openLogin,openEnq}) => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-primary focus:outline-none mr-4">
+          <button onClick={toggleMenu} className="text-primary focus:outline-none mr-2">
             <AiOutlineMenuFold size={24}/>
           </button>
         </div>
