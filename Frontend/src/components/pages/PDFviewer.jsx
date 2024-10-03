@@ -472,7 +472,7 @@ const PDFviewer = () => {
             {imageSize.width && plots.map(plot => (
                 <div
                     key={plot.id}
-                    className="absolute bg-primary border-[1px] bg-opacity-10 hover:bg-opacity-75 transition-all"
+                    className="absolute bg-primary border-[0.2px] bg-opacity-10 hover:bg-opacity-75 transition-all"
                     style={calculatePosition(plot)}
                     onMouseEnter={() => handleHover(plot)}
                     onMouseLeave={handleMouseLeave}
@@ -482,7 +482,7 @@ const PDFviewer = () => {
             {/* Tooltip to show customer details on hover */}
             {hoveredPlot && (
                 <div
-                    className="absolute bg-white border-[0.5 px] p-2 rounded shadow-lg"
+                    className="absolute bg-white border p-2 rounded shadow-lg"
                     style={{
                         top: `${hoveredPlot.y * (imageSize.height / 1200) + hoveredPlot.height * (imageSize.height / 1200) + 10}px`,
                         left: `${hoveredPlot.x * (imageSize.width / 1000)}px`,
