@@ -1,17 +1,14 @@
-import React from "react";
+import React from "react"
+import {PDFviewer} from "../index";
+import { Lpdf } from "../indeximages";
 import { Lodhipur} from "../indeximages";
 
 const Plot = () => {
   return (
-   <div className="container mx-auto max-w-6xl mt-8">
-     <div className="h-auto w-auto">
-      <img
-        src={Lodhipur}
-        title="DWG Viewer"
-        className="w-full h-full"
-      />
-    </div>
-   </div>
+    <div className="App container mx-auto p-4">
+            <h1 className="text-2xl font-bold mb-4">Plot Details Viewer</h1>
+            <PDFviewer pdfFile={Lpdf} />
+        </div>
   );
 };
 

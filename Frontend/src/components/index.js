@@ -31,6 +31,7 @@ import Plot from "./pages/Plot";
 import Emi from './pages/Emi_calc';
 import Scrolltop from './model/Scrolltop.jsx'
 
+import PDFviewer from "./pages/PDFviewer.jsx";
 export{
   Header,
   Footer,
@@ -63,5 +64,6 @@ export{
   ProjectDetails,
   Plot,
   Emi,
+  PDFviewer,
   Scrolltop
 }

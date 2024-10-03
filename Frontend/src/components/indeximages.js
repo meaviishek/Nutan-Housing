@@ -39,7 +39,7 @@ import Raj3 from '../assets/roap.jpg'
 import Raj4 from '../assets/raj.jpg';
 import Raj5 from "../assets/kund.jpg"
 import Rin from '../assets/Infrastrcture.jpg'
-
+import Lsvg from '../assets/lodipur.svg'
 // import DwgL from '../assets/lodipur new.dwg'
 export{
   Schoolimg,
@@ -58,6 +58,7 @@ export{
   Img1,
   Img2,
   Img3,
+  Lsvg,
   Img4,Img5,Img6,Contactimg,Blogimg,Careerimg,
   Gmailimg,Whatsappimg,Phoneimg,
   Lodhipur
