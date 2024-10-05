@@ -7,6 +7,8 @@ const PDFviewer = () => {
     const imageRef = useRef(null);
 
     const plots = [
+
+        //column 1
         { id: 1, x: 120, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 140, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 120, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -44,7 +46,7 @@ const PDFviewer = () => {
 
 
 
-
+        //column 2
         { id: 1, x: 171, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 191, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 171, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -83,7 +85,7 @@ const PDFviewer = () => {
 
 
 
-
+        //column 3
         { id: 1, x: 222, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x:  242, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 222, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -136,7 +138,7 @@ const PDFviewer = () => {
 
 
 
-
+        //column 4
         { id: 1, x: 274, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 294, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 274, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -188,7 +190,7 @@ const PDFviewer = () => {
 
 
 
-
+        //column 5
         { id: 1, x: 325, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 346, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 325, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -237,7 +239,7 @@ const PDFviewer = () => {
 
 
 
-
+        //column 6
         { id: 1, x: 377, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 397, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 377, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -288,7 +290,7 @@ const PDFviewer = () => {
 
 
 
-
+        //column 7
         { id: 1, x: 428, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 449, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 428, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -315,8 +317,48 @@ const PDFviewer = () => {
 
 
 
+        { id: 21, x: 428, y: 488, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 449, y: 488, width: 20, height: 17, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 506, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 506, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 519, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:449, y: 519, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 532, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 532, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 545, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 545, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 558, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 558, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 571, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 571, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 584, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 584, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 597, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 597, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 610, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 449, y: 610, width: 20, height: 17, customer: "Jane Smith" },
+
+        { id: 21, x: 428, y: 675, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 675, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 689, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 689, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 702, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 702, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 715, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 715, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 728, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 728, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 741, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 449, y: 741, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 428, y: 754, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 449, y: 754, width: 20, height: 17, customer: "Jane Smith" },
 
 
+        
+
+
+
+        //column 8
         { id: 1, x: 479, y: 328, width: 20, height: 17, customer: "John Doe" },
         { id: 2, x: 500, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 479, y: 345, width: 20, height: 13, customer: "John Doe" },
@@ -342,7 +384,49 @@ const PDFviewer = () => {
 
 
 
-     
+        { id: 21, x: 479, y: 488, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 500, y: 488, width: 20, height: 17, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 506, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 506, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 519, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:500, y: 519, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 532, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 532, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 545, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 545, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:479, y: 558, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 558, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 571, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 571, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 584, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 584, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 597, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 597, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 650, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 500, y: 650, width: 20, height: 17, customer: "Jane Smith" },
+
+        { id: 21, x: 479, y: 675, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 675, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 688, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 688, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:479, y: 701, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 701, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 714, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 714, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 727, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 727, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 740, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 500, y: 740, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 479, y: 753, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 500, y: 753, width: 20, height: 17, customer: "Jane Smithhhhh" },
+
+        { id: 22, x: 500, y: 815, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 22, x: 500, y: 828, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 22, x: 500, y: 841, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 22, x: 500, y: 854, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 22, x: 500, y: 867, width: 20, height: 13, customer: "Jane Smith" },
+       
+             //column 9
         { id: 3, x: 530, y: 341, width: 20, height: 17, customer: "John Doe" },
         { id: 4, x: 550, y: 341, width: 20, height: 17, customer: "Jane Smith" },
         { id: 5, x: 530, y: 358, width: 20, height: 13, customer: "John Doe" },
@@ -366,6 +450,61 @@ const PDFviewer = () => {
         
 
 
+        { id: 21, x: 550, y: 488, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 530, y: 488, width: 20, height: 17, customer: "Jane Smith" },
+        { id: 21, x: 550, y: 506, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 506, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 550, y: 519, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:530, y: 519, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 550, y: 532, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 532, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 550, y: 545, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 545, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:550, y: 558, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 558, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 550, y: 571, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 571, width: 20, height: 13, customer: "Jane Smith" },
+
+        { id: 21, x: 551, y: 623, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 623, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:551, y: 636, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 636, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 650, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 530, y: 650, width: 20, height: 17, customer: "Jane Smith" },
+
+        { id: 21, x: 551, y: 675, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 675, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:551, y: 688, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 688, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 701, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 701, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 714, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 714, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:551, y: 728, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 728, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 741, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 741, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 754, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 754, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:551, y: 767, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 767, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 780, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 780, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 793, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 793, width: 20, height: 13, customer: "Jane Smith" },
+
+        { id: 21, x: 551, y: 814, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 814, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 827, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 827, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:551, y: 840, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 840, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 853, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 853, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 551, y: 866, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 530, y: 866, width: 20, height: 13, customer: "Jane Smith" },
+
+        //column 10
         { id: 3, x: 581, y: 341, width: 20, height: 17, customer: "John Doe" },
         { id: 4, x: 602, y: 341, width: 20, height: 17, customer: "Jane Smith" },
         { id: 5, x: 581, y: 358, width: 20, height: 13, customer: "John Doe" },
@@ -388,7 +527,64 @@ const PDFviewer = () => {
         { id: 22, x:602, y: 462, width: 20, height: 17, customer: "Jane Smith" },
 
 
-   
+
+        { id: 21, x: 581, y: 488, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 602, y: 488, width: 20, height: 17, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 506, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 506, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 519, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:602, y: 519, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 532, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 532, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 545, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 545, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 558, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 558, width: 20, height: 13, customer: "Jane Smith" },
+
+        { id: 21, x: 581, y: 610, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:602, y: 610, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 623, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 623, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 636, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 636, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 650, width: 20, height: 17, customer: "John Doe" },
+        { id: 22, x: 602, y: 650, width: 20, height: 17, customer: "Jane Smith" },
+
+        { id: 21, x: 581, y: 675, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:602, y: 675, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 688, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 688, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 701, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 701, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 714, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 714, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 727, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x:602, y: 727, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 740, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 740, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 753, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 753, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 766, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 766, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 779, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 779, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 792, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 792, width: 20, height: 13, customer: "Jane Smith" },
+
+        { id: 21, x: 581, y: 814, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 814, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 827, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 827, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 840, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 840, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x: 581, y: 853, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 853, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 21, x:581, y: 866, width: 20, height: 13, customer: "John Doe" },
+        { id: 22, x: 602, y: 866, width: 20, height: 13, customer: "Jane Smith" },
+       
+
+
+           //column 11
         { id: 5, x: 632, y: 354, width: 20, height: 17, customer: "John Doe" },
         { id: 6, x: 653, y: 354, width: 20, height: 17, customer: "Jane Smith" },
         { id: 7, x: 632, y: 371, width: 20, height: 13, customer: "John Doe" },
@@ -403,6 +599,42 @@ const PDFviewer = () => {
         { id: 16, x: 653, y: 423, width: 20, height: 13, customer: "Jane Smith" },
         { id: 17, x: 632, y: 436, width: 20, height: 13, customer: "John Doe" },
         { id: 18, x: 653, y: 436, width: 20, height: 13, customer: "Jane Smith" },
+
+        { id: 7, x: 632, y: 584, width: 20, height: 13, customer: "John Doe" },
+        { id: 8, x: 653, y: 584, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 9, x: 632, y: 597, width: 20, height: 13, customer: "John Doe" },
+        { id: 10, x: 653, y: 597, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 11, x: 632, y: 610, width: 20, height: 13, customer: "John Doe" },
+        { id: 12, x: 653, y: 610, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 13, x: 632, y: 623, width: 20, height: 13, customer: "John Doe" },
+        { id: 14, x: 653, y: 623, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 15, x: 632, y: 636, width: 20, height: 13, customer: "John Doe" },
+        { id: 16, x: 653, y: 636, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 17, x: 632, y: 650, width: 20, height: 17, customer: "John Doe" },
+        { id: 18, x: 653, y: 650, width: 20, height: 17, customer: "Jane Smith" },
+
+
+        
+        { id: 7, x: 632, y: 675, width: 20, height: 13, customer: "John Doe" },
+        { id: 8, x: 653, y: 675, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 9, x: 632, y: 688, width: 20, height: 13, customer: "John Doe" },
+        { id: 10, x: 653, y: 688, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 11, x: 632, y: 702, width: 20, height: 13, customer: "John Doe" },
+        { id: 12, x: 653, y: 702, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 13, x: 632, y: 715, width: 20, height: 13, customer: "John Doe" },
+        { id: 14, x: 653, y: 715, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 15, x: 632, y: 728, width: 20, height: 13, customer: "John Doe" },
+        { id: 16, x: 653, y: 728, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 17, x: 632, y: 741, width: 20, height: 13, customer: "John Doe" },
+        { id: 18, x: 653, y: 741, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 13, x: 632, y: 754, width: 20, height: 13, customer: "John Doe" },
+        { id: 14, x: 653, y: 754, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 15, x: 632, y: 767, width: 20, height: 13, customer: "John Doe" },
+        { id: 16, x: 653, y: 767, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 17, x: 632, y: 780, width: 20, height: 13, customer: "John Doe" },
+        { id: 18, x: 653, y: 780, width: 20, height: 13, customer: "Jane Smith" },
+        { id: 17, x: 632, y: 793, width: 20, height: 13, customer: "John Doe" },
+        { id: 18, x: 653, y: 793, width: 20, height: 13, customer: "Jane Smith" },
    
 
 
