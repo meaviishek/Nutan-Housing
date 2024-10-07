@@ -2,6 +2,9 @@ import { useState } from "react";
 
 function Login({closeLogin}) {
   const [isLogin, setIsLogin] = useState(true);
+  const openAdvisorLogin = () => {
+    window.open('/advisor/dashboard', '_blank');
+  };
   return (
     <div>
       <div  className=" fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-lg p-2">
@@ -33,7 +36,7 @@ function Login({closeLogin}) {
           <a href="#" id="forgotPasswordLink" className=" text-sm  text-yellow-700">Forgot Password?</a>
         </div>
        
-        <button type="submit" className="w-full bg-gold text-white px-4 py-2 rounded-md shadow-lg bg-primary hover:bg-yellow-500 transition duration-300">
+        <button onClick={openAdvisorLogin} type="submit" className="w-full bg-gold text-white px-4 py-2 rounded-md shadow-lg bg-primary hover:bg-yellow-500 transition duration-300">
           Login
         </button>
       </form>

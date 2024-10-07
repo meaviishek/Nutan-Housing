@@ -32,6 +32,12 @@ import Emi from './pages/Emi_calc';
 import Scrolltop from './model/Scrolltop.jsx'
 
 import PDFviewer from "./pages/PDFviewer.jsx";
+import AdvisorDash from "./advisor/AdvisorDash.jsx";
+import AdHeader from "./advisor/AdHeader.jsx";
+import Team from "./advisor/Team.jsx";
+import CustomerDetails from "./advisor/CustomerDetails.jsx";
+import Incentive from "./advisor/Incentive.jsx";
+
 export{
   Header,
   Footer,
@@ -65,5 +71,12 @@ export{
   Plot,
   Emi,
   PDFviewer,
+  AdHeader,
+  AdvisorDash,
+  CustomerDetails,
+  Incentive,
+  Team,
   Scrolltop
+
+
 }
