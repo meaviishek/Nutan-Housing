@@ -824,6 +824,7 @@ const PDFviewer = () => {
                 alt="CAD Plot"
                 ref={imageRef}
                 onLoad={handleImageLoad}
+                loading='lazy'
                 className="w-full h-auto"
             />
 
