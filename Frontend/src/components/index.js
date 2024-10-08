@@ -37,6 +37,7 @@ import AdHeader from "./advisor/AdHeader.jsx";
 import Team from "./advisor/Team.jsx";
 import CustomerDetails from "./advisor/CustomerDetails.jsx";
 import Incentive from "./advisor/Incentive.jsx";
+import CreateLead from "./advisor/CreateLead.jsx";
 
 export{
   Header,
@@ -76,7 +77,7 @@ export{
   CustomerDetails,
   Incentive,
   Team,
-  Scrolltop
-
+  Scrolltop,
+  CreateLead
 
 }

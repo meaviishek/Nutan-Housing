@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter,Route,createRoutesFromElements,RouterProvider } from 'react-router-dom'
-import {Home,About,Projects,Blogs,Contact,Career, Login, Enquire,Plot, Emi,AdvisorDash,Team,Incentive,CustomerDetails} from './components/index.js'
+import {Home,About,Projects,Blogs,Contact,Career, Login, Enquire,Plot, Emi,AdvisorDash,Team,Incentive,CustomerDetails,CreateLead} from './components/index.js'
 import AdvisorLayout from './AdvisorLayout.jsx'
 import MainLayout from './MainLayout.jsx'
 import './index.css'
@@ -30,7 +30,7 @@ const router=createBrowserRouter(
        <Route path="advisor" element={<AdvisorLayout />}>
        <Route path="dashboard" element={<AdvisorDash/>} />
        
-    
+       <Route path='create-lead' element={<CreateLead/>}/>
        <Route path="incentive" element={<Incentive />} />
        <Route path="team" element={<Team />} />
        <Route path="customer-details" element={<CustomerDetails />} />

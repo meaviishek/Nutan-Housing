@@ -9,32 +9,7 @@ function AdHeader() {
       setIsMenuOpen(!isMenuOpen);
     };
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // State to store form data
-  const [leadData, setLeadData] = useState({
-    customerName: '',
-    customerMobile: '',
-    customerEmail: '',
-    customerAddress: '',
-    customerAadhaar: '',
-    plotName: '',
-    plotNo: '',
-    plotSize: '',
-  });
-
-  // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Lead Created:', leadData);
-    setIsModalOpen(false); // Close modal after submission
-  };
-
-  // Function to handle input change
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setLeadData({ ...leadData, [name]: value });
-  };
 
   
   return (
@@ -61,11 +36,11 @@ function AdHeader() {
 
         {/* Enquire & Login Buttons (Desktop only) */}
         <div className="hidden md:flex space-x-4">
-          
-          <button onClick={()=>setIsModalOpen(true)}   className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-xl flex items-center gap-2">
+          <Link to='/advisor/create-lead'>
+          <button  className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-xl flex items-center gap-2">
          
         Create Lead
-          </button>
+          </button></Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -112,148 +87,7 @@ function AdHeader() {
    
 
     </div>
-    {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
-            <h2 className="text-xl font-semibold mb-4">Create New Lead</h2>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Customer Name */}
-              <div>
-                <label className="block text-gray-700">Customer Name</label>
-                <input
-                  type="text"
-                  name="customerName"
-                  value={leadData.customerName}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter customer name"
-                />
-              </div>
-
-              {/* Customer Mobile */}
-              <div>
-                <label className="block text-gray-700">Customer Mobile</label>
-                <input
-                  type="tel"
-                  name="customerMobile"
-                  value={leadData.customerMobile}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter customer mobile number"
-                />
-              </div>
-
-              {/* Customer Email */}
-              <div>
-                <label className="block text-gray-700">Customer Email</label>
-                <input
-                  type="email"
-                  name="customerEmail"
-                  value={leadData.customerEmail}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter customer email"
-                />
-              </div>
-
-              {/* Customer Address */}
-              <div>
-                <label className="block text-gray-700">Customer Address</label>
-                <textarea
-                  name="customerAddress"
-                  value={leadData.customerAddress}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter customer address"
-                />
-              </div>
-
-              {/* Aadhaar Number */}
-              <div>
-                <label className="block text-gray-700">Customer Aadhaar No.</label>
-                <input
-                  type="text"
-                  name="customerAadhaar"
-                  value={leadData.customerAadhaar}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter Aadhaar number"
-                />
-              </div>
-
-              {/* Plot Name Dropdown */}
-              <div>
-                <label className="block text-gray-700">Plot Name</label>
-                <select
-                  name="plotName"
-                  value={leadData.plotName}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                >
-                  <option value="" disabled>Select plot name</option>
-                  <option value="Plot A">Plot A</option>
-                  <option value="Plot B">Plot B</option>
-                  <option value="Plot C">Plot C</option>
-                  {/* Add more options as needed */}
-                </select>
-              </div>
-
-              {/* Plot No. */}
-              <div>
-                <label className="block text-gray-700">Plot No.</label>
-                <input
-                  type="text"
-                  name="plotNo"
-                  value={leadData.plotNo}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter plot number"
-                />
-              </div>
-
-              {/* Plot Size */}
-              <div>
-                <label className="block text-gray-700">Plot Size (sq.ft.)</label>
-                <input
-                  type="number"
-                  name="plotSize"
-                  value={leadData.plotSize}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-2"
-                  placeholder="Enter plot size"
-                />
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex justify-end space-x-4 mt-6">
-                <button
-                  type="button"
-                  onClick={() => setIsModalOpen(false)}
-                  className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-lg"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg"
-                >
-                  Create Lead
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
+  
 
     </>
   )
