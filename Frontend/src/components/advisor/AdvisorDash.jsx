@@ -1,4 +1,5 @@
 import React from 'react'
+import { RiMedalFill } from "react-icons/ri";
 
 function AdvisorDash() {
   const advisorData = {
@@ -26,6 +27,7 @@ function AdvisorDash() {
 
   return (
     <div className="mt-16 bg-gray-50">
+     <div className="mt-16 bg-gray-50">
       <div className="container mx-auto p-8 min-h-screen">
         <div className="bg-white rounded-lg shadow-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           
@@ -54,8 +56,9 @@ function AdvisorDash() {
 
           {/* Badge and Incentive */}
           <div className="col-span-1 flex flex-col justify-center items-center">
-            <span className={`px-6 py-3 text-white text-xl font-semibold rounded-full ${advisorData.badge === 'Gold' ? 'bg-yellow-500' : 'bg-gray-400'}`}>
-              {advisorData.badge} Badge
+            <span className={`px-4 py-3 flex text-white text-xl font-semibold rounded-full ${advisorData.badge === 'Gold' ? 'bg-yellow-500' : 'bg-gray-400'}`}>
+              <RiMedalFill size={32} className="mr-1" />
+              {advisorData.badge} 
             </span>
             <span className="mt-6 text-xl font-semibold">Total Incentive: ₹{advisorData.totalIncentive}</span>
           </div>
@@ -99,6 +102,7 @@ function AdvisorDash() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
