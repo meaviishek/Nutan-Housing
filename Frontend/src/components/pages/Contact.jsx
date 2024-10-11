@@ -110,12 +110,15 @@ function Contact() {
         <div className="mt-4">
           {/* Use Google Maps or other embedding method */}
           <iframe
-            title="Nutan Housing Office Location"
-            src="https://www.google.com/maps/embed?pb=..."
-            className="w-full h-96 rounded-lg"
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1520.0141366690384!2d85.41153957139385!3d25.02649657373828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39f2ef1818029df5%3A0x9d8186901d533dd8!2sJhunki%20Baba%20Road%2C%20near%20RDH%20School%2C%20Patel%20Nagar%2C%20Rajgir%2C%20Bihar%20803116!3m2!1d25.0264617!2d85.4121411!5e0!3m2!1sen!2sin!4v1728647837794!5m2!1sen!2sin"
+       
+        style={{ border: 0 }}
+        allowFullScreen=""
+        className="w-full h-96 rounded-lg"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google Map"
+      ></iframe>
         </div>
       </div>
     </div>

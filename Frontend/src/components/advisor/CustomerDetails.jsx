@@ -6,7 +6,7 @@ const customers = [
     name: "John Doe",
     phone: "+1 555-1234",
     email: "john.doe@example.com",
-    status: "Active",
+
     totalPurchases: "₹500,000",
     address: "123 Elm St, Cityville",
     purchasedPlot: "Plot 12A",
@@ -17,7 +17,7 @@ const customers = [
     name: "Jane Smith",
     phone: "+1 555-5678",
     email: "jane.smith@example.com",
-    status: "Inactive",
+
     totalPurchases: "₹200,000",
     address: "456 Oak St, Townsville",
     purchasedPlot: "Plot 23B",
@@ -40,7 +40,7 @@ function CustomerDetails() {
     return matchesSearch && matchesStatus;
   });
   return (
-    <div className='mt-16'>  <div className="bg-gray-50 p-8">
+    <div className='mt-16'>  <div className="container mx-auto  max-w-7xl p-8">
     <h2 className="text-3xl font-bold text-center text-primary mb-8">
       Customer Details
     </h2>
@@ -54,15 +54,7 @@ function CustomerDetails() {
         onChange={handleSearch}
         className="border rounded-lg p-2 w-1/2 mr-4"
       />
-      <select
-        value={statusFilter}
-        onChange={handleFilterChange}
-        className="border rounded-lg p-2 w-1/4"
-      >
-        <option value="All">All</option>
-        <option value="Active">Active</option>
-        <option value="Inactive">Inactive</option>
-      </select>
+
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -80,15 +72,14 @@ function CustomerDetails() {
           <p className="text-gray-700 mb-1">
             <strong>Email:</strong> {customer.email}
           </p>
-          <p className="text-gray-700 mb-1">
-            <strong>Status:</strong> {customer.status}
-          </p>
+         
           <p className="text-gray-700 mb-1">
             <strong>Total Purchases:</strong> {customer.totalPurchases}
           </p>
           <p className="text-gray-700 mb-1">
-            <strong>Address:</strong> {customer.address}
+            <strong>Customer Address:</strong> {customer.address}
           </p>
+       
           <p className="text-gray-700 mb-1">
             <strong>Purchased Plot:</strong> {customer.purchasedPlot}
           </p>

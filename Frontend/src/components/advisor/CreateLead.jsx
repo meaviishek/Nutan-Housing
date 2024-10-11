@@ -107,7 +107,7 @@ function CreateLead() {
 
             {/* Plot Name Dropdown */}
             <div>
-              <label className="block text-gray-700 text-base sm:text-lg">Plot Name</label>
+              <label className="block text-gray-700 text-base sm:text-lg">Project Name</label>
               <select
                 name="plotName"
                 value={leadData.plotName}
@@ -115,10 +115,9 @@ function CreateLead() {
                 required
                 className="w-full border rounded-lg p-3 text-base sm:text-lg"
               >
-                <option value="" disabled>Select plot name</option>
-                <option value="Plot A">Plot A</option>
-                <option value="Plot B">Plot B</option>
-                <option value="Plot C">Plot C</option>
+                <option value="" disabled>Select Project name</option>
+                <option value="Plot A">Nutan(Rajgir)</option>
+               
               </select>
             </div>
 
@@ -139,15 +138,18 @@ function CreateLead() {
             {/* Plot Size */}
             <div>
               <label className="block text-gray-700 text-base sm:text-lg">Plot Size (sq.ft.)</label>
-              <input
-                type="number"
-                name="plotSize"
+              <select
+                name="pltsize"
                 value={leadData.plotSize}
                 onChange={handleInputChange}
                 required
                 className="w-full border rounded-lg p-3 text-base sm:text-lg"
-                placeholder="Enter plot size"
-              />
+              >
+                <option value="" disabled>Select Plot Size</option>
+                <option value="Plot A">900 Sq. feet</option>
+                <option value="Plot A">1200 Sq. feet</option>
+               
+              </select>
             </div>
           </div>
 

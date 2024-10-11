@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Vid, Custom, Plotimg, Construct, School, Old, Park, Elec, Hall, Road, Hospital, Temple,Scrolltop } from '..';
+import React, { useEffect, useState } from 'react';
+import { Vid, Custom, Plotimg, Construct, School, Old, Park, Elec, Hall, Road, Hospital, Temple, Scrolltop } from '..';
 
 const testimonialsData = [
   { name: 'Amrendra Singh', testimonial: 'Nutan Housing transformed my dream of owning a home into reality! The entire process was seamless and enjoyable.' },
@@ -13,7 +13,7 @@ const testimonialsData = [
   { name: 'Pawan', testimonial: "Their responsiveness and attention to detail made everything easier and less stressful." }
 ];
 
-function Home({openEnq}) {
+function Home({ openEnq }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -24,8 +24,8 @@ function Home({openEnq}) {
   }, []);
 
   return (
-    <div className=" bg-gray-50">
-      <Scrolltop/> 
+    <div className="bg-gray-50">
+      <Scrolltop />
       {/* Hero Section */}
       <div className="relative h-screen w-full">
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
@@ -37,7 +37,7 @@ function Home({openEnq}) {
             <h1 className="text-3xl md:text-6xl font-bold leading-tight">Welcome to Nutan Housing Finance</h1>
             <p className="mt-4 text-lg md:text-2xl">Bringing your vision to life</p>
             <button className="mt-8 px-8 py-2 bg-gradient-to-r from-primary to-secondary rounded-full text-lg font-semibold text-white shadow-lg hover:shadow-2xl transition duration-300">
-             <a href='tel:+919471613137'> Book Now</a>
+              <a href='tel:+919471613137'> Book Now</a>
             </button>
           </div>
         </div>
@@ -64,8 +64,8 @@ function Home({openEnq}) {
             <div key={index} className="flex w-full items-center rounded-xl border border-black border-opacity-10 px-4 py-6 text-black duration-200 hover:border-opacity-0 hover:no-underline hover:shadow-lg dark:text-white dark:hover:bg-white dark:hover:bg-opacity-10 sm:flex-col sm:hover:shadow-2xl">
               <img src={service.img} alt={service.title} className="mr-4 w-20 md:w-auto sm:mr-0 sm:h-32 sm:w-32" />
               <div className='ml-1'>
-              <h3 className="text-lg text-primary font-semibold">{service.title}</h3>
-              <p className="mt-2 text-sm text-gray-600 text-justify">{service.desc}</p>
+                <h3 className="text-lg text-primary font-semibold">{service.title}</h3>
+                <p className="mt-2 text-sm text-gray-600 text-justify">{service.desc}</p>
               </div>
             </div>
           ))}
@@ -95,22 +95,21 @@ function Home({openEnq}) {
           ))}
         </div>
         <div className="text-center ">
-  <button onClick={openEnq} className="bg-primary text-white py-2 px-4 rounded hover:bg-yellow-500">Know More</button>
-</div>
+          <button onClick={openEnq} className="bg-primary text-white py-2 px-4 rounded hover:bg-yellow-500">Know More</button>
+        </div>
       </section>
 
-
       <section className=" bg-yellow-100 mt-4 md:mt-14 text-center" >
-            <div className="container mx-auto max-w-7xl py-8 ">
-                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
-                <p className=" text-md text-justify  mt-4 px-4 ">
-                Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
-                </p>
-            
-            </div>
-        </section>
+        <div className="container mx-auto max-w-7xl py-8 ">
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Expertise</h2>
+          <p className=" text-md text-justify  mt-4 px-4 ">
+            Experience a seamless process of acquiring your dreamland, as our knowledgeable team assists you in finding the perfect piece of land that meets your preferences and requirements. Whether you're looking to make the most of your current property or embark on a new land-buying journey, our comprehensive services ensure you receive the support and expertise needed to unleash the full potential of your land investment or build the house of your dreams.
+          </p>
 
-      {/* Testimonials */}
+        </div>
+      </section>
+
+      {/* Test imonials */}
       <section className="py-8 mx-4 mb-8 " id="testimonials">
         <div className="container mx-auto text-center mb-8">
           <h2 className="text-3xl font-bold text-primary mb-1">Testimonials</h2>

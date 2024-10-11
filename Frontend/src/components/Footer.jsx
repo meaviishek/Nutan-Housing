@@ -61,13 +61,13 @@ function Footer({ openLogin, openEnq }) {
           <div className='text-center lg:text-left lg:mx-auto'>
             <h3 className="text-bse font-semibold text-primary">Follow Us On</h3>
             <div className="flex justify-center lg:justify-start space-x-6 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
+              <a href="https://www.facebook.com/nutan.housing" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
                 <FaFacebookF size={24} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
+              <a href="https://www.instagram.com/nutan.housing/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
+              <a href="https://youtube.com/@nutanhousingfinance-l2x?si=Lt6UVWzoi52a7jZt" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
                 <FaYoutube size={24} />
               </a>
             </div>
