@@ -68,7 +68,7 @@ function Contact() {
                       </div>
             <div >
               <h4 className="font-semibold md:text-lg text-md">Email Us</h4>
-              <p>info@nutanhousing.com</p>
+              <p><a href='mailto:info@nutanhousing.com'>info@nutanhousing.com</a></p>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ function Contact() {
                       </div>
                       <div >
               <h4 className="font-semibold md:text-lg text-md">WhatsApp</h4>
-              <p>+91 8539804930</p></div>
+              <p><a href='https://wa.me/+91 8539804930'>+91 8539804930</a></p></div>
             </div>
           
 
@@ -95,7 +95,7 @@ function Contact() {
                       </div>
                       <div>
               <h4 className="font-semibold md:text-lg text-md">Mobile</h4>
-              <p>+91 9471613137</p></div>
+              <p><a href='tel:9471613137'>+91 9471613137</a></p></div>
            
           </div>
 
