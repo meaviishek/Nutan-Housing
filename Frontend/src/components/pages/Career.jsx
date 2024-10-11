@@ -58,13 +58,13 @@ function Career() {
           </div>
           
         <div className='mb-4'>
-          <label className="block text-sm font-medium">Upload Resume</label>
+          <label className=" text-sm font-medium">Upload Resume</label>
           <input
             type="file"
             name="resume"
             accept=".pdf,.doc,.docx"
             // onChange={handleFileChange}
-            className="mt-1 block w-full text-sm text-gray-500
+            className="mt-1 block  text-sm text-gray-500
             file:mr-4 file:py-2 file:px-4
             file:rounded-full file:border-0
             file:text-sm file:font-semibold
