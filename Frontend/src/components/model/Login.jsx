@@ -89,6 +89,7 @@ function Login({ closeLogin }) {
                 </div>
                 <button
                   type="submit"
+                  onClick={openAdvisorLogin}
                   className="w-full bg-gold text-white px-4 py-2 rounded-md shadow-lg bg-primary hover:bg-yellow-500 transition duration-300"
                 >
                   Login
