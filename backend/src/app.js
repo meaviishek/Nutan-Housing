@@ -3,7 +3,7 @@ import express from 'express';
 import advisorRoutes from './routes/advisorRoute.js'; 
 
 const app = express();
-app.use(cors());
+// app.use(cors());
 // app.use((req, res, next) => {
 //   res.setHeader(
 //     'Content-Security-Policy',
@@ -11,15 +11,16 @@ app.use(cors());
 //   );
 //   next();
 // });
-app.use(express.json());
 
 
-// app.use(cors({
-//   origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend domain
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],         // Allowed methods
-//   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-// }));
+
+app.use(cors({
+  origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],         // Allowed methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+}));
 // app.use(cors())
+app.use(express.json());
 
 // Advisor routes
 app.get('/api/test', (req, res) => {
