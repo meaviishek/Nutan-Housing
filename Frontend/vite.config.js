@@ -6,7 +6,7 @@ export default defineConfig({
 server: {
     proxy: {
       '/api': {
-        target: 'https://nutan-housing-backend.vercel.app/',  // Your local backend server
+        target: 'https://nutan-housing-backend.vercel.app',  // Your local backend server
         changeOrigin: true,
         secure: false,
       },
