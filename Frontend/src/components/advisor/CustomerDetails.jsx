@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function CustomerDetails() {
-  const baseurl = 'https://nutan-housing-backend.vercel.app/api/advisors';
+  const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
   // const baseurl = 'http://localhost:5000/api/advisors'
   const [statusFilter, setStatusFilter] = useState('All');
   const [customers, setCustomers] = useState([]);
