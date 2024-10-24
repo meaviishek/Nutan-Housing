@@ -4,7 +4,7 @@ function IncentiveDashboard() {
   const [customers, setCustomers] = useState([]);
   const [totalIncentive, setTotalIncentive] = useState(0);
   const baseurl = 'https://nutan-housing-backend.vercel.app/api/advisors';
-
+// const baseurl = 'http://localhost:5000/api/advisors'
   useEffect(() => {
     const storedData = localStorage.getItem('advisorData');
     const Data = JSON.parse(storedData);

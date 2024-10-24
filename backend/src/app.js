@@ -3,13 +3,22 @@ import cors from 'cors'; // Convert require to import
 import advisorRoutes from './routes/advisorRoute.js'; 
 
 const app = express();
-
+// app.use((req, res, next) => {
+//   res.setHeader(
+//     'Content-Security-Policy',
+//     "script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' blob: https://nutan-housing-backend.vercel.app https://accounts.google.com; frame-src 'self' https://accounts.google.com; connect-src 'self' https://nutan-housing-backend.vercel.app https://accounts.google.com;"
+//   );
+//   next();
+// });
 app.use(express.json());
 
 app.use(cors({
   origin: 'https://nutan-housing-uwc2.vercel.app', // Frontend origin
-  credentials: true
+  // origin:'http://localhost:5173',
+  credentials:true
+
 }));
+
 // app.use(cors())
 
 // Advisor routes

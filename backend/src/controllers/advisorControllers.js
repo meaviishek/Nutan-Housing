@@ -48,7 +48,7 @@ export const loginAdvisor = async (req, res) => {
   if (!email || !password) {
     return res.status(400).json({ message: 'Email and password are required' });
   }
-
+  
   try {
     // Find advisor by email
     const advisor = await Advisor.findOne({ email });
