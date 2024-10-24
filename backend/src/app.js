@@ -18,7 +18,11 @@ app.use(express.json());
 //   credentials:true
 
 // }));
-
+app.use(cors({
+  origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],         // Allowed methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+}));
 app.use(cors())
 
 // Advisor routes
