@@ -93,7 +93,7 @@ const handleSuccess=async(response)=>{
 console.log(response.credential)
 
   try{
-    const res = await axios.post('http://localhost:5000/api/advisors/googleauth', { tokenId:response.credential });
+    const res = await axios.post('https://nutan-housing-backend.vercel.app/api/advisors/googleauth', { tokenId:response.credential });
     const { token, advisor } = res.data;
     
     // Save the token and advisor details (e.g., in localStorage)

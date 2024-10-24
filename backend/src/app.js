@@ -6,11 +6,11 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({
-  origin: 'http://localhost:5173', // Frontend origin
-  credentials: true
-}));
-
+// app.use(cors({
+//   origin: 'http://localhost:5173', // Frontend origin
+//   credentials: true
+// }));
+app.use(cors())
 
 // Advisor routes
 app.use('/api/advisors', advisorRoutes);
