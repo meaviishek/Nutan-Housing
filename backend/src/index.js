@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import cors from 'cors'
 dotenv.config();  // Load environment variables
 app.use(cors({
-  origin: 'https://nutan-housing-uwc2.vercel.app', // Frontend origin
+  origin: '*', // Frontend origin
   // origin:'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
