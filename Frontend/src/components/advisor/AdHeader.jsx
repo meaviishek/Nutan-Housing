@@ -1,14 +1,22 @@
+import { useNavigate } from 'react-router-dom';
 import { AiOutlineMenuFold } from 'react-icons/ai'
 import { Link,NavLink } from 'react-router-dom'
 import { Logo } from '..'
 import { useState } from 'react';
 function AdHeader() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const navigate = useNavigate();
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
-
+    const handleLogout = () => {
+      // Clear user session data
+      localStorage.removeItem('token');
+      localStorage.removeItem('advisorData') // Remove the token
+      // setAdvisor(null); // Clear advisor data
+      navigate('/'); // Redirect to home page
+      window.location.reload(); // Redirect to login page (or your desired route)
+    };
 
 
   
@@ -40,7 +48,7 @@ function AdHeader() {
           <Link to='/advisor/create-lead'>
             Create Lead</Link>
           </button>
-          <button  className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-xl flex items-center gap-2">
+          <button onClick={handleLogout}  className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-xl flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -85,7 +93,7 @@ function AdHeader() {
           <Link to='/advisor/create-lead'>
     Create Lead</Link>
           </button>
-          <button  className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
+          <button onClick={handleLogout}  className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-secondary hover:text-yellow-600">
           
         Logout
           </button>

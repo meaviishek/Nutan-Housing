@@ -9,7 +9,7 @@ const PDFviewer = () => {
     const plots = [
 
         //column 1
-        { id: 1, x: 120, y: 328, width: 20, height: 17, customer: "John Doe" },
+        { id: 1, x: 120, y: 328, width: 20, height: 17, customer: "Niraj Kumar" },
         { id: 2, x: 140, y: 328, width: 20, height: 17, customer: "Jane Smith" },
         { id: 3, x: 120, y: 345, width: 20, height: 13, customer: "John Doe" },
         { id: 4, x: 140, y: 345, width: 20, height: 13, customer: "Jane Smith" },
@@ -721,26 +721,26 @@ const PDFviewer = () => {
        { id: 17, x: 735, y: 650, width: 20, height: 17, customer: "John Doe" },
        { id: 18, x: 755, y: 650, width: 20, height: 17, customer: "Jane Smith" },
 
-       { id: 7, x: 735, y: 675, width: 20, height: 13, customer: "John Doe" },
-        { id: 8, x: 755, y: 675, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 9, x: 735, y: 688, width: 20, height: 13, customer: "John Doe" },
-        { id: 10, x: 755, y: 688, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 11, x:735, y: 702, width: 20, height: 13, customer: "John Doe" },
-        { id: 12, x: 755, y: 702, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 13, x: 735, y: 715, width: 20, height: 13, customer: "John Doe" },
-        { id: 14, x: 755, y: 715, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 15, x: 735, y: 728, width: 20, height: 13, customer: "John Doe" },
-        { id: 16, x: 755, y: 728, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 17, x: 735, y: 741, width: 20, height: 13, customer: "John Doe" },
-        { id: 18, x: 755, y: 741, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 13, x: 735, y: 754, width: 20, height: 13, customer: "John Doe" },
-        { id: 14, x: 755, y: 754, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 15, x: 735, y: 767, width: 20, height: 13, customer: "John Doe" },
-        { id: 16, x: 755, y: 767, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 17, x: 735, y: 780, width: 20, height: 13, customer: "John Doe" },
-        { id: 18, x: 755, y: 780, width: 20, height: 13, customer: "Jane Smith" },
-        { id: 17, x: 735, y: 793, width: 20, height: 13, customer: "John Doe" },
-        { id: 18, x: 755, y: 793, width: 20, height: 13, customer: "Jane Smith" },
+       { id: 30, x: 735, y: 675, width: 20, height: 13, customer: "John Doe" },
+        { id: 20, x: 755, y: 675, width: 20, height: 13, customer: "vipen kumar" },
+        { id: 29, x: 735, y: 688, width: 20, height: 13, customer: "John Doe" },
+        { id: 19, x: 755, y: 688, width: 20, height: 13, customer: "sangita kumari" },
+        { id: 28, x:735, y: 702, width: 20, height: 13, customer: "John Doe" },
+        { id: 18, x: 755, y: 702, width: 20, height: 13, customer: "shintu devi" },
+        { id: 27, x: 735, y: 715, width: 20, height: 13, customer: "John Doe" },
+        { id: 17, x: 755, y: 715, width: 20, height: 13, customer: "sharvilla devi" },
+        { id: 26, x: 735, y: 728, width: 20, height: 13, customer: "John Doe" },
+        { id: 16, x: 755, y: 728, width: 20, height: 13, customer: "sangita devi" },
+        { id: 25, x: 735, y: 741, width: 20, height: 13, customer: "John Doe" },
+        { id: 15, x: 755, y: 741, width: 20, height: 13, customer: "suneina kumari" },
+        { id: 24, x: 735, y: 754, width: 20, height: 13, customer: "John Doe" },
+        { id: 14, x: 755, y: 754, width: 20, height: 13, customer: "permesh remeshwer chaudhary" },
+        { id: 23, x: 735, y: 767, width: 20, height: 13, customer: "John Doe" },
+        { id: 13, x: 755, y: 767, width: 20, height: 13, customer: "permesh remeshwer chaudhary" },
+        { id: 22, x: 735, y: 780, width: 20, height: 13, customer: "John Doe" },
+        { id: 12, x: 755, y: 780, width: 20, height: 13, customer: "permesh remeshwer chaudhary" },
+        { id: 21, x: 735, y: 793, width: 20, height: 13, customer: "John" },
+        { id: 11, x: 755, y: 793, width: 20, height: 13, customer: " vikesh kumar" },
 
 
         //column 14
@@ -756,16 +756,16 @@ const PDFviewer = () => {
 
 
         
-       { id: 7, x: 786, y: 675, width: 20, height: 13, customer: "John Doe" },
-       { id: 9, x: 786, y: 688, width: 20, height: 13, customer: "John Doe" },
-       { id: 11, x:786, y: 702, width: 20, height: 13, customer: "John Doe" },
-       { id: 13, x: 786, y: 715, width: 20, height: 13, customer: "John Doe" },
-       { id: 15, x: 786, y: 728, width: 20, height: 13, customer: "John Doe" },
-       { id: 17, x: 786, y: 741, width: 20, height: 13, customer: "John Doe" },
-       { id: 13, x: 786, y: 754, width: 20, height: 13, customer: "John Doe" },
-       { id: 15, x: 786, y: 767, width: 20, height: 13, customer: "John Doe" },
-       { id: 17, x: 786, y: 780, width: 20, height: 13, customer: "John Doe" },
-       { id: 17, x: 786, y: 793, width: 20, height: 13, customer: "John Doe" },
+       { id: 10, x: 786, y: 675, width: 20, height: 13, customer: "sables kumar" },
+       { id: 9, x: 786, y: 688, width: 20, height: 13, customer: "nita kumari" },
+       { id: 8, x:786, y: 702, width: 20, height: 13, customer: "anuradha devi" },
+       { id: 7, x: 786, y: 715, width: 20, height: 13, customer: "neetu devi /upender prasad" },
+       { id: 6, x: 786, y: 728, width: 20, height: 13, customer: "ramratand /gautam" },
+       { id: 5, x: 786, y: 741, width: 20, height: 13, customer: "shintu devi" },
+       { id: 4, x: 786, y: 754, width: 20, height: 13, customer: "nandkishor prasad" },
+       { id: 3, x: 786, y: 767, width: 20, height: 13, customer: "Sandeep Kumar" },
+       { id: 2, x: 786, y: 780, width: 20, height: 13, customer: "Upendra Prasad Verma" },
+       { id: 1, x: 786, y: 793, width: 20, height: 13, customer: "Niraj Kumar" },
       
 
 
@@ -848,7 +848,8 @@ const PDFviewer = () => {
                         left: `${hoveredPlot.x * (imageSize.width / 1000)}px`,
                     }}
                 >
-                    <p className="text-sm font-medium">Customer: {hoveredPlot.customer}</p>
+                <p>{hoveredPlot.id}</p>
+                    <p className="text-sm font-medium">{hoveredPlot.customer}</p>
                 </div>
             )}
         </div>

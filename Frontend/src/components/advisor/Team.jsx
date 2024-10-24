@@ -1,88 +1,111 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+// Updated advisor hierarchy with additional details
 const advisorTree = {
   id: 1,
-  name: "Senior Advisor",
-  role: "Level 1",
-  incentive: "₹1,000,000",
-  badge: "Gold",
+  name: "Advisor A",
+  incentive: "₹2,000,000",
+  leads: 50,
+  badge: "Platinum",
   subordinates: [
     {
       id: 2,
-      name: "Mid-level Advisor 1",
-      role: "Level 2",
-      incentive: "₹500,000",
+      name: "Advisor B",
+      incentive: "₹1,000,000",
+      leads: 30,
+      badge: "Gold",
+      subordinates: [],
+    },
+    {
+      id: 3,
+      name: "Advisor C",
+      incentive: "₹1,500,000",
+      leads: 40,
       badge: "Silver",
       subordinates: [
         {
           id: 4,
-          name: "Junior Advisor 1",
-          role: "Level 3",
-          incentive: "₹200,000",
+          name: "Advisor D",
+          incentive: "₹500,000",
+          leads: 20,
           badge: "Bronze",
-        },
-        {
-          id: 5,
-          name: "Junior Advisor 2",
-          role: "Level 3",
-          incentive: "₹150,000",
-          badge: "Bronze",
-        },
-      ],
-    },
-    {
-      id: 3,
-      name: "Mid-level Advisor 2",
-      role: "Level 2",
-      incentive: "₹300,000",
-      badge: "Silver",
-      subordinates: [
-        {
-          id: 6,
-          name: "Junior Advisor 3",
-          role: "Level 3",
-          incentive: "₹100,000",
-          badge: "Bronze",
+          subordinates: [],
         },
       ],
     },
   ],
 };
 
-function Team() {
-  const renderTree = (node) => (
-    <div className="flex flex-col items-center">
-      {/* Advisor Card */}
-      <div className="advisor-card bg-white shadow-lg p-4 rounded-lg border border-gray-300 w-full max-w-xs text-center mb-6 transition-transform duration-300 transform hover:scale-105">
-        
-        <h3 className="text-sm md:text-lg font-bold text-primary">{node.name}</h3>
-        <p className="text-xs md:text-sm text-gray-600">{node.role}</p>
-        <p className="text-xs md:text-sm text-green-600">Incentive: {node.incentive}</p>
-        <p className="text-xs md:text-sm text-yellow-600">Badge: {node.badge}</p>
-      </div>
+// Function to get badge color
+const getBadgeColor = (badge) => {
+  switch (badge) {
+    case 'Platinum':
+      return 'bg-blue-400 text-white';
+    case 'Gold':
+      return 'bg-yellow-400 text-black';
+    case 'Silver':
+      return 'bg-gray-300 text-black';
+    case 'Bronze':
+      return 'bg-orange-400 text-black';
+    default:
+      return 'bg-gray-200 text-black';
+  }
+};
 
-      {/* Render subordinates */}
-      {node.subordinates && node.subordinates.length > 0 && (
-        <div className="flex justify-center space-x-4">
-          {node.subordinates.map((subordinate) => (
-            <div key={subordinate.id} className="flex flex-col items-center">
-              <div className="h-6 w-0.5 bg-gray-400 mx-auto" /> {/* Line to connect */}
-              {renderTree(subordinate)}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+// Recursive component to render the tree
+const TreeNode = ({ node }) => {
+  const [isOpen, setIsOpen] = useState(false); // Start with nodes closed
 
   return (
-    <div className="mt-16 bg-gray-50 py-8 min-h-screen">
-      <h2 className="text-3xl font-bold text-center text-primary mb-8">
-        Team Structure
-      </h2>
-      <div className="flex justify-center">{renderTree(advisorTree)}</div>
+    <li className="relative">
+      <div
+        className="flex items-center cursor-pointer px-4 py-2 hover:bg-gray-200"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {node.subordinates.length > 0 && (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2.5"
+            stroke="currentColor"
+            className={`h-6 w-6 transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        )}
+        <div className={`ml-2 rounded-full px-4 py-1 text-lg ${getBadgeColor(node.badge)}`}>{node.badge}</div>
+        <span className="ml-4 text-xl font-bold">{node.name}</span>
+      </div>
+
+      {/* Display additional details */}
+      <div className={`ml-8 ${isOpen ? 'block' : 'hidden'} text-base md:text-lg`}>
+        <p>Incentive: {node.incentive}</p>
+        <p>Total Leads: {node.leads}</p>
+      </div>
+
+      {isOpen && node.subordinates.length > 0 && (
+        <ul className="ml-8 mt-2">
+          {node.subordinates.map((subordinate) => (
+            <TreeNode key={subordinate.id} node={subordinate} />
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+};
+
+const Tree = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 md:p-8">
+      <div className="w-full max-w-3xl"> {/* Set a maximum width for the tree */}
+        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Advisor Team Structure</h1>
+        <ul className="ml-12"> {/* Increased left margin */}
+          <TreeNode node={advisorTree} />
+        </ul>
+      </div>
     </div>
   );
-}
+};
 
-export default Team;
+export default Tree;

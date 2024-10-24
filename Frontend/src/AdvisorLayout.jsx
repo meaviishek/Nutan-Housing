@@ -1,23 +1,27 @@
 
 import { AdHeader,Footer } from './components'
-import { Outlet } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
+
 
 function AdvisorLayout() {
-  return (
+  const token = localStorage.getItem('token')
+  return token ? (
 
      <div className="min-h-screen flex flex-col">
+
       <AdHeader />
       <main className="flex-grow">
 
         <Outlet />
       </main>
       <Footer />
+   
     </div>
 
 
 
     
-  )
+  ) : ( <Navigate to='/'/>)
 }
 
 export default AdvisorLayout

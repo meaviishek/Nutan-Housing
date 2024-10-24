@@ -31,7 +31,7 @@ function Footer({ openLogin, openEnq }) {
                 <a href="tel:+919471613137" className="hover:text-white ">+91 9471613137</a> 
                 <a href="tel:+918539804930" className="hover:text-white">+91 8539804930</a>
               </p>
-              <p className='mt-2 text-primary ml-6'>Open On Sunday</p>
+              <p className='mt-2 text-green-600 ml-6'>Open On Sunday</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ function Footer({ openLogin, openEnq }) {
               <a href="https://www.instagram.com/nutan.housing/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://youtube.com/@nutanhousingfinance-l2x?si=Lt6UVWzoi52a7jZt" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
+              <a href="https://www.youtube.com/@Nutan.housing" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary">
                 <FaYoutube size={24} />
               </a>
             </div>

@@ -37,7 +37,7 @@ function MainLayout() {
   
   return (
     <div>
-     
+
     {loading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
           {/* Spinner or any image */}
@@ -52,13 +52,13 @@ function MainLayout() {
       
       <main className='w-full'>
       
-        <Outlet openEnq={openEnq}/>
+        <Outlet context={{ openEnq }}/>
       </main>
       <Floating/>
       <Footer openLogin={openLogin} openEnq={openEnq}/>
       
       </div> )}
-   
+
     </div>
   )
 }

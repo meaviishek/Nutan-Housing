@@ -1,14 +1,14 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Blogs from "./pages/Blogs";
-import Career from "./pages/Career";
-import Login from "./model/Login"
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Projects from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
+import Blogs from "./pages/Blogs.jsx";
+import Career from "./pages/Career.jsx";
+import Login from "./model/Login.jsx"
 import Logo from "../assets/logo.png"
-import Enquire from "./model/Enquire";
+import Enquire from "./model/Enquire.jsx";
 import Vid from "../assets/videoplayback.mov"
 import Construct from "../assets/construction.png"
 import Plotimg from "../assets/plot.png"
@@ -21,14 +21,14 @@ import Hospital from "../assets/hospital.png"
 import Road from "../assets/road.png"
 import Old from "../assets/old.png"
 import Elec from "../assets/electricity.png"
-import Floating from "./Floating";
+import Floating from "./Floating.jsx";
 import Aboutus from "../assets/aboutus.jpg"
 import Mission from "../assets/mission.png"
 import Vision from "../assets/vision.png"
 import Project from "../assets/project.jpg";
-import ProjectDetails from "./pages/ProjectDetails";
-import Plot from "./pages/Plot";
-import Emi from './pages/Emi_calc';
+import ProjectDetails from "./pages/ProjectDetails.jsx";
+import Plot from "./pages/Plot.jsx";
+import Emi from './pages/Emi_calc.jsx';
 import Scrolltop from './model/Scrolltop.jsx'
 
 import PDFviewer from "./pages/PDFviewer.jsx";
@@ -38,7 +38,9 @@ import Team from "./advisor/Team.jsx";
 import CustomerDetails from "./advisor/CustomerDetails.jsx";
 import Incentive from "./advisor/Incentive.jsx";
 import CreateLead from "./advisor/CreateLead.jsx";
-
+import Profile from '../assets/profile.png'
+import Nutanim from '../assets/nu.png'
+import Expert from '../assets/expert.png'
 export{
   Header,
   Footer,
@@ -78,6 +80,9 @@ export{
   Incentive,
   Team,
   Scrolltop,
-  CreateLead
+  CreateLead,
+  Nutanim,
+  Expert,
+  Profile
 
 }

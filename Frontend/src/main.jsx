@@ -4,6 +4,7 @@ import { createBrowserRouter,Route,createRoutesFromElements,RouterProvider } fro
 import {Home,About,Projects,Blogs,Contact,Career, Login, Enquire,Plot, Emi,AdvisorDash,Team,Incentive,CustomerDetails,CreateLead} from './components/index.js'
 import AdvisorLayout from './AdvisorLayout.jsx'
 import MainLayout from './MainLayout.jsx'
+import { GoogleOAuthProvider } from "@react-oauth/google"
 import './index.css'
 import ProjectDetails from './components/pages/ProjectDetails.jsx'
 import AllBlogs from './components/pages/AllBlogs.jsx'
@@ -27,6 +28,7 @@ const router=createBrowserRouter(
 
     
       </Route>
+      
        <Route path="advisor" element={<AdvisorLayout />}>
        <Route path="dashboard" element={<AdvisorDash/>} />
        
@@ -40,8 +42,11 @@ const router=createBrowserRouter(
 )
 
 createRoot(document.getElementById('root')).render(
+  <GoogleOAuthProvider clientId='1006802234305-6efh6hkrvtkj622die4ah1bu41nt9hin.apps.googleusercontent.com'>
   <StrictMode>
+  
     <RouterProvider router={router}/>
   
-  </StrictMode>,
+  </StrictMode>
+  </GoogleOAuthProvider>
 )
