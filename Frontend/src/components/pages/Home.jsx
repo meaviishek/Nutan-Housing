@@ -43,7 +43,7 @@ function Home() {
           strings={["Welcome to Nutan Housing Finance ", "Home you Love, Financing you Trust", "The key to your new beginning"]}
          
           loop
-          typeSpeed={40}
+          typeSpeed={60}
           backSpeed={20}
           cursorChar="|"
           showCursor={true}
