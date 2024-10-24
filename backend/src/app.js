@@ -11,11 +11,20 @@ const app = express();
 //   );
 //   next();
 // });
+app.use(cors({
+  origin: 'https://nutan-housing-finance.onrender.com',  // Frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true // Allow credentials like cookies, headers, etc.
+}));
 
-
-app.use(cors());
-app.options('*', cors());
-// Handle preflig
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://nutan-housing-finance.onrender.com'); // Allow your frontend domain
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  next();
+});
 
 
 // app.use(cors({
