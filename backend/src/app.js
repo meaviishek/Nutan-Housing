@@ -1,5 +1,5 @@
 import express from 'express';
- import cors from 'cors'
+//  import cors from 'cors'
 import advisorRoutes from './routes/advisorRoute.js'; 
 
 const app = express();
@@ -14,11 +14,11 @@ const app = express();
 
 
 
-app.use(cors({
-  origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend domain
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],         // Allowed methods
-  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-}));
+// app.use(cors({
+//   origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend domain
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],         // Allowed methods
+//   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+// }));
 // app.use(cors())
 app.use(express.json());
 

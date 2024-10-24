@@ -8,6 +8,6 @@ export default defineConfig({
       '/api':'https://nutan-housing-backend.vercel.app'
     },
   },
-  plugins: [react()]
+  plugins: [react()],
  
 });
