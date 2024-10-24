@@ -90,7 +90,7 @@ function Login({ closeLogin }) {
 
 const handleSuccess=async(response)=>{
 // const API_URL = 'http://localhost:5000/api/advisors'
-console.log(response.credential)
+
 
   try{
     const res = await axios.post('https://nutan-housing-backend.vercel.app/api/advisors/googleauth', { tokenId:response.credential });
