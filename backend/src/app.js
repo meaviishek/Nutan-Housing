@@ -11,12 +11,9 @@ const app = express();
 //   );
 //   next();
 // });
-const corsOptions = {
-  origin: 'https://nutan-housing-finance.onrender.com',
-  optionsSuccessStatus: 200,
-};
 
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 // Handle preflig
 
