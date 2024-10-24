@@ -1,8 +1,9 @@
 import express from 'express';
-import cors from 'cors'; // Convert require to import
+ import cors from 'cors'
 import advisorRoutes from './routes/advisorRoute.js'; 
 
 const app = express();
+app.use(cors());
 // app.use((req, res, next) => {
 //   res.setHeader(
 //     'Content-Security-Policy',
