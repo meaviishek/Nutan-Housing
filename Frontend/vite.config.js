@@ -3,9 +3,13 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  server:{
-    proxy:{
-      '/api':'https://nutan-housing-backend.vercel.app'
+server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',  // Your local backend server
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
   plugins: [react()],

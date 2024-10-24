@@ -1,5 +1,5 @@
 import express from 'express';
-//  import cors from 'cors'
+ import cors from 'cors'
 import advisorRoutes from './routes/advisorRoute.js'; 
 
 const app = express();
@@ -11,7 +11,17 @@ const app = express();
 //   );
 //   next();
 // });
+const corsOptions = {
+  origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,  // Allow cookies or authorization headers
+  allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
+};
 
+// Apply CORS middleware
+app.use(cors(corsOptions));
+
+// Handle preflig
 
 
 // app.use(cors({
