@@ -87,9 +87,12 @@ export const loginAdvisor = async (req, res) => {
         role: advisor.role,
         leads:advisor.leads,
         sales: advisor.sales,
+
         incentive:advisor.incentives,
         badge: advisor.badge,
-        customers: advisor.customers 
+        customers: advisor.customers,
+        connectedAdvisors:advisor.connectedAdvisors , // Child advisors
+         parentAdvisor:advisor.parentAdvisor
       }
     });
   } catch (error) {
@@ -226,7 +229,9 @@ export const googleLogin=async(req,res)=>{
         sales: advisor.sales,
         incentive:advisor.incentives,
         badge: advisor.badge,
-        customers: advisor.customers 
+        customers: advisor.customers,
+        connectedAdvisors:advisor.connectedAdvisors , // Child advisors
+         parentAdvisor:advisor.parentAdvisor
       }
     });
   }catch(error){
