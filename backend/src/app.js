@@ -12,7 +12,7 @@ const app = express();
 //   next();
 // });
 const corsOptions = {
-  origin: 'https://nutan-housing-uwc2.vercel.app',  // Your frontend URL
+  origin: 'https://nutan-housing-finance.onrender.com',  // Your frontend URL
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,  // Allow cookies or authorization headers
   allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
