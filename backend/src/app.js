@@ -12,13 +12,10 @@ const app = express();
 //   next();
 // });
 const corsOptions = {
-  origin: 'https://nutan-housing-finance.onrender.com',  // Your frontend URL
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,  // Allow cookies or authorization headers
-  allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
+  origin: 'https://nutan-housing-finance.onrender.com',
+  optionsSuccessStatus: 200,
 };
 
-// Apply CORS middleware
 app.use(cors(corsOptions));
 
 // Handle preflig
