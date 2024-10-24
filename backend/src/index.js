@@ -4,14 +4,7 @@ import connectDB from './db/index.js';  // Your DB connection
 import dotenv from 'dotenv';
 import cors from 'cors'
 dotenv.config();  // Load environment variables
-app.use(cors({
-  origin: '*', // Frontend origin
-  // origin:'http://localhost:5173',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true,
-
- 
-}));
+app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB
