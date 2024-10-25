@@ -219,7 +219,7 @@ function ProjectDetails() {
       {project.description.includes('class="hidden"') && (
         <button
           onClick={toggleExpand}
-          className="text-primary hover:underline mt-2"
+          className="text-green-600 hover:underline mt-2"
         >
           {isexp ? 'Less' : 'know More'}
         </button>
