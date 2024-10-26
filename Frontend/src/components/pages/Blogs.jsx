@@ -35,10 +35,10 @@ function Blogs() {
         <img 
         src={Blogimg}
         alt="Header"
-        className="object-cover w-full h-full"
+        className="object-cover w-full h-98"
       />
       <div className="max-w-7xl mx-auto py-6 px-6 ">
-        <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary mt-4 mb-4">Our Blog</h1>
+        <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary mt-4 mb-4">Our Blogs</h1>
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((blog) => (
