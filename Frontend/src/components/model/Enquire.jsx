@@ -23,6 +23,10 @@ function Enquire({ closeEnq }) {
     setLoading(true);
 
     try {
+      if (formData.phoneNumber.length !== 10) {
+        setErrorMessage('Phone number must be exactly 10 digits long.');
+        return;
+      }
       const response = await submitEnquiry(formData);
       console.log(response)
       if (response) {
@@ -47,7 +51,7 @@ function Enquire({ closeEnq }) {
 
         {isSubmitted ? (
           <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4">Thank You!</h2>
+            <h2 className="text-2xl text-primary font-bold mb-4">Thank You!</h2>
             <p className="text-green-500">we'll get back to you shortly </p>
           </div>
         ) : (
