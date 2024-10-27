@@ -11,8 +11,9 @@ function AdHeader() {
     };
     const handleLogout = () => {
       // Clear user session data
-      localStorage.removeItem('token');
-      localStorage.removeItem('advisorData') // Remove the token
+      localStorage.clear();
+      // localStorage.removeItem('token');
+      // localStorage.removeItem('advisorData') // Remove the token
       // setAdvisor(null); // Clear advisor data
       navigate('/'); // Redirect to home page
       window.location.reload(); // Redirect to login page (or your desired route)
