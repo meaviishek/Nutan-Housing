@@ -4,7 +4,8 @@ function IncentiveDashboard() {
   const [customers, setCustomers] = useState([]);
   const [totalIncentive, setTotalIncentive] = useState(0);
   const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
-// const baseurl = 'http://localhost:5000/api/advisors'
+  // const baseurl = 'http://localhost:5000/api/advisors'
+
   useEffect(() => {
     const storedData = localStorage.getItem('advisorData');
     const Data = JSON.parse(storedData);
@@ -16,7 +17,6 @@ function IncentiveDashboard() {
         const response = await fetch(`${baseurl}/${advisorId}/customers`);
         const data = await response.json();
         setCustomers(data);
-
 
         const total = data.reduce((sum, customer) => {
           return sum + parseFloat(calculateIncentive(customer.purchaseAmount));
@@ -53,14 +53,14 @@ function IncentiveDashboard() {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-50 mt-16">
+    <div className="flex flex-col md:flex-row min-h-screen bg-gray-50 mt-16">
       {/* Left Side: Recent Incentives */}
-      <div className="w-2/3 p-8">
-        <h2 className="text-4xl font-bold text-primary mb-6">Recent Incentives</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-full md:w-2/3 p-4 md:p-8">
+        <h2 className="text-2xl md:text-4xl font-bold text-primary mb-6">Recent Incentives</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {customers.map((customer) => (
-            <div key={customer.id} className="bg-white shadow-md rounded-lg p-6 border-l-4 border-primary">
-              <h3 className="text-xl font-semibold text-secondary mb-2">{customer.name}</h3>
+            <div key={customer.id} className="bg-white shadow-md rounded-lg p-4 md:p-6 border-l-4 border-primary">
+              <h3 className="text-lg md:text-xl font-semibold text-secondary mb-2">{customer.name}</h3>
               <p className="text-gray-700 mb-1"><strong>Property:</strong> {customer.plotNumber}, {customer.projectName}</p>
               <p className="text-gray-700 mb-1"><strong>Total Purchases:</strong> ₹{customer.purchaseAmount.toLocaleString()}</p>
               <p className="text-green-600 font-semibold">
@@ -73,13 +73,13 @@ function IncentiveDashboard() {
       </div>
 
       {/* Right Side: Incentive Table */}
-      <div className="w-1/3 bg-white p-8 shadow-lg border-l border-gray-200">
-        <h2 className="text-3xl font-bold text-center text-orange-700 mb-4">Reference</h2>
+      <div className="w-full md:w-1/3 bg-white p-4 md:p-8 shadow-lg border-t md:border-t-0 md:border-l border-gray-200">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-orange-700 mb-4">Reference</h2>
         <table className="min-w-full table-auto border-collapse">
           <thead>
             <tr>
-              <th className="border-b-2 py-2 text-left text-lg font-semibold text-orange-600">Range</th>
-              <th className="border-b-2 py-2 text-right text-lg font-semibold text-orange-600">Percentage</th>
+              <th className="border-b-2 py-2 text-left text-md md:text-lg font-semibold text-orange-600">Range</th>
+              <th className="border-b-2 py-2 text-right text-md md:text-lg font-semibold text-orange-600">Percentage</th>
             </tr>
           </thead>
           <tbody>
