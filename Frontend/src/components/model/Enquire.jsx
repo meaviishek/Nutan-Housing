@@ -48,7 +48,7 @@ function Enquire({ closeEnq }) {
         {isSubmitted ? (
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">Thank You!</h2>
-            <p className="text-green-500">Our team will reach out to you shortly.</p>
+            <p className="text-green-500">we'll get back to you shortly </p>
           </div>
         ) : (
           <div id="login-form" className="block">
@@ -68,17 +68,23 @@ function Enquire({ closeEnq }) {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-gray-700">Phone Number *</label>
-                <input
-                  type="text"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
-                  placeholder="Enter your phone number"
-                  required
-                />
-              </div>
+  <label className="block text-gray-700">Phone Number *</label>
+  <div className="flex items-center">
+    <span className="px-2 py-2 bg-gray-200 rounded-l-md text-gray-700">+91</span>
+    <input
+      type="text"
+      name="phoneNumber"
+      value={formData.phoneNumber}
+      onChange={handleChange}
+      pattern="[0-9]{10}" // Enforces a 10-digit number after +91
+      minLength="10"
+      maxLength="10"
+      className="w-full px-4 py-2 rounded-r-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
+      placeholder="Enter your phone number"
+      required
+    />
+  </div>
+</div>
               <div className="mb-4">
                 <label className="block text-gray-700">Address</label>
                 <input

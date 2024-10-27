@@ -10,7 +10,7 @@ const projectdetails=[
   {
     id: 1,
     title: 'Nutan Villa',
-    description: `    <h1 class="font-bold text-2xl mb-2 font-poppins">About Rajgir</h1>
+    description: `    <h1 class="font-bold text-blue-700 text-2xl mb-2 font-poppins">About Rajgir</h1>
       <div class="md:flex text-base">
         <div>
           <p class="my-3 text-justify pr-4 flex">
@@ -207,7 +207,7 @@ function ProjectDetails() {
     <img src={project.image} alt={project.title} className="w-full h-96 object-cover mb-8" />
     <div className='max-w-7xl  container mx-auto'>
     
-    <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary text-center">{project.title}</h1>
+    <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-primary  text-center">{project.title}</h1>
     <div className='bg-yellow-100 p-4 rounded-lg md:flex'>
  <div>
     <div

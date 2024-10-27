@@ -10,21 +10,21 @@ function Blogs() {
         title: 'Why Buying a Home is Better Than Renting: A Simple Guide to Making the Right Choice',
         description: 'In the age-old debate of buying versus renting, many people find themselves pondering which option....',
         image: Blog1,
-        date: 'September 25, 2024',
+        date: 'September 28, 2024',
       },
       {
         id: 2,
         title: 'The Future of Sustainable Real Estate: Trends and Innovations',
         description: 'As the world becomes more environmentally conscious, sustainable real estate practice....',
         image: Blog2,
-        date: 'September 20, 2024',
+        date: 'September 25, 2024',
       },
       {
         id: 3,
         title: 'The Importance of Home: A Cornerstone of Our Lives',
         description: 'In today’s fast-paced world, the concept of home holds profound significance that goes far......',
         image: Blog3,
-        date: 'September 28, 2024',
+        date: 'September 20, 2024',
       },
       // Add more blog posts as needed
     ];

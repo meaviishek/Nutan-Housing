@@ -9,7 +9,8 @@ function Login({ closeLogin }) {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState(''); // State for success messages
+  const [successMessage, setSuccessMessage] = useState('')
+  const [isLoading, setIsLoading] = useState(false);
   const navigate=useNavigate()
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -52,6 +53,7 @@ function Login({ closeLogin }) {
     e.preventDefault();
     setErrorMessage('');
     setSuccessMessage('');
+    setIsLoading(true);
 
     try {
       const { email, password } = loginData;
@@ -69,6 +71,8 @@ function Login({ closeLogin }) {
       }
     } catch (error) {
       setErrorMessage(error.message || 'Login failed');
+    }finally {
+      setIsLoading(false); // Stop loading
     }
   };
 
@@ -214,7 +218,11 @@ const errorMsg=(error)=>{
                   type="submit"
                   className="w-full bg-gold text-white px-4 py-2 rounded-md shadow-lg bg-primary hover:bg-yellow-500 transition duration-300"
                 >
-                  Login
+                  {isLoading ? (
+                    <div className="flex justify-center items-center">
+                      <div className="animate-spin loader mr-2"></div> Logging in...
+                    </div>
+                  ) : "Login"}
                 </button>
               </form>
               <div className="mt-2">
