@@ -56,8 +56,7 @@ const Header = ({ openLogin, openEnq}) => {
 
   const handleLogout = () => {
  
-    localStorage.removeItem('token');        // Remove token
-    localStorage.removeItem('advisorData'); 
+    localStorage.clear();
     setAdvisorData(null); // Clear advisor data
     setIsDropdownOpen(false); // Close the dropdown
     navigate('/') // Redirect to login page (or your desired route)
