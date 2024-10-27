@@ -12,6 +12,7 @@ function CustomerDetails() {
     const Data = JSON.parse(storedData);
     const advisorId = Data.id;
 
+    // Function to fetch customer data
     const customerData = async () => {
       try {
         const response = await fetch(`${baseurl}/${advisorId}/customers`, {
@@ -24,8 +25,17 @@ function CustomerDetails() {
         const responseBody = await response.text();
 
         if (response.ok) {
-          const data = JSON.parse(responseBody);
-          setCustomers(data);
+          const fetchedData = JSON.parse(responseBody);
+
+          // Check if local storage data is different from fetched data
+          const storedCustomers = JSON.parse(localStorage.getItem('customers')) || [];
+          if (JSON.stringify(storedCustomers) !== JSON.stringify(fetchedData)) {
+            // Update local storage with new data if different
+            localStorage.setItem('customers', JSON.stringify(fetchedData));
+            setCustomers(fetchedData);
+          } else {
+            setCustomers(storedCustomers); // Use existing local storage data
+          }
         } else {
           console.error('Failed to fetch advisor data:', responseBody);
         }
@@ -34,7 +44,13 @@ function CustomerDetails() {
       }
     };
 
-    customerData();
+    // Check if customers are in local storage
+    const storedCustomers = JSON.parse(localStorage.getItem('customers'));
+    if (storedCustomers) {
+      setCustomers(storedCustomers); // Use data from local storage if available
+    } else {
+      customerData(); // Fetch data if not available in local storage
+    }
   }, []);
 
   const handleSearch = (event) => setSearchTerm(event.target.value.toLowerCase());
@@ -67,24 +83,33 @@ function CustomerDetails() {
         <h2 className="text-4xl font-extrabold text-center text-primary mb-8">Customer Details</h2>
 
         {/* Search and Filter Controls */}
-        <div className="flex justify-between mb-8 items-center">
-          <input
-            type="text"
-            placeholder="Search by name..."
-            value={searchTerm}
-            onChange={handleSearch}
-            className="border rounded-lg p-3 w-2/3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          />
-          <select
-            value={statusFilter}
-            onChange={handleFilterChange}
-            className="border rounded-lg p-3 w-1/3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          >
-            <option value="All">All</option>
-            <option value="booked">Booked</option>
-            <option value="not-confirmed">Not Confirmed</option>
-            <option value="confirmed">Confirmed</option>
-          </select>
+        <div className="flex flex-col sm:flex-row sm:justify-between mb-8 items-center space-y-4 sm:space-y-0 sm:space-x-4">
+          {/* Search Input */}
+          <div className="w-full sm:w-2/3">
+            <label className="text-gray-700 font-medium mb-1 block">Search by Name</label>
+            <input
+              type="text"
+              placeholder="Search by name..."
+              value={searchTerm}
+              onChange={handleSearch}
+              className="w-full border border-gray-300 rounded-lg p-3 text-sm sm:text-base transition duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm"
+            />
+          </div>
+
+          {/* Status Filter */}
+          <div className="w-full sm:w-1/3">
+            <label className="text-gray-700 font-medium mb-1 block">Filter by Status</label>
+            <select
+              value={statusFilter}
+              onChange={handleFilterChange}
+              className="w-full border border-gray-300 rounded-lg p-3 text-sm sm:text-base transition duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm bg-white"
+            >
+              <option value="All">All</option>
+              <option value="booked">Booked</option>
+              <option value="not-confirmed">Not Confirmed</option>
+              <option value="confirmed">Confirmed</option>
+            </select>
+          </div>
         </div>
 
         {/* Customer Grid */}
@@ -117,15 +142,10 @@ function CustomerDetails() {
                 <i className="fas fa-project-diagram mr-2 text-primary"></i>
                 <strong>Project Name:</strong> <span className="text-gray-800">{customer.projectName}</span>
               </p>
-              {/* Display booking or purchase amount based on status */}
               {customer.status === 'booked' ? (
-                <p className="text-yellow-600 font-semibold">
-                  Booking Amount: ₹{customer.bookingAmount}
-                </p>
+                <p className="text-yellow-600 font-semibold">Booking Amount: ₹{customer.bookingAmount}</p>
               ) : customer.status === 'confirmed' ? (
-                <p className="text-green-600 font-semibold">
-                  Purchase Amount: ₹{customer.purchaseAmount}
-                </p>
+                <p className="text-green-600 font-semibold">Purchase Amount: ₹{customer.purchaseAmount}</p>
               ) : null}
               <p className={`mt-4 py-2 px-4 rounded-lg border text-center font-semibold ${getStatusColor(customer.status)}`}>
                 Status: {customer.status.charAt(0).toUpperCase() + customer.status.slice(1)}
