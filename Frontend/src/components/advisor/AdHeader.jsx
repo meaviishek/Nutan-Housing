@@ -27,7 +27,7 @@ function AdHeader() {
         <header className="fixed top-0 left-0  w-full bg-[#fafaf960] shadow-md z-50 backdrop-blur-xl">
       <div className="container mx-auto flex justify-between items-center py-4 px-2">
         {/* Logo */}
-        <Link to='/advisor/dashboard'>
+        <Link to='/'>
           <div className="flex items-center">
             <img src={Logo} alt="Nutan Housing Finance" className="md:w-20 md:h-10 w-14 h-8" />
             <h1 className="text-lg lg:text-2xl ml-2 mt-[5px] font-semibold text-primary font-poppins">NUTAN HOUSING FINANCE</h1>
@@ -49,7 +49,7 @@ function AdHeader() {
           <Link to='/advisor/create-lead'>
             Create Lead</Link>
           </button>
-          <button onClick={handleLogout}  className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-red-800 hover:bg-yellow-500 text-gray-50 rounded-md flex items-center gap-2">
+          <button onClick={handleLogout}  className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-red-800 hover:bg-red-500 text-gray-50 rounded-md flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>

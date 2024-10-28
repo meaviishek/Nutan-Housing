@@ -110,7 +110,7 @@ const Header = ({ openLogin, openEnq}) => {
                 </div>
               )}
             </div>) : (
-            <button onClick={openLogin} className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-md flex items-center gap-2"> <IoLogInOutline/>Login</button>
+            <button onClick={openLogin} className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-400 text-gray-50 rounded-md flex items-center gap-2"> <IoLogInOutline/>Login</button>
           )}
         </div>
 
