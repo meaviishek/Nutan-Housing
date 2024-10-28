@@ -14,17 +14,17 @@ const router=createBrowserRouter(
     <>
     <Route path='/' element={<MainLayout/>}>
       <Route path='' element={<Home/>}/>
-      <Route path='about' element={<About/>}/>
-      <Route path='projects' element={<Projects/>}/>
-      <Route path='career' element={<Career/>}/>
-      <Route path='blogs' element={<Blogs/>}/>
-      <Route path='contact' element={<Contact/>}/>
-      <Route path='login' element={<Login/>}/>
-      <Route path='enquire' element={<Enquire/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/projects' element={<Projects/>}/>
+      <Route path='/career' element={<Career/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/enquire' element={<Enquire/>}/>
       <Route path='/projects/:id' element={<ProjectDetails/>}/>
       <Route path="/blogs/:id" element={<AllBlogs />} />
-      <Route path='plot' element={<Plot/>}/>
-      <Route path='emi_calc' element={<Emi/>}/>
+      <Route path='/plot' element={<Plot/>}/>
+      <Route path='/emi_calc' element={<Emi/>}/>
 
     
       </Route>
