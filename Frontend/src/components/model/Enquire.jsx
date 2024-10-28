@@ -60,7 +60,7 @@ function Enquire({ closeEnq }) {
             {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label className="block text-gray-700">Name</label>
+                <label className="block text-gray-700">Name *</label>
                 <input
                   type="text"
                   name="name"
@@ -90,7 +90,7 @@ function Enquire({ closeEnq }) {
   </div>
 </div>
               <div className="mb-4">
-                <label className="block text-gray-700">Address</label>
+                <label className="block text-gray-700">Address *</label>
                 <input
                   type="text"
                   name="address"
