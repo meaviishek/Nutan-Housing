@@ -86,7 +86,7 @@ function Contact() {
 
 
               <div>
-                <label className="block text-gray-700">Address</label>
+                <label className="block text-gray-700">Address *</label>
                 <textarea
                   name="address"
                   value={formData.address}
