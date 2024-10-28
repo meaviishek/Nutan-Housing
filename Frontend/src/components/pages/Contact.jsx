@@ -123,7 +123,7 @@ function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold md:text-lg text-md">Address</h4>
-                <p>Jhunki Baba Road, Patel Nagar, Near RDH School, Rajgir, 803116</p>
+                <p>Jhunki Baba Road, Patel Nagar,<br/> Near RDH School, Rajgir, 803116 (Bihar)</p>
               </div>
             </div>
 

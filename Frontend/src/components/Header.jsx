@@ -3,6 +3,8 @@ import { Link,useNavigate, NavLink } from 'react-router-dom';
 import { Logo ,Profile} from '.'; // Replace with your logo import
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { FaCaretDown } from "react-icons/fa"
+import { IoLogInOutline } from "react-icons/io5";
+
 
 const Header = ({ openLogin, openEnq}) => {
 
@@ -108,7 +110,7 @@ const Header = ({ openLogin, openEnq}) => {
                 </div>
               )}
             </div>) : (
-            <button onClick={openLogin} className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-md flex items-center gap-2">Login</button>
+            <button onClick={openLogin} className="px-4 hover:scale-105 transition-all duration-500 py-2 bg-primary hover:bg-yellow-500 text-gray-50 rounded-md flex items-center gap-2"> <IoLogInOutline/>Login</button>
           )}
         </div>
 
