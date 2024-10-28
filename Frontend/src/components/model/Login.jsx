@@ -265,17 +265,21 @@ const errorMsg=(error)=>{
                   />
                 </div>
                 <div className="mb-2">
-                  <label className="block mb-2 text-gray-700">Phone Number*</label>
-                  <input
-                    type="text"
-                    name="phoneNumber"
-                    value={signupData.phoneNumber} // Use signupData here
-                    onChange={handleSignupChange} // Use handleSignupChange here
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
-                    placeholder="Enter your phone Number"
-                    required
-                  />
-                </div>
+  <label className="block mb-2 text-gray-700">Phone Number*</label>
+  <div className="flex items-center">
+    <span className="px-3 py-2 bg-gray-200 text-gray-700 rounded-l-md border border-gray-300">+91</span>
+    <input
+      type="text"
+      name="phoneNumber"
+      value={signupData.phoneNumber} // Use signupData here
+      onChange={handleSignupChange} // Use handleSignupChange here
+      className="w-full px-4 py-2 rounded-r-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
+      placeholder="Enter your phone number"
+      required
+    />
+  </div>
+</div>
+
                 <div className="mb-2">
                   <label className="block mb-1 font-medium text-gray-600">Select Role</label>
                   <select
