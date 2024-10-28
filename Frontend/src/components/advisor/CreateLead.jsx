@@ -80,7 +80,7 @@ function CreateLead() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
               <div>
                 <label className="block text-gray-700 text-base sm:text-lg">
-                  Customer Name <span className="text-red-500">*</span>
+                  Customer's Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -89,28 +89,33 @@ function CreateLead() {
                   onChange={handleInputChange}
                   required
                   className="w-full border rounded-lg p-3 text-base sm:text-lg"
-                  placeholder="Enter customer name"
+                  placeholder="Enter customer's name"
                 />
               </div>
 
               <div>
-                <label className="block text-gray-700 text-base sm:text-lg">
-                  Customer Mobile <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="tel"
-                  name="phoneNumber"
-                  value={leadData.phoneNumber}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full border rounded-lg p-3 text-base sm:text-lg"
-                  placeholder="Enter customer mobile number"
-                />
-              </div>
+  <label className="block text-gray-700 text-base sm:text-lg">
+    Customer's Mobile <span className="text-red-500">*</span>
+  </label>
+  <div className="flex mt-1">
+    <span className="inline-flex items-center px-3 rounded-l-lg border border-r-0 bg-gray-200 text-gray-600 text-base sm:text-lg">
+      +91
+    </span>
+    <input
+      type="tel"
+      name="phoneNumber"
+      value={leadData.phoneNumber}
+      onChange={handleInputChange}
+      required
+      className="w-full border border-gray-300 rounded-r-lg p-3 text-base sm:text-lg"
+      placeholder="Enter customer's mobile number"
+    />
+  </div>
+</div>
 
               <div>
                 <label className="block text-gray-700 text-base sm:text-lg">
-                  Customer Email <span className="text-red-500">*</span>
+                  Customer's Email <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
@@ -119,13 +124,13 @@ function CreateLead() {
                   onChange={handleInputChange}
                   required
                   className="w-full border rounded-lg p-3 text-base sm:text-lg"
-                  placeholder="Enter customer email"
+                  placeholder="Enter customer's email"
                 />
               </div>
 
               <div>
                 <label className="block text-gray-700 text-base sm:text-lg">
-                  Customer Address <span className="text-red-500">*</span>
+                  Customer's Address <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   name="address"
@@ -133,13 +138,13 @@ function CreateLead() {
                   onChange={handleInputChange}
                   required
                   className="w-full border rounded-lg p-3 text-base sm:text-lg"
-                  placeholder="Enter customer address"
+                  placeholder="Enter customer's address"
                 />
               </div>
 
               <div>
                 <label className="block text-gray-700 text-base sm:text-lg">
-                  Customer Aadhaar No. <span className="text-red-500">*</span>
+                  Customer's Aadhaar No. <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"

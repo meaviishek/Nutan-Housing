@@ -54,7 +54,7 @@ function Contact() {
           <div className="lg:w-1/2 bg-white shadow-md rounded-lg p-6">
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
-                <label className="block text-gray-700">Name</label>
+                <label className="block text-gray-700">Name *</label>
                 <input
                   type="text"
                   name="name"
@@ -67,17 +67,23 @@ function Contact() {
               </div>
 
               <div>
-                <label className="block text-gray-700">Phone Number</label>
-                <input
-                  type="text"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-md p-2"
-                  placeholder="Phone Number"
-                  required
-                />
-              </div>
+  <label className="block text-gray-700">Phone Number *</label>
+  <div className="flex mt-1">
+    <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 bg-gray-200 text-gray-600">
+      +91
+    </span>
+    <input
+      type="text"
+      name="phoneNumber"
+      value={formData.phoneNumber}
+      onChange={handleChange}
+      className="w-full border border-gray-300 rounded-r-md p-2"
+      placeholder="Phone Number"
+      required
+    />
+  </div>
+</div>
+
 
               <div>
                 <label className="block text-gray-700">Address</label>

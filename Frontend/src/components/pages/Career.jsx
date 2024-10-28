@@ -46,16 +46,22 @@ function Career() {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="phone" className="block text-sm font-semibold text-gray-700">
-              Phone Number*
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              className="mt-1 block w-full px-4 py-2 border rounded-md text-sm focus:border-yellow-500 focus:ring-yellow-500"
-              placeholder="Phone Number"
-            />
-          </div>
+  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700">
+    Phone Number*
+  </label>
+  <div className="mt-1 flex">
+    <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 bg-gray-200 text-gray-600 text-sm">
+      +91
+    </span>
+    <input
+      type="tel"
+      id="phone"
+      className="w-full px-4 py-2 border rounded-r-md text-sm focus:border-yellow-500 focus:ring-yellow-500"
+      placeholder="Phone Number"
+    />
+  </div>
+</div>
+
           
         <div className='mb-4'>
           <label className=" text-sm font-medium">Upload Resume</label>
