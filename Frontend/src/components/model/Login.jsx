@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { advisorLogin, advisorSignup } from "../../services/advisorservice";
 import { useNavigate } from "react-router-dom";
