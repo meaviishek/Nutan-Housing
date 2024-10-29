@@ -12,6 +12,7 @@ function Login({ closeLogin }) {
   const [successMessage, setSuccessMessage] = useState('')
   const [isLoading, setIsLoading] = useState(false);
   const navigate=useNavigate()
+  let logoutTimer;
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -49,6 +50,33 @@ function Login({ closeLogin }) {
     }));
   };
 
+  const resetTimer = () => {
+    if (logoutTimer) clearTimeout(logoutTimer);
+    logoutTimer = setTimeout(handleLogout, 30 * 60 * 1000); // Set timeout for 30 minutes
+  };
+  const handleLogout = () => {
+ 
+    localStorage.clear();
+    setAdvisorData(null); // Clear advisor data
+    setIsDropdownOpen(false); // Close the dropdown
+    navigate('/') // Redirect to login page (or your desired route)
+  };
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      resetTimer();
+    }
+
+    // Reset timer on user activity
+    window.addEventListener("mousemove", resetTimer);
+    window.addEventListener("keydown", resetTimer);
+
+    // Cleanup event listeners on unmount
+    return () => {
+      clearTimeout(logoutTimer);
+      window.removeEventListener("mousemove", resetTimer);
+      window.removeEventListener("keydown", resetTimer);
+    };
+  }, []);
   const handleLogin = async (e) => {
     e.preventDefault();
     setErrorMessage('');

@@ -71,7 +71,7 @@ export const loginAdvisor = async (req, res) => {
     }
 
     // Generate a token
-    const token = jwt.sign({ advisorId: advisor._id}, process.env.JWT_SECRET, { expiresIn: '1h' });
+    const token = jwt.sign({ advisorId: advisor._id}, process.env.JWT_SECRET, { expiresIn: '1800s' });
 
 
     // Send a successful response with advisor details and token

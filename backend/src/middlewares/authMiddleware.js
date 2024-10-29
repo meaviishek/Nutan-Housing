@@ -17,12 +17,14 @@ const protect = async (req, res, next) => {
 
    
     console.log('Extracted Token:', token);
-
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+      if (err) return res.status(403).json({ message: 'Token has expired or is invalid' });
+      req.advisorId = decoded.advisorId;
+      next();
+    });
     // Verify token 
-    const decoded = jwt.verify(token, jwtSecret);
-    req.advisorId = decoded.advisorId;
-
-    next();
+  
+  
   } catch (error) {
     console.error('JWT Verification Error:', error);
     res.status(401).json({ error: 'Invalid token' });
