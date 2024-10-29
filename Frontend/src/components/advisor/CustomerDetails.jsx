@@ -1,4 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
+import { bookCustomer } from '../../services/advisorservice';
 
 function CustomerDetails() {
   const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
@@ -6,11 +8,24 @@ function CustomerDetails() {
   const [statusFilter, setStatusFilter] = useState('All');
   const [customers, setCustomers] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCustomer, setSelectedCustomer] = useState(null);
+  const [bookingAmount, setBookingAmount] = useState('');
+  const [totalAmount, setTotalAmount] = useState('');
+  const [bookingDate, setBookingDate] = useState('');
+  const [bookingTime, setBookingTime] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const openBookingPopup = (customer) => {
+    setSelectedCustomer(customer);
+
+    setSuccessMessage(''); 
+  };
 
   useEffect(() => {
     const storedData = localStorage.getItem('advisorData');
     const Data = JSON.parse(storedData);
     const advisorId = Data.id;
+
 
     // Function to fetch customer data
     const customerData = async () => {
@@ -26,16 +41,16 @@ function CustomerDetails() {
 
         if (response.ok) {
           const fetchedData = JSON.parse(responseBody);
-
+          setCustomers(fetchedData)
           // Check if local storage data is different from fetched data
-          const storedCustomers = JSON.parse(localStorage.getItem('customers')) || [];
-          if (JSON.stringify(storedCustomers) !== JSON.stringify(fetchedData)) {
-            // Update local storage with new data if different
-            localStorage.setItem('customers', JSON.stringify(fetchedData));
-            setCustomers(fetchedData);
-          } else {
-            setCustomers(storedCustomers); // Use existing local storage data
-          }
+          // const storedCustomers = JSON.parse(localStorage.getItem('customers')) || [];
+          // if (JSON.stringify(storedCustomers) !== JSON.stringify(fetchedData)) {
+          //   // Update local storage with new data if different
+          //   localStorage.setItem('customers', JSON.stringify(fetchedData));
+          //   setCustomers(fetchedData);
+          // } else {
+          //   setCustomers(storedCustomers); // Use existing local storage data
+          // }
         } else {
           console.error('Failed to fetch advisor data:', responseBody);
         }
@@ -45,13 +60,57 @@ function CustomerDetails() {
     };
 
     // Check if customers are in local storage
-    const storedCustomers = JSON.parse(localStorage.getItem('customers'));
-    if (storedCustomers) {
-      setCustomers(storedCustomers); // Use data from local storage if available
-    } else {
-      customerData(); // Fetch data if not available in local storage
-    }
+    // const storedCustomers = JSON.parse(localStorage.getItem('customers'));
+    // if (storedCustomers) {
+    //   setCustomers(storedCustomers); // Use data from local storage if available
+    // } else {
+    //   customerData(); // Fetch data if not available in local storage
+    // }
+    customerData()
   }, []);
+
+
+
+
+
+  const handleBooking = async () => {
+  
+    try {
+      const bookingData = {
+        bookingAmount,
+        totalAmount,
+        bookingDate,
+        bookingTime,
+        status: 'booked',
+      };
+      
+      const response = await bookCustomer(selectedCustomer._id,bookingData)
+     
+  
+      if (response.status==201) {
+        setCustomers((prevCustomers) =>
+          prevCustomers.map((cust) =>
+            cust._id === selectedCustomer._id ? { ...cust, status: 'booked', bookingAmount } : cust
+          )
+        );
+        setSuccessMessage('Booking successful!');
+        setTimeout(() => setSuccessMessage(''), 2000);
+      
+        // Refresh the page after a short delay to ensure smooth UX
+       // Set success message
+        setSelectedCustomer(null);
+       
+      } else {
+        console.error('Failed to book customer:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error booking customer:', error);
+    }
+  };
+
+
+
+
 
   const handleSearch = (event) => setSearchTerm(event.target.value.toLowerCase());
 
@@ -81,6 +140,11 @@ function CustomerDetails() {
     <div className="mt-16">
       <div className="container mx-auto max-w-7xl p-8">
         <h2 className="text-4xl font-extrabold text-center text-primary mb-8">Customer Details</h2>
+        {successMessage && (
+          <div className="bg-green-100 text-green-800 px-4 py-3 rounded-lg mb-4 text-center">
+            {successMessage}
+          </div>
+        )}
 
         {/* Search and Filter Controls */}
         <div className="flex flex-col sm:flex-row sm:justify-between mb-8 items-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -119,7 +183,7 @@ function CustomerDetails() {
               key={customer.id}
               className={`bg-white shadow-xl rounded-xl p-6 border-t-4 transition-transform transform hover:shadow-2xl hover:scale-105 ${getStatusColor(customer.status)}`}
             >
-              <h3 className="text-2xl font-bold mb-4 text-primary hover:text-secondary transition duration-300">
+              <h3 className="text-2xl font-bold mb-4 text-primary  transition duration-300">
                 {customer.name}
               </h3>
               <p className="text-gray-700 mb-2 flex items-center">
@@ -150,10 +214,66 @@ function CustomerDetails() {
               <p className={`mt-4 py-2 px-4 rounded-lg border text-center font-semibold ${getStatusColor(customer.status)}`}>
                 Status: {customer.status.charAt(0).toUpperCase() + customer.status.slice(1)}
               </p>
+              {customer.status === 'not-confirmed' && (
+                <button
+                  onClick={() => openBookingPopup(customer)}
+                  className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
+                >
+                  Book Now
+                </button>
+              )}
             </div>
           ))}
         </div>
       </div>
+
+      {selectedCustomer && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-lg max-w-lg">
+            <h3 className="text-xl font-semibold mb-4">Booking Details for {selectedCustomer.name}</h3>
+            <input
+              type="number"
+              placeholder="Booking Amount"
+              value={bookingAmount}
+              onChange={(e) => setBookingAmount(e.target.value)}
+              className="mb-4 w-full p-2 border"
+            />
+            <input
+              type="number"
+              placeholder="Total Amount"
+              value={totalAmount}
+              onChange={(e) => setTotalAmount(e.target.value)}
+              className="mb-4 w-full p-2 border"
+            />
+            <input
+              type="date"
+              placeholder="Booking Date"
+              value={bookingDate}
+              onChange={(e) => setBookingDate(e.target.value)}
+              className="mb-4 w-full p-2 border"
+            />
+            <input
+              type="time"
+              placeholder="Booking Time"
+              value={bookingTime}
+              onChange={(e) => setBookingTime(e.target.value)}
+              className="mb-4 w-full p-2 border"
+            />
+            <button
+              onClick={handleBooking}
+              className="bg-green-500 text-white py-2 px-4 rounded mr-2"
+            >
+              Book
+            </button>
+            <button
+              onClick={() => setSelectedCustomer(null)}
+              className="bg-red-500 text-white py-2 px-4 rounded"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

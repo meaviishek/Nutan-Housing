@@ -49,3 +49,15 @@ export const submitEnquiry = async (data) => {
     throw err.response.data; // Throw the error response data
   }
 };
+
+
+//bookcustomer
+export const bookCustomer= async (customerId,bookingData)=>{
+  try{
+    const response =await axios.post(`${API_URL}/customers/${customerId}/book`,bookingData)
+  return response
+  }catch(err){
+    throw err.response
+  }
+
+}

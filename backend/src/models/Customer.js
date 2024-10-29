@@ -18,7 +18,10 @@ const customerSchema = new mongoose.Schema({
   },
   bookingAmount: { type: Number, default: 0 }, // Booking amount if only booked
   purchaseAmount: { type: Number, default: 0 },
-  advisor: { type: mongoose.Schema.Types.ObjectId, ref: 'Advisor', required: true } // Linked to advisor
+  advisor: { type: mongoose.Schema.Types.ObjectId, ref: 'Advisor', required: true }, // Linked to advisor
+  bookingDate: { type: Date }, // Date of booking
+  actualDate: { type: Date, default: Date.now },
+  bookingTime: { type: String },
 });
 
 const Customer = mongoose.model('Customer', customerSchema);

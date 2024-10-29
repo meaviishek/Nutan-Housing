@@ -3,9 +3,8 @@ import React, { useState, useEffect } from 'react';
 function IncentiveDashboard() {
   const [customers, setCustomers] = useState([]);
   const [totalIncentive, setTotalIncentive] = useState(0);
+  // const baseurl = 'http://localhost:5000/api/advisors';
   const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
-  // const baseurl = 'http://localhost:5000/api/advisors'
-
   useEffect(() => {
     const storedData = localStorage.getItem('advisorData');
     const Data = JSON.parse(storedData);
@@ -16,9 +15,11 @@ function IncentiveDashboard() {
       try {
         const response = await fetch(`${baseurl}/${advisorId}/customers`);
         const data = await response.json();
-        setCustomers(data);
+        // Filter only confirmed customers
+        const confirmedCustomers = data.filter(customer => customer.status == 'confirmed');
+        setCustomers(confirmedCustomers);
 
-        const total = data.reduce((sum, customer) => {
+        const total = confirmedCustomers.reduce((sum, customer) => {
           return sum + parseFloat(calculateIncentive(customer.purchaseAmount));
         }, 0);
 
@@ -60,7 +61,7 @@ function IncentiveDashboard() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {customers.map((customer) => (
             <div key={customer.id} className="bg-white shadow-md rounded-lg p-4 md:p-6 border-l-4 border-primary">
-              <h3 className="text-lg md:text-xl font-semibold text-secondary mb-2">{customer.name}</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-primary mb-2">{customer.name}</h3>
               <p className="text-gray-700 mb-1"><strong>Property:</strong> {customer.plotNumber}, {customer.projectName}</p>
               <p className="text-gray-700 mb-1"><strong>Total Purchases:</strong> ₹{customer.purchaseAmount.toLocaleString()}</p>
               <p className="text-green-600 font-semibold">

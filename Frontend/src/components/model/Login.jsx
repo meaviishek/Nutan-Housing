@@ -93,11 +93,12 @@ function Login({ closeLogin }) {
 
 
 const handleSuccess=async(response)=>{
-// const API_URL = 'http://localhost:5000/api/advisors'
+const API_URL = 'http://localhost:5000/api/advisors'
+// const API_URL = 'https://nutan-housing-32ig.onrender.com/api/advisors'
 
 
   try{
-    const res = await axios.post('https://nutan-housing-32ig.onrender.com/api/advisors/googleauth', { tokenId:response.credential });
+    const res = await axios.post(`${API_URL}/googleauth`, { tokenId:response.credential });
     const { token, advisor } = res.data;
     
     // Save the token and advisor details (e.g., in localStorage)

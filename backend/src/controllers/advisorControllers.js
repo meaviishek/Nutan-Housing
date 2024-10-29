@@ -286,3 +286,30 @@ export const enquariesForm=async (req, res) => {
     res.status(500).json({ message: 'Server error, please try again later' });
   }
 }
+
+
+//update book
+export const updatebook=async(req,res)=>{
+  
+    const { customerId } = req.params;
+    const { bookingAmount, totalAmount, bookingDate, bookingTime, status } = req.body;
+  
+    try {
+      const customer = await Customer.findById(customerId);
+      if (!customer) return res.status(404).json({ message: 'Customer not found' });
+  
+      customer.bookingAmount = bookingAmount;
+      customer.purchaseAmount = totalAmount;
+      customer.status = status;
+      customer.bookingDate = bookingDate;
+      customer.bookingTime = bookingTime;
+  
+      await customer.save();
+      res.status(201).json({ message: 'booking successfully' });
+     
+     
+    } catch (error) {
+      console.error('Booking error:', error);
+      res.status(500).json({ message: 'Server error' });
+    }
+  }
