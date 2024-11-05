@@ -80,7 +80,7 @@ function Enquire({ closeEnq }) {
       name="phoneNumber"
       value={formData.phoneNumber}
       onChange={handleChange}
-      pattern="[0-9]{10}" // Enforces a 10-digit number after +91
+      pattern="[0-9]{10}" 
       minLength="10"
       maxLength="10"
       className="w-full px-4 py-2 rounded-r-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"

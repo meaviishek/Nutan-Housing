@@ -313,3 +313,22 @@ export const updatebook=async(req,res)=>{
       res.status(500).json({ message: 'Server error' });
     }
   }
+
+
+  //confirm book
+  export const confirmbook =async(req,res)=>{
+    const {customerId} =req.params
+    const {status}=req.body;
+    try{
+      const customer= await Customer.findById(customerId);
+
+      if(!customer) return res.status(404).json({message:'Customer not found'});
+
+      customer.status=status
+      await customer.save();
+      res.status(201).json({message: 'confirmed'})
+    }catch(err){
+      console.error('confirm error',err)
+      res.status(500).json({message:'server error'})
+    }
+  }

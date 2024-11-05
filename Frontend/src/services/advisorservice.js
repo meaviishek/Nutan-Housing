@@ -1,5 +1,6 @@
 // services/advisorService.js
 import axios from 'axios';
+import { RiThreadsFill } from 'react-icons/ri';
 
 const API_URL = 'https://nutan-housing-32ig.onrender.com/api/advisors';
 // const API_URL = 'http://localhost:5000/api/advisors'
@@ -60,4 +61,14 @@ export const bookCustomer= async (customerId,bookingData)=>{
     throw err.response
   }
 
+}
+
+//confirm booking
+export const confirmBooking =async(customerId,data)=>{
+  try{
+    const response = await axios.post(`${API_URL}/customers/${customerId}/confirmbook`,data)
+    return response
+  }catch(err){
+    throw err.response
+  }
 }

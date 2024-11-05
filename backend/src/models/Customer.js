@@ -13,7 +13,7 @@ const customerSchema = new mongoose.Schema({
   plotSize:{type:String,required:true},
   status: {
     type: String,
-    enum: ['booked', 'not-confirmed', 'confirmed'], // Enum for predefined statuses
+    enum: ['booked', 'not-confirmed', 'confirmed','waiting'], // Enum for predefined statuses
     default: 'not-confirmed', // Default status
   },
   bookingAmount: { type: Number, default: 0 }, // Booking amount if only booked

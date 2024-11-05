@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import { bookCustomer } from '../../services/advisorservice';
+import { bookCustomer,confirmBooking } from '../../services/advisorservice';
+
 
 function CustomerDetails() {
   const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
@@ -136,6 +137,35 @@ function CustomerDetails() {
     }
   };
 
+
+  // confirm booking by advisor
+  const c_booking = async (customer) => {
+  
+    setSuccessMessage('')
+    console.log(customer)
+    try{
+
+      const data = {
+       
+        status: 'waiting',
+      };
+      
+      const response = await confirmBooking(customer._id,data)
+     
+      if (response.status==201) {
+    setCustomers((prevCustomers) =>
+      prevCustomers.map((cust) =>
+        cust._id === customer._id ? { ...cust, status: 'waiting' } : cust
+      )
+    );
+    setSuccessMessage('Wait for the admin to confirm this customer');
+    setTimeout(() => setSuccessMessage(''), 2000);
+ 
+  }}catch(error){
+    console.error('Error confirm:', error);
+  }
+  };
+  
   return (
     <div className="mt-16">
       <div className="container mx-auto max-w-7xl p-8">
@@ -188,23 +218,23 @@ function CustomerDetails() {
               </h3>
               <p className="text-gray-700 mb-2 flex items-center">
                 <i className="fas fa-phone mr-2 text-primary"></i>
-                <strong>Phone:</strong> <span className="text-gray-800">{customer.phoneNumber}</span>
+                <strong>Phone:</strong> <span className="text-gray-800 pl-2">{customer.phoneNumber}</span>
               </p>
               <p className="text-gray-700 mb-2 flex items-center">
                 <i className="fas fa-envelope mr-2 text-primary"></i>
-                <strong>Email:</strong> <span className="text-gray-800">{customer.email}</span>
+                <strong>Email:</strong> <span className="text-gray-800 pl-2">{customer.email}</span>
               </p>
               <p className="text-gray-700 mb-2 flex items-center">
                 <i className="fas fa-map-marker-alt mr-2 text-primary"></i>
-                <strong>Customer Address:</strong> <span className="text-gray-800">{customer.address}</span>
+                <strong>Customer Address:</strong> <span className="text-gray-800 pl-2">{customer.address}</span>
               </p>
               <p className="text-gray-700 mb-2 flex items-center">
                 <i className="fas fa-tag mr-2 text-primary"></i>
-                <strong>Plot Number:</strong> <span className="text-gray-800">{customer.plotNumber}</span>
+                <strong>Plot Number:</strong> <span className="text-gray-800 pl-2">{customer.plotNumber}</span>
               </p>
               <p className="text-gray-700 mb-2 flex items-center">
                 <i className="fas fa-project-diagram mr-2 text-primary"></i>
-                <strong>Project Name:</strong> <span className="text-gray-800">{customer.projectName}</span>
+                <strong>Project Name:</strong> <span className="text-gray-800 pl-2">{customer.projectName}</span>
               </p>
               {customer.status === 'booked' ? (
                 <p className="text-yellow-600 font-semibold">Booking Amount: ₹{customer.bookingAmount}</p>
@@ -213,15 +243,24 @@ function CustomerDetails() {
               ) : null}
               <p className={`mt-4 py-2 px-4 rounded-lg border text-center font-semibold ${getStatusColor(customer.status)}`}>
                 Status: {customer.status.charAt(0).toUpperCase() + customer.status.slice(1)}
-              </p>
-              {customer.status === 'not-confirmed' && (
+                {customer.status === 'not-confirmed' && (
                 <button
                   onClick={() => openBookingPopup(customer)}
-                  className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
+                  className=" ml-2 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
                 >
                   Book Now
                 </button>
               )}
+              {customer.status === 'booked' && (
+    <button
+      onClick={()=>c_booking(customer)}
+      className="ml-2 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition duration-200"
+    >
+      Confirm
+    </button>
+  )}
+              </p>
+            
             </div>
           ))}
         </div>

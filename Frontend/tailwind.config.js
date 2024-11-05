@@ -9,6 +9,7 @@ export default {
         // You can add more custom fonts here, for example:
         roboto: ['Roboto', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        museo:["MuseoModerno","sans-serif"],
       },
 
 
