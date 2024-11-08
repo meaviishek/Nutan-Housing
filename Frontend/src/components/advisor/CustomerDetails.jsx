@@ -4,8 +4,8 @@ import { bookCustomer,confirmBooking } from '../../services/advisorservice';
 
 
 function CustomerDetails() {
-  const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
-  // const baseurl = 'http://localhost:5000/api/advisors'
+  // const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
+  const baseurl = 'http://localhost:5000/api/advisors'
   const [statusFilter, setStatusFilter] = useState('All');
   const [customers, setCustomers] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -129,7 +129,7 @@ function CustomerDetails() {
       case 'confirmed':
         return 'bg-green-100 text-green-800 border-green-400';
       case 'booked':
-        return 'bg-yellow-100 text-yellow-800 border-yellow-400';
+        return ' text-yellow-800 border-yellow-400';
       case 'not-confirmed':
         return 'bg-red-100 text-red-800 border-red-400';
       default:
@@ -241,12 +241,12 @@ function CustomerDetails() {
               ) : customer.status === 'confirmed' ? (
                 <p className="text-green-600 font-semibold">Purchase Amount: ₹{customer.purchaseAmount}</p>
               ) : null}
-              <p className={`mt-4 py-2 px-4 rounded-lg border text-center font-semibold ${getStatusColor(customer.status)}`}>
+              <p className={`mt-4 py-2 px-4 rounded-lg border  text-center font-semibold ${getStatusColor(customer.status)}`}>
                 Status: {customer.status.charAt(0).toUpperCase() + customer.status.slice(1)}
                 {customer.status === 'not-confirmed' && (
                 <button
                   onClick={() => openBookingPopup(customer)}
-                  className=" ml-2 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
+                  className=" ml-6 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
                 >
                   Book Now
                 </button>
@@ -254,7 +254,7 @@ function CustomerDetails() {
               {customer.status === 'booked' && (
     <button
       onClick={()=>c_booking(customer)}
-      className="ml-2 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition duration-200"
+      className="ml-6 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition duration-200"
     >
       Confirm
     </button>
