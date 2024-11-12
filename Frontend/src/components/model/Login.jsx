@@ -49,11 +49,6 @@ function Login({ closeLogin }) {
       [name]: value
     }));
   };
-
-  const resetTimer = () => {
-    if (logoutTimer) clearTimeout(logoutTimer);
-    logoutTimer = setTimeout(handleLogout, 30 * 60 * 1000); // Set timeout for 30 minutes
-  };
   const handleLogout = () => {
  
     localStorage.clear();
@@ -61,6 +56,11 @@ function Login({ closeLogin }) {
     setIsDropdownOpen(false); // Close the dropdown
     navigate('/') // Redirect to login page (or your desired route)
   };
+  const resetTimer = () => {
+    if (logoutTimer) clearTimeout(logoutTimer);
+    logoutTimer = setTimeout(handleLogout, 30 * 60 * 1000); // Set timeout for 30 minutes
+  };
+  
   useEffect(() => {
     if (localStorage.getItem('token')) {
       resetTimer();
@@ -121,8 +121,8 @@ function Login({ closeLogin }) {
 
 
 const handleSuccess=async(response)=>{
-const API_URL = 'http://localhost:5000/api/advisors'
-// const API_URL = 'https://nutan-housing-32ig.onrender.com/api/advisors'
+// const API_URL = 'http://localhost:5000/api/advisors'
+const API_URL = 'https://nutan-housing-32ig.onrender.com/api/advisors'
 
 
   try{

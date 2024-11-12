@@ -2,8 +2,8 @@
 import axios from 'axios';
 import { RiThreadsFill } from 'react-icons/ri';
 
-// const API_URL = 'https://nutan-housing-32ig.onrender.com/api/advisors';
-const API_URL = 'http://localhost:5000/api/advisors'
+const API_URL = 'https://nutan-housing-32ig.onrender.com/api/advisors';
+// const API_URL = 'http://localhost:5000/api/advisors'
 // Advisor signup API call
 export const advisorSignup = async (data) => {
   try {

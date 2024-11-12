@@ -4,8 +4,8 @@ import { bookCustomer,confirmBooking } from '../../services/advisorservice';
 
 
 function CustomerDetails() {
-  // const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
-  const baseurl = 'http://localhost:5000/api/advisors'
+  const baseurl = 'https://nutan-housing-32ig.onrender.com/api/advisors';
+  // const baseurl = 'http://localhost:5000/api/advisors'
   const [statusFilter, setStatusFilter] = useState('All');
   const [customers, setCustomers] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
