@@ -202,6 +202,8 @@ function CustomerDetails() {
               <option value="booked">Booked</option>
               <option value="not-confirmed">Not Confirmed</option>
               <option value="confirmed">Confirmed</option>
+<option value="waiting">waiting</option>
+
             </select>
           </div>
         </div>
