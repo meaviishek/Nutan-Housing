@@ -94,7 +94,7 @@ const Header = ({ openLogin, openEnq}) => {
           </button>
           {advisorData ? (        <div className="relative ">
            
-              <button onClick={toggleDropdown} className="flex text-sm items-center px-1 py-1 bg-primary hover:bg-yellow-500 text-gray-50 rounded-2xl">
+              <button onClick={toggleDropdown} className="flex text-sm items-center px-1 py-1 bg-primary hover:bg-yellow-500 text-gray-50 rounded-md">
               <img 
                 src={Profile} // Dummy profile picture
                 alt="Profile"
@@ -155,7 +155,7 @@ const Header = ({ openLogin, openEnq}) => {
           </button>
           {advisorData ? (        <div className="relative ">
            
-           <button onClick={toggleDropdown} className="flex text-sm items-center px-1 py-1 bg-primary hover:bg-yellow-500 text-gray-50 rounded-2xl">
+           <button onClick={toggleDropdown} className="flex text-sm items-center px-1 py-1 bg-primary hover:bg-yellow-500 text-gray-50 rounded-md">
            <img 
              src={Profile} // Dummy profile picture
              alt="Profile"
@@ -167,7 +167,7 @@ const Header = ({ openLogin, openEnq}) => {
            {isDropdownOpen && (
              <div ref={dropdownRef} className="absolute right-0 mt-2 w-48 bg-white rounded shadow-lg z-20">
                <Link to="/advisor/dashboard" className="block px-4 py-2 text-gray-800 hover:bg-yellow-200">Dashboard</Link>
-               <button className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-yellow-200">Logout</button>
+               <button onClick={handleLogout} className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-yellow-200">Logout</button>
              </div>
            )}
          </div>) : (
